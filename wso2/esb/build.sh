@@ -1,0 +1,1 @@
+docker build -t wso2esb:5.0.0 .

@@ -1,0 +1,1 @@
+docker build -t wso2dss:3.5.1 .

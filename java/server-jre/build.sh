@@ -1,0 +1,1 @@
+docker build -t server-jre:8 .

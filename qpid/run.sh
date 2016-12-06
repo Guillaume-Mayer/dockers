@@ -1,0 +1,1 @@
+docker run --name qpid -p 5672:5672 -p 8080:8080 -d qpid:6.1.0
