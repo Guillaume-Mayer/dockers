@@ -1,4 +1,5 @@
-FROM server-jre:8
+#FROM server-jre:8
+FROM anapsix/alpine-java
 
 MAINTAINER Guillaume Mayer <gmayer@arkho.tech>
 
