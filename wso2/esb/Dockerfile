@@ -11,6 +11,8 @@ COPY master-datasources.xml /opt/wso2esb-5.0.0/repository/conf/datasources/maste
 
 COPY mysql-connector-java-5.1.40-bin.jar /opt/wso2esb-5.0.0/repository/components/lib/mysql-connector-java-5.1.40-bin.jar
 
+COPY postgresql-9.4.1212.jar /opt/wso2esb-5.0.0/repository/components/lib/postgresql-9.4.1212.jar
+
 VOLUME /opt/wso2esb-5.0.0/repository/deployment/server/carbonapps
 
 EXPOSE 8280 9443
