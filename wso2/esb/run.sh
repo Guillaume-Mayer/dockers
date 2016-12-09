@@ -1,1 +1,1 @@
-docker run --name wso2esb -p 8280:8280 -p 9443:9443 -d -v /Users/guillaumemayer/volumes/carbonapps:/opt/wso2esb-5.0.0/repository/deployment/server/carbonapps --link mysql-minju:mysql wso2esb:5.0.0
+docker run --name wso2esb -p 8280:8280 -p 9443:9443 -d -v /Users/guillaumemayer/volumes/carbonapps:/opt/wso2esb-5.0.0/repository/deployment/server/carbonapps wso2esb:5.0.0

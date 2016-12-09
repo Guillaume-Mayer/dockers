@@ -13,6 +13,6 @@ COPY mysql-connector-java-5.1.40-bin.jar /opt/wso2esb-5.0.0/repository/component
 
 VOLUME /opt/wso2esb-5.0.0/repository/deployment/server/carbonapps
 
-ENTRYPOINT /opt/wso2esb-5.0.0/bin/wso2server.sh
+EXPOSE 8280 9443
 
-EXPOSE 9443
+ENTRYPOINT /opt/wso2esb-5.0.0/bin/wso2server.sh
