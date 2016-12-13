@@ -1,1 +1,1 @@
-docker run -d -e MYSQL_ROOT_PASSWORD=rOot123., -p 3306:3306 --name mysql-minju mysql:5 
+docker run -d -e MYSQL_ROOT_PASSWORD=rOot123., -p 3306:3306 -v /Users/guillaumemayer/volumes/mysql/minju:/var/lib/mysql --name mysql-minju mysql:5

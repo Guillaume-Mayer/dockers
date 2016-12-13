@@ -1,0 +1,1 @@
+docker run -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD=rOot123.,' -p 1433:1433 --volumes-from mssql-data --name mssql -d microsoft/mssql-server-linux
