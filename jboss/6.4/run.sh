@@ -1,0 +1,1 @@
+docker run -d --name jboss -p 8080:8080 -p 9990:9990 -v /Users/guillaumemayer/volumes/deployments:/jboss-eap-6.4/standalone/deployments jboss-eap:6.4
