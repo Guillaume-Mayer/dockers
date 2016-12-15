@@ -1,0 +1,1 @@
+docker run --name corfo -p 8081:8081 -p 8161:8161 -p 9990:9990 -d corfo

@@ -1,6 +1,10 @@
-FROM corfo-base
+FROM server-jre:7
 
 MAINTAINER Guillaume Mayer <gmayer@arkho.tech>
+
+ADD escritorio_empresa.tar.gz /
+
+ENV JBOSS_HOME /escritorio_empresa/runtime/jboss-fuse
 
 RUN echo "JAVA_OPTS=\"\$JAVA_OPTS -Djboss.bind.address=0.0.0.0 -Djboss.bind.address.management=0.0.0.0\"" >> $JBOSS_HOME/bin/standalone.conf
 
