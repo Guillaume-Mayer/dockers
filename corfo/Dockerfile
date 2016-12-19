@@ -2,15 +2,21 @@ FROM server-jre:7
 
 MAINTAINER Guillaume Mayer <gmayer@arkho.tech>
 
-ADD escritorio_empresa.tar.gz /
+COPY escritorio_empresa /escritorio_empresa
 
 ENV JBOSS_HOME /escritorio_empresa/runtime/jboss-fuse
 
-RUN echo "JAVA_OPTS=\"\$JAVA_OPTS -Djboss.bind.address=0.0.0.0 -Djboss.bind.address.management=0.0.0.0\"" >> $JBOSS_HOME/bin/standalone.conf
+ENV JAVA_OPTS -server -Xms1024m -Xmx2048m -XX:MaxPermSize=256m -Dorg.jboss.resolver.warning=true -Dsun.rmi.dgc.client.gcInterval=3600000 -Dsun.rmi.dgc.server.gcInterval=3600000 -Dsun.lang.ClassLoader.allowArraySyntax=true -DEE_HOME=/escritorio_empresa -Djboss.bind.address=0.0.0.0 -Djboss.bind.address.management=0.0.0.0
 
-EXPOSE 8081 8161 9990
+RUN echo ee.srv.core.interno.inter.vault.sag=123456 >> /escritorio_empresa/runtime/config/ee-srv-core-config.properties
+
+VOLUME /escritorio_empresa/runtime/jboss-fuse/standalone/deployments
+
+VOLUME /escritorio_empresa/runtime/config
+
+EXPOSE 8081 8161 8787 9990
 
 CMD cd /escritorio_empresa/runtime/apache-activemq-5.9.1 && \
 	./activemq-start.sh && \
-	cd /escritorio_empresa/runtime/jboss-fuse && \
-	./jfuse-start.sh
+	cd /escritorio_empresa/runtime/jboss-fuse/bin && \
+	bash standalone.sh -c ee-standalone.xml --debug

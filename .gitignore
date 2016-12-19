@@ -1,3 +1,5 @@
 *.gz
 *.zip
 *.jar
+.DS_Store
+escritorio_empresa/
