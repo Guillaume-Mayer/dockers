@@ -3,3 +3,4 @@
 *.jar
 .DS_Store
 escritorio_empresa/
+id_rsa*
