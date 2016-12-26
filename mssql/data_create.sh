@@ -1,1 +1,1 @@
-docker create --name mssql-data -v /opt/mssql/data busybox /bin/false
+docker create --name mssql-data -v /var/opt/mssql/data busybox /bin/false
