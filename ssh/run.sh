@@ -1,0 +1,1 @@
+docker run -d --name ssh-corfo -p 1521:1521 ssh
