@@ -1,0 +1,1 @@
+docker exec corfo ssh root@190.96.76.145 -L 1521:localhost:1521 -p 22025 -i /id_rsa -o StrictHostKeyChecking=no -o ExitOnForwardFailure=yes -fN
