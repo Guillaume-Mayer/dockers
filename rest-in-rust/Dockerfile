@@ -1,7 +1,5 @@
-FROM alpine
+FROM scratch
 
 COPY rest /rest
 
-EXPOSE 3000
-
-CMD ["/rest"]  
+ENTRYPOINT ["/rest"]

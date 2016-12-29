@@ -1,1 +1,1 @@
-docker build -t rest-in-rust .
+docker build -t gui77aume/rest-in-rust .
