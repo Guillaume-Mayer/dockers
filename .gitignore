@@ -4,3 +4,4 @@
 .DS_Store
 escritorio_empresa/
 id_rsa*
+rust-musl-builder/
