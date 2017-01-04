@@ -1,0 +1,1 @@
+docker create --name elastic-data -v /usr/share/elasticsearch/data busybox /bin/false

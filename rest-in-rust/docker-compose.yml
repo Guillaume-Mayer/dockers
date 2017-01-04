@@ -1,0 +1,13 @@
+version: '2'
+services:
+    rest:
+        build: .
+        image: gui77aume/rest-in-rust
+        ports:
+            - 3000:3000
+    elastic:
+        image: elasticsearch:alpine
+        ports:
+            - 9200:9200
+        volumes_from:
+            - container:elastic-data

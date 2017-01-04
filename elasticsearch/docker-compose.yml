@@ -1,15 +1,14 @@
 version: '2'
 services:
-    elastic1:
+    master:
         image: elasticsearch:alpine
-        container_name: elastic1
+        container_name: elasticsearch_master
         environment:
             - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
         command: [
             -Ecluster.name=my_cluster, 
-            -Enode.name=my_node1, 
+            -Enode.name=master_node, 
             -Ebootstrap.memory_lock=true,
-            -Ediscovery.zen.minimum_master_nodes=2
             ]
         ulimits:
             memlock:
@@ -23,20 +22,21 @@ services:
             - IPC_LOCK
         ports:
             - 9200:9200
+        volumes_from: 
+            - container:elastic-data
         networks:
-            - es-net
-    elastic2:
+            - net
+    node:
         image: elasticsearch:alpine
-        container_name: elastic2
         environment:
             - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
         command: [
             -Ecluster.name=my_cluster, 
-            -Enode.name=my_node2, 
             -Ebootstrap.memory_lock=true, 
-            -Ediscovery.zen.minimum_master_nodes=2,
-            -Ediscovery.zen.ping.unicast.hosts=elastic1
+            -Ediscovery.zen.ping.unicast.hosts=elasticsearch_master
             ]
+        depends_on: 
+            - master
         ulimits:
             memlock:
                 soft: -1
@@ -47,10 +47,10 @@ services:
         mem_limit: 1g
         cap_add: 
             - IPC_LOCK
-        ports:
-            - 9201:9200
+        volumes_from: 
+             - container:elastic-data
         networks:
-            - es-net
+            - net
 networks:
-    es-net:
+    net:
         driver: bridge
