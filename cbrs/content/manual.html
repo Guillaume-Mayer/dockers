@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html>
+<title>Aplicación Comercio en Docker</title>
+
+<xmp theme="cerulean" style="display:none;">
+# Aplicación Comercio en Docker
+
+## 1) Instalar Docker
+
+Los contenedores Windows funcionan en Windows Server 2016.
+
+Para activar el servicio docker, primero se necesita **descargar las ultimas actualizaciones** de Windows 2016, luego en PowerShell (y siendo administrador) :
+
+```PowerShell
+Install-PackageProvider -Name NuGet -MinimumVersion 2.8.5.201 -Force
+Install-Module -Name DockerMsftProvider -Force
+Install-Package -Name docker -ProviderName DockerMsftProvider -Force
+Restart-Computer -Force
+```
+
+Se necesitara reiniciar la maquina.
+
+## 2) Descargar la imagen de base
+
+Se descarga la imagen de base en la cual correra la aplicación dockerizada.
+
+Es un servidor microsoft completo, ocupa mas o menos 10 Go, así que dura bastante descarga.
+
+```Shell
+docker pull microsoft/windowsservercore
+```
+
+Por desgracia no se pudó usar la imagen *microsoft/nanoserver* por que Jboss 5 no la soporta.
+
+## 3) Imagen con maquina virtual Java 6
+
+Se usa la ultima JVM de Oracle (6 update 45) para Windows.
+
+Despues de descargarla se copia en una carpeta dedicada al Docker.
+
+Cada imagen Docker necesita una carpeta dedicada.
+
+Por ejemplo, en la maquina 192.168.102.178 donde se hizo el desarrollo:
+
+**C:\Arkhotech\Docker\Java\6u45\jdk1.6.0_45**
+
+Luego, se arma el Dockerfile :
+
+```Dockerfile
+# Microsoft full server image
+FROM microsoft/windowsservercore
+
+# Me :)
+MAINTAINER Guillaume Mayer <gmayer@arkho.tech>
+
+# Specify Powershell as the default shell (for RUN commands)
+SHELL ["powershell", "-Command", "$ErrorActionPreference = 'Stop';"]
+
+# Copy the JDK
+COPY jdk1.6.0_45 c:/jdk1.6.0_45
+
+# Set the JAVA_HOME environment variable
+ENV JAVA_HOME c:\\jdk1.6.0_45
+
+# Add JAVA_HOME\bin to the PATH
+RUN $newPath = ('{0};{1}\bin' -f $env:PATH, $env:JAVA_HOME); \
+    Write-Host ('Updating PATH: {0}' -f $newPath); \
+    setx /M PATH $newPath;
+```
+
+- Esa imagen ocupa la de microsoft Windows Server Core como base (No se pudó usar nanoserver por causa del JBoss 5).
+- Se define PowerShell como shell por defecto
+- Se copia la JDK 6u45 en la raiz (C:)
+- Se define la variable de entono JAVA_HOME
+- Se agrega JAVA_HOME\bin al PATH
+
+Para construir esta imagen, hay que llamar el comando siguiente:
+```Shell
+docker build -t arkhotech/java:6u45 .
+```
+La option -t permite dar un nombre (tag) a la imagen.
+
+Se puede probar la imagen con el comando siguiente:
+```Shell
+docker run -it --rm arkhotech/java:6u45
+```
+Las opciones -it permiten simular un terminal interactivo, la opción --rm le dice a docker de borrar el contenedor cuando no se usa mas.
+
+## 4) Imagen con JBoss 5
+
+En otra carpeta dedicada se arma una imagen Docker conteniendo el JBoss 5 descarda desde la web (https://sourceforge.net/projects/jboss/files/JBoss/JBoss-5.1.0.GA/)
+
+```Dockerfile
+# Java 6 on Windows Server Core (unfortunatly Jboos 5 does not work on nano-server)
+FROM arkhotech/java:6u45
+
+# Me :)
+MAINTAINER Guillaume Mayer <gmayer@arkho.tech>
+
+# Copy the Jboss folder (I cleaned it a little)
+COPY jboss-5.1.0.GA c:/jboss-5.1.0.GA
+
+# Set the JBOSS_HOME environment variable
+ENV JBOSS_HOME c:\\jboss-5.1.0.GA
+
+# Expose the port 8080
+EXPOSE 8080
+
+# Run the server (will be overrided)
+CMD c:\\jboss-5.1.0.GA\\bin\\run.bat
+```
+
+- Aqui se ocupa la imagen con Java 6u45 previamente construida
+- Se copia la carpeta Jboss en la raiz (C:)
+- Se define la variable de entorno JBOSS_HOME
+- Se expone el puerto 8080
+- Se levanta el servidor JBoss mediante el script run.bat
+
+Para construir la imagen, desde la carpeta dedicada (aqui, C:\Arkhotech\Docker\Jboss) se llama el comando siguiente:
+```Shell
+docker build -t arkhotech/jboss:5.1.0.GA .
+```
+
+Para probarla, se puede llamar a:
+```Shell
+docker run --rm arkhotech/jboss:5.1.0.GA
+```
+
+
+## 5) Imagen con aplicaciones de CBRS
+
+En esa ultima capa/imagen, se agregan los archvos propios a las aplicaciones de CBRS, archivos de configuración y archivos java (war, jar, sar).
+La mayoria de esos archivos estando en la carpeta "default".
+También se agrega el archivo run.conf.bat que permite definir las opciones de la JVM, así que el script docker-cmd.bat, que sera el punto de inicio del contenedor y que nos permite definir algunas acciones personalisadas.
+
+```Dockerfile
+# Jboss base image
+FROM arkhotech/jboss:5.1.0.GA
+
+# Me :)
+MAINTAINER Guillaume Mayer <gmayer@arkho.tech>
+
+# Solve the conflict with slf4j-log4j
+RUN Remove-Item C:/jboss-5.1.0.GA/common/lib/slf4j-jboss-logging.jar
+
+# Add the app files (jar, war, xml ...)
+COPY default c:/jboss-5.1.0.GA/server/default
+
+# Used to config the bind at 0.0.0.0 and the java memory settings
+COPY run.conf.bat c:/jboss-5.1.0.GA/bin/run.conf.bat
+
+# Used to add the server host name mappings (maipo, sigma, alpha)
+# And to connect the R and Z drives to the network
+COPY docker-cmd.bat c:/docker-cmd.bat
+
+# Make the log files accesible from the host
+VOLUME c:/jboss-5.1.0.GA/server/default/log
+
+# Run the script and thus the JBoss server
+CMD c:\\docker-cmd.bat
+```
+
+- Se ocupa la imagen Jboss 5 previamente contruida como base.
+- Se supprime el archivo C:/jboss-5.1.0.GA/common/lib/slf4j-jboss-logging.jar, que regeneraba un warning.
+- Se copia la carpeta default en la carpeta server del JBoss (eso agrega los archivos sin borrar los existentes)
+- Se copian el run.conf.bat y el docker-cmd.bat
+- Se define un volumen en c:/jboss-5.1.0.GA/server/default/log, eso permitira acceder a los logs dedes la maquina host
+- Se inicia el servidor Jboss mediante el script docker-cmd.bat
+
+
+## 6) Script de inicio (docker-cmd.bat)
+
+```Shell
+@echo off
+
+echo Adding maipo mapping (192.168.100.27) to hosts file
+echo 192.168.100.27 maipo >> c:\Windows\System32\drivers\etc\hosts
+
+echo Adding sigma mapping (192.168.100.27) to hosts file
+echo 192.168.100.27 sigma >> c:\Windows\System32\drivers\etc\hosts
+
+echo Adding alpha mapping (192.168.100.27) to hosts file
+echo 192.168.100.27 alpha >> c:\Windows\System32\drivers\etc\hosts
+
+echo Adding omega mapping (192.168.100.11) to hosts file
+echo 192.168.100.11 omega >> c:\Windows\System32\drivers\etc\hosts
+
+echo Connecting I drive (\\192.168.100.81\index)
+net use I: \\192.168.100.81\index Ar20k0,t3c15h /user:CBRS\Arkhotech
+
+echo Connecting J drive (\\srv-nas1.cbrs.local\STORAGE_INSCRIPCIONES\INSCRIPCIONES_COMERCIO_IMAGENES)
+net use J: \\srv-nas1.cbrs.local\STORAGE_INSCRIPCIONES\INSCRIPCIONES_COMERCIO_IMAGENES Ar20k0,t3c15h /user:CBRS\Arkhotech
+
+echo Connecting R drive (\\maipo\PDF Matricerias paso\Comercio)
+net use R: "\\maipo\PDF Matricerias paso\Comercio" Ar20k0,t3c15h /user:CBRS\Arkhotech
+
+echo Connecting W drive (\\maipo\Firma_E)
+net use W: \\maipo\Firma_E Ar20k0,t3c15h /user:CBRS\Arkhotech
+
+echo Connecting Z drive (\\omega\Storage)
+net use Z: \\omega\Storage Ar20k0,t3c15h /user:CBRS\Arkhotech
+
+echo Launching JBoss (run.bat)
+c:\jboss-5.1.0.GA\bin\run.bat
+```
+
+- Se agregan mapeos IP/Nombre en archivo hosts para que sean reconocidos en la Aplicación
+Docker ocupa el mismo DNS que la maquina host, pero no agrega automaticamente el nomre de dominio:
+Por ejemplo `ping maipo.cbrs.local` encuentra el IP del servidor maipo, pero `ping maipo` no lo encuentra.
+- Se conectan las unidades de red I, J, R, W y Z
+- Se levanta el servidor JBoss mediante el script run.bat
+
+**Ojo** La conexión de las unidades I: y Z: no funcionan (error 121, timeOut)
+
+**Ojo** Se ocupó los credenciales de Arkhotech, pero se deberian reemplazar por otros.
+
+La imagen se construira con el comando siguiente:
+```Shell
+docker build -t cbrs/comercio .
+```
+
+## 7) Imagenes
+
+Se muestran las images mediante el comamdo `docker images`, despues de descarger y construir las imagenes documentas acá, se deberian mostrar una lista parecida a esa:
+
+![docker images][ss1]
+
+Para levantar el contenedor final, ejecutar el comando siguiente:
+
+```Shell
+docker run -p 8080:8080 -v c:/Arkhotech/Volumes/log:c:/jboss-5.1.0.GA/server/default/log --name cbrs -d arkhotech/cbrs
+```
+
+- La opción -p 8080:8080 permite mapear el puerto 8080 del host al puerto 8080 del contenedor
+- La opción -v c:/Arkhotech/Volumes/log:c:/jboss-5.1.0.GA/server/default/log permite montar la carpeta de los logs del contenedor en una carpeta del host.
+- La opción --name le da "cbrs" como nombre al contenedor
+- La opción -d le dice que se ejecutar en background
+
+Para ver los logs del contenedor, se ejecuta el comando siguiente:
+```Shell
+docker logs cbrs
+```
+
+Se muestran los contenedores mediante el comando `docker ps -a`, despues de levantar el contenedor cbrs, se deberia mostrar eso:
+![docker ps -a][ss2]
+
+Para ver los detalles del contenedor, se usa el comando `docker inspect cbrs`, que deberia mostra algo así:
+```json
+[
+    {
+        "Id": "5feb073b84052b20ea22006c1535d0313943e7401faca470ea8c3fad8bb36870",
+        "Created": "2017-01-12T19:36:29.9650234Z",
+        "Path": "powershell",
+        "Args": [
+            "-Command",
+            "$ErrorActionPreference = 'Stop';",
+            "c:\\\\docker-cmd.bat"
+        ],
+        "State": {
+            "Status": "running",
+            "Running": true,
+            "Paused": false,
+            "Restarting": false,
+            "OOMKilled": false,
+            "Dead": false,
+            "Pid": 4688,
+            "ExitCode": 0,
+            "Error": "",
+            "StartedAt": "2017-01-12T19:36:34.4582601Z",
+            "FinishedAt": "0001-01-01T00:00:00Z"
+        },
+        "Image": "sha256:5dc572492a55619edb799a8a68b78af400151f67701ffea95e83521b6799ab69",
+        "ResolvConfPath": "",
+        "HostnamePath": "",
+        "HostsPath": "",
+        "LogPath": "C:\\ProgramData\\docker\\containers\\5feb073b84052b20ea22006c1535d0313943e7401faca470ea8c3fad8bb36870\\5feb07
+70-json.log",
+        "Name": "/cbrs",
+        "RestartCount": 0,
+        "Driver": "windowsfilter",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "",
+        "ExecIDs": null,
+        "HostConfig": {
+            "Binds": [
+                "c:/Arkhotech/Volumes/log:c:/jboss-5.1.0.GA/server/default/log"
+            ],
+            "ContainerIDFile": "",
+            "LogConfig": {
+                "Type": "json-file",
+                "Config": {}
+            },
+            "NetworkMode": "default",
+            "PortBindings": {
+                "8080/tcp": [
+                    {
+                        "HostIp": "",
+                        "HostPort": "8080"
+                    }
+                ]
+            },
+            "RestartPolicy": {
+                "Name": "no",
+                "MaximumRetryCount": 0
+            },
+            "AutoRemove": false,
+            "VolumeDriver": "",
+            "VolumesFrom": null,
+            "CapAdd": null,
+            "CapDrop": null,
+            "Dns": [],
+            "DnsOptions": [],
+            "DnsSearch": [],
+            "ExtraHosts": null,
+            "GroupAdd": null,
+            "IpcMode": "",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": false,
+            "PublishAllPorts": false,
+            "ReadonlyRootfs": false,
+            "SecurityOpt": null,
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 0,
+            "ConsoleSize": [
+                30,
+                120
+            ],
+            "Isolation": "process",
+            "CpuShares": 0,
+            "Memory": 0,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": null,
+            "BlkioDeviceReadBps": null,
+            "BlkioDeviceWriteBps": null,
+            "BlkioDeviceReadIOps": null,
+            "BlkioDeviceWriteIOps": null,
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpusetCpus": "",
+            "CpusetMems": "",
+            "Devices": [],
+            "DiskQuota": 0,
+            "KernelMemory": 0,
+            "MemoryReservation": 0,
+            "MemorySwap": 0,
+            "MemorySwappiness": -1,
+            "OomKillDisable": false,
+            "PidsLimit": 0,
+            "Ulimits": null,
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0
+        },
+        "GraphDriver": {
+            "Name": "windowsfilter",
+            "Data": {
+                "dir": "C:\\ProgramData\\docker\\windowsfilter\\5feb073b84052b20ea22006c1535d0313943e7401faca470ea8c3fad8bb36870"
+            }
+        },
+        "Mounts": [
+            {
+                "Type": "bind",
+                "Source": "c:\\arkhotech\\volumes\\log",
+                "Destination": "c:\\jboss-5.1.0.ga\\server\\default\\log",
+                "Mode": "",
+                "RW": true,
+                "Propagation": ""
+            }
+        ],
+        "Config": {
+            "Hostname": "5feb073b8405",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "ExposedPorts": {
+                "8080/tcp": {}
+            },
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "JAVA_HOME=c:\\jdk1.6.0_45",
+                "JBOSS_HOME=c:\\jboss-5.1.0.GA"
+            ],
+            "Cmd": [
+                "powershell",
+                "-Command",
+                "$ErrorActionPreference = 'Stop';",
+                "c:\\\\docker-cmd.bat"
+            ],
+            "ArgsEscaped": true,
+            "Image": "arkhotech/cbrs",
+            "Volumes": {
+                "c:/jboss-5.1.0.GA/server/default/log": {}
+            },
+            "WorkingDir": "",
+            "Entrypoint": null,
+            "OnBuild": null,
+            "Labels": {}
+        },
+        "NetworkSettings": {
+            "Bridge": "",
+            "SandboxID": "ff678646821b698602697d5a26fb39cd4893b3d37af8386e60bbf60654039efb",
+            "HairpinMode": false,
+            "LinkLocalIPv6Address": "",
+            "LinkLocalIPv6PrefixLen": 0,
+            "Ports": {
+                "8080/tcp": [
+                    {
+                        "HostIp": "0.0.0.0",
+                        "HostPort": "8080"
+                    }
+                ]
+            },
+            "SandboxKey": "ff678646821b",
+            "SecondaryIPAddresses": null,
+            "SecondaryIPv6Addresses": null,
+            "EndpointID": "",
+            "Gateway": "",
+            "GlobalIPv6Address": "",
+            "GlobalIPv6PrefixLen": 0,
+            "IPAddress": "",
+            "IPPrefixLen": 0,
+            "IPv6Gateway": "",
+            "MacAddress": "",
+            "Networks": {
+                "nat": {
+                    "IPAMConfig": null,
+                    "Links": null,
+                    "Aliases": null,
+                    "NetworkID": "ec0cb5e1f1c49dac6ae0322c118dba32861ffe96cddfa49a36874a95f76ec4ca",
+                    "EndpointID": "46bf14beffd365206526d6976548a02954e38d5e43302c3f92e7cde7d1a24715",
+                    "Gateway": "",
+                    "IPAddress": "172.28.61.47",
+                    "IPPrefixLen": 16,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "MacAddress": "00:15:5d:2b:24:ee"
+                }
+            }
+        }
+    }
+]
+```
+
+Una vez la aplicación levantada se podra acceder a través del puerto 8080.
+
+**NAT** Docker ocupa NAT para sus contenedores así que cada contenedor tendra una IP propia que no significa nada fuera de la maquina host.
+
+En el ejemplo encima, la IP **172.28.61.47** es valida solo en la maquina host.
+
+- Para acceder a la aplicación desde la maquina host : http://172.28.61.47:8080/comercio
+- Para acceder a la aplicación desde fuera, usar la IP (o hostname) de la maquina host, en nuestro caso : http://192.168.102.178:8080/comercio
+- Para parrar el contenedor : `docker stop cbrs`
+- Para borrar el contenedor : `docker rm cbrs`
+
+![Arkhotech][logo]
+
+[ss1]: img/Screen_Shot_1.png "docker images"
+[ss2]: img/Screen_Shot_2.png "docker ps -a"
+[logo]: img/Logo.png "Arkhotech"
+
+</xmp>
+
+<script src="http://strapdownjs.com/v/0.2/strapdown.js"></script>
+</html>
