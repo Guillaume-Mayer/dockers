@@ -9,7 +9,7 @@
 
 Los contenedores Windows funcionan en Windows Server 2016.
 
-Para activar el servicio docker, primero se necesita **descargar las ultimas actualizaciones** de Windows 2016, luego en PowerShell (y siendo administrador) :
+Para activar el servicio docker, primero se necesita **descargar las ultimas actualizaciones** de Windows 2016, luego en PowerShell (y siendo **administrador**) :
 
 ```PowerShell
 Install-PackageProvider -Name NuGet -MinimumVersion 2.8.5.201 -Force
@@ -24,7 +24,7 @@ Se necesitara reiniciar la maquina.
 
 Se descarga la imagen de base en la cual correra la aplicación dockerizada.
 
-Es un servidor microsoft completo, ocupa mas o menos 10 Go, así que dura bastante descarga.
+Es un servidor microsoft completo, ocupa mas o menos 10 Go, así que dura bastante la descarga.
 
 ```Shell
 docker pull microsoft/windowsservercore
@@ -472,5 +472,5 @@ En el ejemplo encima, la IP **172.28.61.47** es valida solo en la maquina host.
 
 </xmp>
 
-<script src="http://strapdownjs.com/v/0.2/strapdown.js"></script>
+<script src="strapdownjs/strapdown.js"></script>
 </html>
