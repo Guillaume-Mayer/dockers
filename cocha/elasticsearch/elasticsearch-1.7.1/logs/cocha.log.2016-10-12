@@ -1,0 +1,54 @@
+[2016-10-12 10:35:45,129][INFO ][node                     ] [locations] version[1.7.1], pid[2936], build[b88f43f/2015-07-29T09:54:16Z]
+[2016-10-12 10:35:45,130][INFO ][node                     ] [locations] initializing ...
+[2016-10-12 10:35:45,230][INFO ][plugins                  ] [locations] loaded [], sites []
+[2016-10-12 10:35:45,280][INFO ][env                      ] [locations] using [1] data paths, mounts [[/ (/dev/disk2)]], net usable_space [608.7gb], net total_space [691.4gb], types [hfs]
+[2016-10-12 10:36:18,928][WARN ][common.network           ] failed to resolve local host, fallback to loopback
+java.net.UnknownHostException: Users-iMac: Users-iMac: nodename nor servname provided, or not known
+	at java.net.InetAddress.getLocalHost(InetAddress.java:1475)
+	at org.elasticsearch.common.network.NetworkUtils.<clinit>(NetworkUtils.java:55)
+	at org.elasticsearch.http.netty.NettyHttpServerTransport.<init>(NettyHttpServerTransport.java:165)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at org.elasticsearch.common.inject.DefaultConstructionProxyFactory$1.newInstance(DefaultConstructionProxyFactory.java:54)
+	at org.elasticsearch.common.inject.ConstructorInjector.construct(ConstructorInjector.java:86)
+	at org.elasticsearch.common.inject.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:98)
+	at org.elasticsearch.common.inject.FactoryProxy.get(FactoryProxy.java:52)
+	at org.elasticsearch.common.inject.ProviderToInternalFactoryAdapter$1.call(ProviderToInternalFactoryAdapter.java:45)
+	at org.elasticsearch.common.inject.InjectorImpl.callInContext(InjectorImpl.java:837)
+	at org.elasticsearch.common.inject.ProviderToInternalFactoryAdapter.get(ProviderToInternalFactoryAdapter.java:42)
+	at org.elasticsearch.common.inject.Scopes$1$1.get(Scopes.java:57)
+	at org.elasticsearch.common.inject.InternalFactoryToProviderAdapter.get(InternalFactoryToProviderAdapter.java:45)
+	at org.elasticsearch.common.inject.InjectorBuilder$1.call(InjectorBuilder.java:200)
+	at org.elasticsearch.common.inject.InjectorBuilder$1.call(InjectorBuilder.java:193)
+	at org.elasticsearch.common.inject.InjectorImpl.callInContext(InjectorImpl.java:830)
+	at org.elasticsearch.common.inject.InjectorBuilder.loadEagerSingletons(InjectorBuilder.java:193)
+	at org.elasticsearch.common.inject.InjectorBuilder.injectDynamically(InjectorBuilder.java:175)
+	at org.elasticsearch.common.inject.InjectorBuilder.build(InjectorBuilder.java:110)
+	at org.elasticsearch.common.inject.Guice.createInjector(Guice.java:93)
+	at org.elasticsearch.common.inject.Guice.createInjector(Guice.java:70)
+	at org.elasticsearch.common.inject.ModulesBuilder.createInjector(ModulesBuilder.java:59)
+	at org.elasticsearch.node.internal.InternalNode.<init>(InternalNode.java:210)
+	at org.elasticsearch.node.NodeBuilder.build(NodeBuilder.java:159)
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:77)
+	at org.elasticsearch.bootstrap.Bootstrap.main(Bootstrap.java:245)
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:32)
+Caused by: java.net.UnknownHostException: Users-iMac: nodename nor servname provided, or not known
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$1.lookupAllHostAddr(InetAddress.java:901)
+	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1295)
+	at java.net.InetAddress.getLocalHost(InetAddress.java:1471)
+	... 29 more
+[2016-10-12 10:36:19,245][INFO ][node                     ] [locations] initialized
+[2016-10-12 10:36:19,246][INFO ][node                     ] [locations] starting ...
+[2016-10-12 10:36:19,348][INFO ][transport                ] [locations] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.1.116:9300]}
+[2016-10-12 10:36:19,366][INFO ][discovery                ] [locations] cocha/lqOkQoNYQDGtp_wtpsu_8g
+[2016-10-12 10:36:23,138][INFO ][cluster.service          ] [locations] new_master [locations][lqOkQoNYQDGtp_wtpsu_8g][localhost][inet[/192.168.1.116:9300]], reason: zen-disco-join (elected_as_master)
+[2016-10-12 10:36:23,167][INFO ][http                     ] [locations] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.1.116:9200]}
+[2016-10-12 10:36:23,168][INFO ][node                     ] [locations] started
+[2016-10-12 10:36:23,221][INFO ][gateway                  ] [locations] recovered [1] indices into cluster_state
+[2016-10-12 10:52:59,938][INFO ][node                     ] [locations] stopping ...
+[2016-10-12 10:52:59,969][INFO ][node                     ] [locations] stopped
+[2016-10-12 10:52:59,969][INFO ][node                     ] [locations] closing ...
+[2016-10-12 10:52:59,974][INFO ][node                     ] [locations] closed

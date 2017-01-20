@@ -1,6 +1,24 @@
-version: '2'
+version: "3"
 services:
-    elasticsearch:
-    hazelcast:
-    metasearch:
     mysql:
+        image: mysql
+        volumes:
+        - data:/var/lib/mysql
+        networks:
+        - nw
+        ports: 
+        - 3306:3306
+        environment: 
+        - MYSQL_ROOT_PASSWORD=rOot123.,
+    hazelcast:
+        build: ./hazelcast
+        networks:
+        - nw
+    elasticsearch:
+        build: ./elasticsearch
+        networks:
+        - nw
+volumes: 
+    data:
+networks: 
+    nw:

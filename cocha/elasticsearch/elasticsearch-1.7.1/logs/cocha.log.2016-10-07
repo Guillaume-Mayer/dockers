@@ -1,0 +1,16 @@
+[2016-10-07 11:40:01,562][INFO ][node                     ] [locations] version[1.7.1], pid[21374], build[b88f43f/2015-07-29T09:54:16Z]
+[2016-10-07 11:40:01,564][INFO ][node                     ] [locations] initializing ...
+[2016-10-07 11:40:01,655][INFO ][plugins                  ] [locations] loaded [], sites []
+[2016-10-07 11:40:01,701][INFO ][env                      ] [locations] using [1] data paths, mounts [[/ (/dev/disk2)]], net usable_space [608.2gb], net total_space [691.4gb], types [hfs]
+[2016-10-07 11:40:04,130][INFO ][node                     ] [locations] initialized
+[2016-10-07 11:40:04,130][INFO ][node                     ] [locations] starting ...
+[2016-10-07 11:40:04,232][INFO ][transport                ] [locations] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.1.116:9300]}
+[2016-10-07 11:40:04,249][INFO ][discovery                ] [locations] cocha/NczW2AKDRr6AcYBaHIGwFg
+[2016-10-07 11:40:08,024][INFO ][cluster.service          ] [locations] new_master [locations][NczW2AKDRr6AcYBaHIGwFg][Users-iMac][inet[/192.168.1.116:9300]], reason: zen-disco-join (elected_as_master)
+[2016-10-07 11:40:08,048][INFO ][http                     ] [locations] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.1.116:9200]}
+[2016-10-07 11:40:08,048][INFO ][node                     ] [locations] started
+[2016-10-07 11:40:08,076][INFO ][gateway                  ] [locations] recovered [1] indices into cluster_state
+[2016-10-07 12:14:55,511][INFO ][node                     ] [locations] stopping ...
+[2016-10-07 12:14:55,559][INFO ][node                     ] [locations] stopped
+[2016-10-07 12:14:55,559][INFO ][node                     ] [locations] closing ...
+[2016-10-07 12:14:55,563][INFO ][node                     ] [locations] closed

@@ -1,0 +1,1018 @@
+[2016-10-03 16:09:57,559][INFO ][node                     ] [locations] version[1.7.1], pid[33659], build[b88f43f/2015-07-29T09:54:16Z]
+[2016-10-03 16:09:57,560][INFO ][node                     ] [locations] initializing ...
+[2016-10-03 16:09:57,646][INFO ][plugins                  ] [locations] loaded [], sites []
+[2016-10-03 16:09:57,684][INFO ][env                      ] [locations] using [1] data paths, mounts [[/ (/dev/disk2)]], net usable_space [610.9gb], net total_space [691.4gb], types [hfs]
+[2016-10-03 16:09:59,944][INFO ][node                     ] [locations] initialized
+[2016-10-03 16:09:59,945][INFO ][node                     ] [locations] starting ...
+[2016-10-03 16:10:00,022][INFO ][transport                ] [locations] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.1.116:9300]}
+[2016-10-03 16:10:00,047][INFO ][discovery                ] [locations] cocha/4SARC3DCTl-AwnCjr4du3g
+[2016-10-03 16:10:03,834][INFO ][cluster.service          ] [locations] new_master [locations][4SARC3DCTl-AwnCjr4du3g][Users-iMac][inet[/192.168.1.116:9300]], reason: zen-disco-join (elected_as_master)
+[2016-10-03 16:10:03,853][INFO ][http                     ] [locations] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.1.116:9200]}
+[2016-10-03 16:10:03,853][INFO ][node                     ] [locations] started
+[2016-10-03 16:10:03,878][INFO ][gateway                  ] [locations] recovered [1] indices into cluster_state
+[2016-10-03 16:12:33,629][INFO ][node                     ] [locations] stopping ...
+[2016-10-03 16:12:33,668][INFO ][node                     ] [locations] stopped
+[2016-10-03 16:12:33,668][INFO ][node                     ] [locations] closing ...
+[2016-10-03 16:12:33,673][INFO ][node                     ] [locations] closed
+[2016-10-03 16:13:31,480][INFO ][node                     ] [locations] version[1.7.1], pid[34135], build[b88f43f/2015-07-29T09:54:16Z]
+[2016-10-03 16:13:31,481][INFO ][node                     ] [locations] initializing ...
+[2016-10-03 16:13:31,551][INFO ][plugins                  ] [locations] loaded [], sites []
+[2016-10-03 16:13:31,591][INFO ][env                      ] [locations] using [1] data paths, mounts [[/ (/dev/disk2)]], net usable_space [611.1gb], net total_space [691.4gb], types [hfs]
+[2016-10-03 16:13:33,669][INFO ][node                     ] [locations] initialized
+[2016-10-03 16:13:33,672][INFO ][node                     ] [locations] starting ...
+[2016-10-03 16:13:33,741][INFO ][transport                ] [locations] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.1.116:9300]}
+[2016-10-03 16:13:33,762][INFO ][discovery                ] [locations] cocha/bfehfldITRCoeX9b7OKq5g
+[2016-10-03 16:13:37,539][INFO ][cluster.service          ] [locations] new_master [locations][bfehfldITRCoeX9b7OKq5g][Users-iMac][inet[/192.168.1.116:9300]], reason: zen-disco-join (elected_as_master)
+[2016-10-03 16:13:37,558][INFO ][http                     ] [locations] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.1.116:9200]}
+[2016-10-03 16:13:37,559][INFO ][node                     ] [locations] started
+[2016-10-03 16:13:37,584][INFO ][gateway                  ] [locations] recovered [1] indices into cluster_state
+[2016-10-03 16:14:25,907][INFO ][node                     ] [locations] stopping ...
+[2016-10-03 16:14:25,941][INFO ][node                     ] [locations] stopped
+[2016-10-03 16:14:25,942][INFO ][node                     ] [locations] closing ...
+[2016-10-03 16:14:25,947][INFO ][node                     ] [locations] closed
+[2016-10-03 16:14:29,791][INFO ][node                     ] [locations] version[1.7.1], pid[34363], build[b88f43f/2015-07-29T09:54:16Z]
+[2016-10-03 16:14:29,791][INFO ][node                     ] [locations] initializing ...
+[2016-10-03 16:14:29,867][INFO ][plugins                  ] [locations] loaded [marvel], sites [marvel]
+[2016-10-03 16:14:29,907][INFO ][env                      ] [locations] using [1] data paths, mounts [[/ (/dev/disk2)]], net usable_space [611.1gb], net total_space [691.4gb], types [hfs]
+[2016-10-03 16:14:32,019][INFO ][node                     ] [locations] initialized
+[2016-10-03 16:14:32,019][INFO ][node                     ] [locations] starting ...
+[2016-10-03 16:14:32,098][INFO ][transport                ] [locations] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.1.116:9300]}
+[2016-10-03 16:14:32,121][INFO ][discovery                ] [locations] cocha/MTFGwKkAS1y5LTaosJ7Xgg
+[2016-10-03 16:14:35,895][INFO ][cluster.service          ] [locations] new_master [locations][MTFGwKkAS1y5LTaosJ7Xgg][Users-iMac][inet[/192.168.1.116:9300]], reason: zen-disco-join (elected_as_master)
+[2016-10-03 16:14:35,915][INFO ][http                     ] [locations] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.1.116:9200]}
+[2016-10-03 16:14:35,916][INFO ][node                     ] [locations] started
+[2016-10-03 16:14:35,943][INFO ][gateway                  ] [locations] recovered [1] indices into cluster_state
+[2016-10-03 16:14:44,108][INFO ][cluster.metadata         ] [locations] [.marvel-2016.10.03] creating index, cause [auto(bulk api)], templates [marvel], shards [1]/[1], mappings [_default_, shard_event, index_event, index_stats, node_event, routing_event, cluster_event, cluster_state, cluster_stats, node_stats, indices_stats]
+[2016-10-03 16:14:44,348][INFO ][cluster.metadata         ] [locations] [.marvel-2016.10.03] update_mapping [node_stats] (dynamic)
+[2016-10-03 16:14:44,397][INFO ][cluster.metadata         ] [locations] [.marvel-2016.10.03] update_mapping [cluster_state] (dynamic)
+[2016-10-03 16:14:44,410][INFO ][cluster.metadata         ] [locations] [.marvel-2016.10.03] update_mapping [node_event] (dynamic)
+[2016-10-03 16:14:44,417][INFO ][cluster.metadata         ] [locations] [.marvel-2016.10.03] update_mapping [routing_event] (dynamic)
+[2016-10-03 16:14:44,422][INFO ][cluster.metadata         ] [locations] [.marvel-2016.10.03] update_mapping [cluster_event] (dynamic)
+[2016-10-03 16:14:44,426][INFO ][cluster.metadata         ] [locations] [.marvel-2016.10.03] update_mapping [index_event] (dynamic)
+[2016-10-03 16:14:44,447][INFO ][cluster.metadata         ] [locations] [.marvel-2016.10.03] update_mapping [index_stats] (dynamic)
+[2016-10-03 16:14:44,461][INFO ][cluster.metadata         ] [locations] [.marvel-2016.10.03] update_mapping [indices_stats] (dynamic)
+[2016-10-03 16:14:44,471][INFO ][cluster.metadata         ] [locations] [.marvel-2016.10.03] update_mapping [cluster_stats] (dynamic)
+[2016-10-03 16:15:55,251][INFO ][cluster.metadata         ] [locations] [.marvel-kibana] creating index, cause [auto(index api)], templates [marvel], shards [1]/[1], mappings [_default_, shard_event, index_event, index_stats, node_event, routing_event, cluster_event, cluster_state, cluster_stats, node_stats, indices_stats, appdata]
+[2016-10-03 16:15:55,317][INFO ][cluster.metadata         ] [locations] [.marvel-kibana] update_mapping [appdata] (dynamic)
+[2016-10-03 16:57:01,115][INFO ][node                     ] [locations] stopping ...
+[2016-10-03 16:57:01,168][INFO ][node                     ] [locations] stopped
+[2016-10-03 16:57:01,168][INFO ][node                     ] [locations] closing ...
+[2016-10-03 16:57:01,174][INFO ][node                     ] [locations] closed
+[2016-10-03 16:57:04,260][INFO ][node                     ] [locations] version[1.7.1], pid[35319], build[b88f43f/2015-07-29T09:54:16Z]
+[2016-10-03 16:57:04,260][INFO ][node                     ] [locations] initializing ...
+[2016-10-03 16:57:04,336][INFO ][plugins                  ] [locations] loaded [], sites []
+[2016-10-03 16:57:04,374][INFO ][env                      ] [locations] using [1] data paths, mounts [[/ (/dev/disk2)]], net usable_space [611.2gb], net total_space [691.4gb], types [hfs]
+[2016-10-03 16:57:06,547][INFO ][node                     ] [locations] initialized
+[2016-10-03 16:57:06,547][INFO ][node                     ] [locations] starting ...
+[2016-10-03 16:57:06,621][INFO ][transport                ] [locations] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.1.116:9300]}
+[2016-10-03 16:57:06,642][INFO ][discovery                ] [locations] cocha/Wzzk4-VBTXmeKAtXfNdvlA
+[2016-10-03 16:57:10,418][INFO ][cluster.service          ] [locations] new_master [locations][Wzzk4-VBTXmeKAtXfNdvlA][Users-iMac][inet[/192.168.1.116:9300]], reason: zen-disco-join (elected_as_master)
+[2016-10-03 16:57:10,449][INFO ][http                     ] [locations] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.1.116:9200]}
+[2016-10-03 16:57:10,450][INFO ][node                     ] [locations] started
+[2016-10-03 16:57:10,492][INFO ][gateway                  ] [locations] recovered [3] indices into cluster_state
+[2016-10-03 16:59:19,561][INFO ][cluster.metadata         ] [locations] [.marvel-2016.10.03] deleting index
+[2016-10-03 16:59:37,480][INFO ][cluster.metadata         ] [locations] [.marvel-kibana] deleting index
+[2016-10-03 17:41:45,235][INFO ][cluster.service          ] [locations] added {[Tusk][Q2CCbBY3T-ajhHHw5-U21w][users-imac][inet[/192.168.1.116:9301]]{data=false, client=true},}, reason: zen-disco-receive(join from node[[Tusk][Q2CCbBY3T-ajhHHw5-U21w][users-imac][inet[/192.168.1.116:9301]]{data=false, client=true}])
+[2016-10-03 17:41:48,530][DEBUG][action.bulk              ] [locations] [geo_index_1][0] failed to execute bulk item (index) index {[geo_index_1][hotel][300024b4fc8-e7bc-4c45], source[{"id":"300024b4fc8-e7bc-4c45","priority":1.0,"name":"Hotel N'OntuÃª","city":"Buenos Aires","country":"AR"}]}
+org.elasticsearch.index.mapper.MapperParsingException: failed to parse [id]
+	at org.elasticsearch.index.mapper.core.AbstractFieldMapper.parse(AbstractFieldMapper.java:411)
+	at org.elasticsearch.index.mapper.object.ObjectMapper.serializeValue(ObjectMapper.java:706)
+	at org.elasticsearch.index.mapper.object.ObjectMapper.parse(ObjectMapper.java:497)
+	at org.elasticsearch.index.mapper.DocumentMapper.parse(DocumentMapper.java:544)
+	at org.elasticsearch.index.mapper.DocumentMapper.parse(DocumentMapper.java:493)
+	at org.elasticsearch.index.shard.IndexShard.prepareIndex(IndexShard.java:493)
+	at org.elasticsearch.action.bulk.TransportShardBulkAction.shardIndexOperation(TransportShardBulkAction.java:409)
+	at org.elasticsearch.action.bulk.TransportShardBulkAction.shardOperationOnPrimary(TransportShardBulkAction.java:148)
+	at org.elasticsearch.action.support.replication.TransportShardReplicationOperationAction$PrimaryPhase.performOnPrimary(TransportShardReplicationOperationAction.java:574)
+	at org.elasticsearch.action.support.replication.TransportShardReplicationOperationAction$PrimaryPhase$1.doRun(TransportShardReplicationOperationAction.java:440)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.NumberFormatException: For input string: "300024b4fc8-e7bc-4c45"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Long.parseLong(Long.java:589)
+	at java.lang.Long.parseLong(Long.java:631)
+	at org.elasticsearch.common.xcontent.support.AbstractXContentParser.longValue(AbstractXContentParser.java:145)
+	at org.elasticsearch.index.mapper.core.LongFieldMapper.innerParseCreateField(LongFieldMapper.java:288)
+	at org.elasticsearch.index.mapper.core.NumberFieldMapper.parseCreateField(NumberFieldMapper.java:239)
+	at org.elasticsearch.index.mapper.core.AbstractFieldMapper.parse(AbstractFieldMapper.java:401)
+	... 13 more
+[2016-10-03 17:41:48,535][DEBUG][action.bulk              ] [locations] [geo_index_1][0] failed to execute bulk item (index) index {[geo_index_1][hotel][30003f8a3ce-b518-4530], source[{"id":"30003f8a3ce-b518-4530","priority":1.0,"name":"Buenos Aires Grand Hotel","city":"Buenos Aires","country":"AR"}]}
+org.elasticsearch.index.mapper.MapperParsingException: failed to parse [id]
+	at org.elasticsearch.index.mapper.core.AbstractFieldMapper.parse(AbstractFieldMapper.java:411)
+	at org.elasticsearch.index.mapper.object.ObjectMapper.serializeValue(ObjectMapper.java:706)
+	at org.elasticsearch.index.mapper.object.ObjectMapper.parse(ObjectMapper.java:497)
+	at org.elasticsearch.index.mapper.DocumentMapper.parse(DocumentMapper.java:544)
+	at org.elasticsearch.index.mapper.DocumentMapper.parse(DocumentMapper.java:493)
+	at org.elasticsearch.index.shard.IndexShard.prepareIndex(IndexShard.java:493)
+	at org.elasticsearch.action.bulk.TransportShardBulkAction.shardIndexOperation(TransportShardBulkAction.java:409)
+	at org.elasticsearch.action.bulk.TransportShardBulkAction.shardOperationOnPrimary(TransportShardBulkAction.java:148)
+	at org.elasticsearch.action.support.replication.TransportShardReplicationOperationAction$PrimaryPhase.performOnPrimary(TransportShardReplicationOperationAction.java:574)
+	at org.elasticsearch.action.support.replication.TransportShardReplicationOperationAction$PrimaryPhase$1.doRun(TransportShardReplicationOperationAction.java:440)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.NumberFormatException: For input string: "30003f8a3ce-b518-4530"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Long.parseLong(Long.java:589)
+	at java.lang.Long.parseLong(Long.java:631)
+	at org.elasticsearch.common.xcontent.support.AbstractXContentParser.longValue(AbstractXContentParser.java:145)
+	at org.elasticsearch.index.mapper.core.LongFieldMapper.innerParseCreateField(LongFieldMapper.java:288)
+	at org.elasticsearch.index.mapper.core.NumberFieldMapper.parseCreateField(NumberFieldMapper.java:239)
+	at org.elasticsearch.index.mapper.core.AbstractFieldMapper.parse(AbstractFieldMapper.java:401)
+	... 13 more
+[2016-10-03 17:41:48,536][DEBUG][action.bulk              ] [locations] [geo_index_1][0] failed to execute bulk item (index) index {[geo_index_1][hotel][30006ae1d17-9e2e-4771], source[{"id":"30006ae1d17-9e2e-4771","priority":1.0,"name":"Quimelen Lodge","city":"Bariloche","country":"AR"}]}
+org.elasticsearch.index.mapper.MapperParsingException: failed to parse [id]
+	at org.elasticsearch.index.mapper.core.AbstractFieldMapper.parse(AbstractFieldMapper.java:411)
+	at org.elasticsearch.index.mapper.object.ObjectMapper.serializeValue(ObjectMapper.java:706)
+	at org.elasticsearch.index.mapper.object.ObjectMapper.parse(ObjectMapper.java:497)
+	at org.elasticsearch.index.mapper.DocumentMapper.parse(DocumentMapper.java:544)
+	at org.elasticsearch.index.mapper.DocumentMapper.parse(DocumentMapper.java:493)
+	at org.elasticsearch.index.shard.IndexShard.prepareIndex(IndexShard.java:493)
+	at org.elasticsearch.action.bulk.TransportShardBulkAction.shardIndexOperation(TransportShardBulkAction.java:409)
+	at org.elasticsearch.action.bulk.TransportShardBulkAction.shardOperationOnPrimary(TransportShardBulkAction.java:148)
+	at org.elasticsearch.action.support.replication.TransportShardReplicationOperationAction$PrimaryPhase.performOnPrimary(TransportShardReplicationOperationAction.java:574)
+	at org.elasticsearch.action.support.replication.TransportShardReplicationOperationAction$PrimaryPhase$1.doRun(TransportShardReplicationOperationAction.java:440)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.NumberFormatException: For input string: "30006ae1d17-9e2e-4771"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Long.parseLong(Long.java:589)
+	at java.lang.Long.parseLong(Long.java:631)
+	at org.elasticsearch.common.xcontent.support.AbstractXContentParser.longValue(AbstractXContentParser.java:145)
+	at org.elasticsearch.index.mapper.core.LongFieldMapper.innerParseCreateField(LongFieldMapper.java:288)
+	at org.elasticsearch.index.mapper.core.NumberFieldMapper.parseCreateField(NumberFieldMapper.java:239)
+	at org.elasticsearch.index.mapper.core.AbstractFieldMapper.parse(AbstractFieldMapper.java:401)
+	... 13 more
+[2016-10-03 17:41:48,537][DEBUG][action.bulk              ] [locations] [geo_index_1][0] failed to execute bulk item (index) index {[geo_index_1][hotel][300187d4549-5536-43e8], source[{"id":"300187d4549-5536-43e8","priority":1.0,"name":"Fertilia Downtown","city":"Buenos Aires","country":"AR"}]}
+org.elasticsearch.index.mapper.MapperParsingException: failed to parse [id]
+	at org.elasticsearch.index.mapper.core.AbstractFieldMapper.parse(AbstractFieldMapper.java:411)
+	at org.elasticsearch.index.mapper.object.ObjectMapper.serializeValue(ObjectMapper.java:706)
+	at org.elasticsearch.index.mapper.object.ObjectMapper.parse(ObjectMapper.java:497)
+	at org.elasticsearch.index.mapper.DocumentMapper.parse(DocumentMapper.java:544)
+	at org.elasticsearch.index.mapper.DocumentMapper.parse(DocumentMapper.java:493)
+	at org.elasticsearch.index.shard.IndexShard.prepareIndex(IndexShard.java:493)
+	at org.elasticsearch.action.bulk.TransportShardBulkAction.shardIndexOperation(TransportShardBulkAction.java:409)
+	at org.elasticsearch.action.bulk.TransportShardBulkAction.shardOperationOnPrimary(TransportShardBulkAction.java:148)
+	at org.elasticsearch.action.support.replication.TransportShardReplicationOperationAction$PrimaryPhase.performOnPrimary(TransportShardReplicationOperationAction.java:574)
+	at org.elasticsearch.action.support.replication.TransportShardReplicationOperationAction$PrimaryPhase$1.doRun(TransportShardReplicationOperationAction.java:440)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.NumberFormatException: For input string: "300187d4549-5536-43e8"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Long.parseLong(Long.java:589)
+	at java.lang.Long.parseLong(Long.java:631)
+	at org.elasticsearch.common.xcontent.support.AbstractXContentParser.longValue(AbstractXContentParser.java:145)
+	at org.elasticsearch.index.mapper.core.LongFieldMapper.innerParseCreateField(LongFieldMapper.java:288)
+	at org.elasticsearch.index.mapper.core.NumberFieldMapper.parseCreateField(NumberFieldMapper.java:239)
+	at org.elasticsearch.index.mapper.core.AbstractFieldMapper.parse(AbstractFieldMapper.java:401)
+	... 13 more
+[2016-10-03 17:41:48,538][DEBUG][action.bulk              ] [locations] [geo_index_1][0] failed to execute bulk item (index) index {[geo_index_1][hotel][3001a58cfb4-1fa9-4ea0], source[{"id":"3001a58cfb4-1fa9-4ea0","priority":1.0,"name":"HosterÃ­a Lupama","city":"El Calafate","country":"AR"}]}
+org.elasticsearch.index.mapper.MapperParsingException: failed to parse [id]
+	at org.elasticsearch.index.mapper.core.AbstractFieldMapper.parse(AbstractFieldMapper.java:411)
+	at org.elasticsearch.index.mapper.object.ObjectMapper.serializeValue(ObjectMapper.java:706)
+	at org.elasticsearch.index.mapper.object.ObjectMapper.parse(ObjectMapper.java:497)
+	at org.elasticsearch.index.mapper.DocumentMapper.parse(DocumentMapper.java:544)
+	at org.elasticsearch.index.mapper.DocumentMapper.parse(DocumentMapper.java:493)
+	at org.elasticsearch.index.shard.IndexShard.prepareIndex(IndexShard.java:493)
+	at org.elasticsearch.action.bulk.TransportShardBulkAction.shardIndexOperation(TransportShardBulkAction.java:409)
+	at org.elasticsearch.action.bulk.TransportShardBulkAction.shardOperationOnPrimary(TransportShardBulkAction.java:148)
+	at org.elasticsearch.action.support.replication.TransportShardReplicationOperationAction$PrimaryPhase.performOnPrimary(TransportShardReplicationOperationAction.java:574)
+	at org.elasticsearch.action.support.replication.TransportShardReplicationOperationAction$PrimaryPhase$1.doRun(TransportShardReplicationOperationAction.java:440)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.NumberFormatException: For input string: "3001a58cfb4-1fa9-4ea0"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Long.parseLong(Long.java:589)
+	at java.lang.Long.parseLong(Long.java:631)
+	at org.elasticsearch.common.xcontent.support.AbstractXContentParser.longValue(AbstractXContentParser.java:145)
+	at org.elasticsearch.index.mapper.core.LongFieldMapper.innerParseCreateField(LongFieldMapper.java:288)
+	at org.elasticsearch.index.mapper.core.NumberFieldMapper.parseCreateField(NumberFieldMapper.java:239)
+	at org.elasticsearch.index.mapper.core.AbstractFieldMapper.parse(AbstractFieldMapper.java:401)
+	... 13 more
+[2016-10-03 17:41:48,538][DEBUG][action.bulk              ] [locations] [geo_index_1][0] failed to execute bulk item (index) index {[geo_index_1][hotel][300246868d6-4e36-4da0], source[{"id":"300246868d6-4e36-4da0","priority":1.0,"name":"CabaÃ±as El Challao","city":"Las Heras","country":"AR"}]}
+org.elasticsearch.index.mapper.MapperParsingException: failed to parse [id]
+	at org.elasticsearch.index.mapper.core.AbstractFieldMapper.parse(AbstractFieldMapper.java:411)
+	at org.elasticsearch.index.mapper.object.ObjectMapper.serializeValue(ObjectMapper.java:706)
+	at org.elasticsearch.index.mapper.object.ObjectMapper.parse(ObjectMapper.java:497)
+	at org.elasticsearch.index.mapper.DocumentMapper.parse(DocumentMapper.java:544)
+	at org.elasticsearch.index.mapper.DocumentMapper.parse(DocumentMapper.java:493)
+	at org.elasticsearch.index.shard.IndexShard.prepareIndex(IndexShard.java:493)
+	at org.elasticsearch.action.bulk.TransportShardBulkAction.shardIndexOperation(TransportShardBulkAction.java:409)
+	at org.elasticsearch.action.bulk.TransportShardBulkAction.shardOperationOnPrimary(TransportShardBulkAction.java:148)
+	at org.elasticsearch.action.support.replication.TransportShardReplicationOperationAction$PrimaryPhase.performOnPrimary(TransportShardReplicationOperationAction.java:574)
+	at org.elasticsearch.action.support.replication.TransportShardReplicationOperationAction$PrimaryPhase$1.doRun(TransportShardReplicationOperationAction.java:440)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.NumberFormatException: For input string: "300246868d6-4e36-4da0"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Long.parseLong(Long.java:589)
+	at java.lang.Long.parseLong(Long.java:631)
+	at org.elasticsearch.common.xcontent.support.AbstractXContentParser.longValue(AbstractXContentParser.java:145)
+	at org.elasticsearch.index.mapper.core.LongFieldMapper.innerParseCreateField(LongFieldMapper.java:288)
+	at org.elasticsearch.index.mapper.core.NumberFieldMapper.parseCreateField(NumberFieldMapper.java:239)
+	at org.elasticsearch.index.mapper.core.AbstractFieldMapper.parse(AbstractFieldMapper.java:401)
+	... 13 more
+[2016-10-03 17:41:48,539][DEBUG][action.bulk              ] [locations] [geo_index_1][0] failed to execute bulk item (index) index {[geo_index_1][hotel][30024ae9374-0eb4-47b4], source[{"id":"30024ae9374-0eb4-47b4","priority":1.0,"name":"Nuna Ayni Departamentos","city":"Alta gracia","country":"AR"}]}
+org.elasticsearch.index.mapper.MapperParsingException: failed to parse [id]
+	at org.elasticsearch.index.mapper.core.AbstractFieldMapper.parse(AbstractFieldMapper.java:411)
+	at org.elasticsearch.index.mapper.object.ObjectMapper.serializeValue(ObjectMapper.java:706)
+	at org.elasticsearch.index.mapper.object.ObjectMapper.parse(ObjectMapper.java:497)
+	at org.elasticsearch.index.mapper.DocumentMapper.parse(DocumentMapper.java:544)
+	at org.elasticsearch.index.mapper.DocumentMapper.parse(DocumentMapper.java:493)
+	at org.elasticsearch.index.shard.IndexShard.prepareIndex(IndexShard.java:493)
+	at org.elasticsearch.action.bulk.TransportShardBulkAction.shardIndexOperation(TransportShardBulkAction.java:409)
+	at org.elasticsearch.action.bulk.TransportShardBulkAction.shardOperationOnPrimary(TransportShardBulkAction.java:148)
+	at org.elasticsearch.action.support.replication.TransportShardReplicationOperationAction$PrimaryPhase.performOnPrimary(TransportShardReplicationOperationAction.java:574)
+	at org.elasticsearch.action.support.replication.TransportShardReplicationOperationAction$PrimaryPhase$1.doRun(TransportShardReplicationOperationAction.java:440)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.NumberFormatException: For input string: "30024ae9374-0eb4-47b4"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Long.parseLong(Long.java:589)
+	at java.lang.Long.parseLong(Long.java:631)
+	at org.elasticsearch.common.xcontent.support.AbstractXContentParser.longValue(AbstractXContentParser.java:145)
+	at org.elasticsearch.index.mapper.core.LongFieldMapper.innerParseCreateField(LongFieldMapper.java:288)
+	at org.elasticsearch.index.mapper.core.NumberFieldMapper.parseCreateField(NumberFieldMapper.java:239)
+	at org.elasticsearch.index.mapper.core.AbstractFieldMapper.parse(AbstractFieldMapper.java:401)
+	... 13 more
+[2016-10-03 17:41:48,540][DEBUG][action.bulk              ] [locations] [geo_index_1][0] failed to execute bulk item (index) index {[geo_index_1][hotel][300273f541a-94b9-43c4], source[{"id":"300273f541a-94b9-43c4","priority":1.0,"name":"Naindo Park Hotel","city":"La Rioja","country":"AR"}]}
+org.elasticsearch.index.mapper.MapperParsingException: failed to parse [id]
+	at org.elasticsearch.index.mapper.core.AbstractFieldMapper.parse(AbstractFieldMapper.java:411)
+	at org.elasticsearch.index.mapper.object.ObjectMapper.serializeValue(ObjectMapper.java:706)
+	at org.elasticsearch.index.mapper.object.ObjectMapper.parse(ObjectMapper.java:497)
+	at org.elasticsearch.index.mapper.DocumentMapper.parse(DocumentMapper.java:544)
+	at org.elasticsearch.index.mapper.DocumentMapper.parse(DocumentMapper.java:493)
+	at org.elasticsearch.index.shard.IndexShard.prepareIndex(IndexShard.java:493)
+	at org.elasticsearch.action.bulk.TransportShardBulkAction.shardIndexOperation(TransportShardBulkAction.java:409)
+	at org.elasticsearch.action.bulk.TransportShardBulkAction.shardOperationOnPrimary(TransportShardBulkAction.java:148)
+	at org.elasticsearch.action.support.replication.TransportShardReplicationOperationAction$PrimaryPhase.performOnPrimary(TransportShardReplicationOperationAction.java:574)
+	at org.elasticsearch.action.support.replication.TransportShardReplicationOperationAction$PrimaryPhase$1.doRun(TransportShardReplicationOperationAction.java:440)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.NumberFormatException: For input string: "300273f541a-94b9-43c4"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Long.parseLong(Long.java:589)
+	at java.lang.Long.parseLong(Long.java:631)
+	at org.elasticsearch.common.xcontent.support.AbstractXContentParser.longValue(AbstractXContentParser.java:145)
+	at org.elasticsearch.index.mapper.core.LongFieldMapper.innerParseCreateField(LongFieldMapper.java:288)
+	at org.elasticsearch.index.mapper.core.NumberFieldMapper.parseCreateField(NumberFieldMapper.java:239)
+	at org.elasticsearch.index.mapper.core.AbstractFieldMapper.parse(AbstractFieldMapper.java:401)
+	... 13 more
+[2016-10-03 17:41:48,541][DEBUG][action.bulk              ] [locations] [geo_index_1][0] failed to execute bulk item (index) index {[geo_index_1][hotel][3002d682636-5dc2-4581], source[{"id":"3002d682636-5dc2-4581","priority":1.0,"name":"Hotel Super Resort Apartur Mar del Plata","city":"Mar del Plata","country":"AR"}]}
+org.elasticsearch.index.mapper.MapperParsingException: failed to parse [id]
+	at org.elasticsearch.index.mapper.core.AbstractFieldMapper.parse(AbstractFieldMapper.java:411)
+	at org.elasticsearch.index.mapper.object.ObjectMapper.serializeValue(ObjectMapper.java:706)
+	at org.elasticsearch.index.mapper.object.ObjectMapper.parse(ObjectMapper.java:497)
+	at org.elasticsearch.index.mapper.DocumentMapper.parse(DocumentMapper.java:544)
+	at org.elasticsearch.index.mapper.DocumentMapper.parse(DocumentMapper.java:493)
+	at org.elasticsearch.index.shard.IndexShard.prepareIndex(IndexShard.java:493)
+	at org.elasticsearch.action.bulk.TransportShardBulkAction.shardIndexOperation(TransportShardBulkAction.java:409)
+	at org.elasticsearch.action.bulk.TransportShardBulkAction.shardOperationOnPrimary(TransportShardBulkAction.java:148)
+	at org.elasticsearch.action.support.replication.TransportShardReplicationOperationAction$PrimaryPhase.performOnPrimary(TransportShardReplicationOperationAction.java:574)
+	at org.elasticsearch.action.support.replication.TransportShardReplicationOperationAction$PrimaryPhase$1.doRun(TransportShardReplicationOperationAction.java:440)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.NumberFormatException: For input string: "3002d682636-5dc2-4581"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Long.parseLong(Long.java:589)
+	at java.lang.Long.parseLong(Long.java:631)
+	at org.elasticsearch.common.xcontent.support.AbstractXContentParser.longValue(AbstractXContentParser.java:145)
+	at org.elasticsearch.index.mapper.core.LongFieldMapper.innerParseCreateField(LongFieldMapper.java:288)
+	at org.elasticsearch.index.mapper.core.NumberFieldMapper.parseCreateField(NumberFieldMapper.java:239)
+	at org.elasticsearch.index.mapper.core.AbstractFieldMapper.parse(AbstractFieldMapper.java:401)
+	... 13 more
+[2016-10-03 17:41:48,541][DEBUG][action.bulk              ] [locations] [geo_index_1][0] failed to execute bulk item (index) index {[geo_index_1][hotel][3002f91fe8b-90e8-430e], source[{"id":"3002f91fe8b-90e8-430e","priority":1.0,"name":"El Castillo de San Lorenzo","city":"Villa San Lorenzo","country":"AR"}]}
+org.elasticsearch.index.mapper.MapperParsingException: failed to parse [id]
+	at org.elasticsearch.index.mapper.core.AbstractFieldMapper.parse(AbstractFieldMapper.java:411)
+	at org.elasticsearch.index.mapper.object.ObjectMapper.serializeValue(ObjectMapper.java:706)
+	at org.elasticsearch.index.mapper.object.ObjectMapper.parse(ObjectMapper.java:497)
+	at org.elasticsearch.index.mapper.DocumentMapper.parse(DocumentMapper.java:544)
+	at org.elasticsearch.index.mapper.DocumentMapper.parse(DocumentMapper.java:493)
+	at org.elasticsearch.index.shard.IndexShard.prepareIndex(IndexShard.java:493)
+	at org.elasticsearch.action.bulk.TransportShardBulkAction.shardIndexOperation(TransportShardBulkAction.java:409)
+	at org.elasticsearch.action.bulk.TransportShardBulkAction.shardOperationOnPrimary(TransportShardBulkAction.java:148)
+	at org.elasticsearch.action.support.replication.TransportShardReplicationOperationAction$PrimaryPhase.performOnPrimary(TransportShardReplicationOperationAction.java:574)
+	at org.elasticsearch.action.support.replication.TransportShardReplicationOperationAction$PrimaryPhase$1.doRun(TransportShardReplicationOperationAction.java:440)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.NumberFormatException: For input string: "3002f91fe8b-90e8-430e"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Long.parseLong(Long.java:589)
+	at java.lang.Long.parseLong(Long.java:631)
+	at org.elasticsearch.common.xcontent.support.AbstractXContentParser.longValue(AbstractXContentParser.java:145)
+	at org.elasticsearch.index.mapper.core.LongFieldMapper.innerParseCreateField(LongFieldMapper.java:288)
+	at org.elasticsearch.index.mapper.core.NumberFieldMapper.parseCreateField(NumberFieldMapper.java:239)
+	at org.elasticsearch.index.mapper.core.AbstractFieldMapper.parse(AbstractFieldMapper.java:401)
+	... 13 more
+[2016-10-03 17:41:48,542][DEBUG][action.bulk              ] [locations] [geo_index_1][0] failed to execute bulk item (index) index {[geo_index_1][hotel][3003a5c3b9a-cf9a-46eb], source[{"id":"3003a5c3b9a-cf9a-46eb","priority":1.0,"name":"Loisuites Chapelco Golf Resort Spa","city":"San Martin de los Andes","country":"AR"}]}
+org.elasticsearch.index.mapper.MapperParsingException: failed to parse [id]
+	at org.elasticsearch.index.mapper.core.AbstractFieldMapper.parse(AbstractFieldMapper.java:411)
+	at org.elasticsearch.index.mapper.object.ObjectMapper.serializeValue(ObjectMapper.java:706)
+	at org.elasticsearch.index.mapper.object.ObjectMapper.parse(ObjectMapper.java:497)
+	at org.elasticsearch.index.mapper.DocumentMapper.parse(DocumentMapper.java:544)
+	at org.elasticsearch.index.mapper.DocumentMapper.parse(DocumentMapper.java:493)
+	at org.elasticsearch.index.shard.IndexShard.prepareIndex(IndexShard.java:493)
+	at org.elasticsearch.action.bulk.TransportShardBulkAction.shardIndexOperation(TransportShardBulkAction.java:409)
+	at org.elasticsearch.action.bulk.TransportShardBulkAction.shardOperationOnPrimary(TransportShardBulkAction.java:148)
+	at org.elasticsearch.action.support.replication.TransportShardReplicationOperationAction$PrimaryPhase.performOnPrimary(TransportShardReplicationOperationAction.java:574)
+	at org.elasticsearch.action.support.replication.TransportShardReplicationOperationAction$PrimaryPhase$1.doRun(TransportShardReplicationOperationAction.java:440)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.NumberFormatException: For input string: "3003a5c3b9a-cf9a-46eb"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Long.parseLong(Long.java:589)
+	at java.lang.Long.parseLong(Long.java:631)
+	at org.elasticsearch.common.xcontent.support.AbstractXContentParser.longValue(AbstractXContentParser.java:145)
+	at org.elasticsearch.index.mapper.core.LongFieldMapper.innerParseCreateField(LongFieldMapper.java:288)
+	at org.elasticsearch.index.mapper.core.NumberFieldMapper.parseCreateField(NumberFieldMapper.java:239)
+	at org.elasticsearch.index.mapper.core.AbstractFieldMapper.parse(AbstractFieldMapper.java:401)
+	... 13 more
+[2016-10-03 17:41:48,543][DEBUG][action.bulk              ] [locations] [geo_index_1][0] failed to execute bulk item (index) index {[geo_index_1][hotel][3003b7e9eb9-583f-4279], source[{"id":"3003b7e9eb9-583f-4279","priority":1.0,"name":"Howard Johnson Hotel & Convention Center Ezeiza","city":"Tristan Suarez","country":"AR"}]}
+org.elasticsearch.index.mapper.MapperParsingException: failed to parse [id]
+	at org.elasticsearch.index.mapper.core.AbstractFieldMapper.parse(AbstractFieldMapper.java:411)
+	at org.elasticsearch.index.mapper.object.ObjectMapper.serializeValue(ObjectMapper.java:706)
+	at org.elasticsearch.index.mapper.object.ObjectMapper.parse(ObjectMapper.java:497)
+	at org.elasticsearch.index.mapper.DocumentMapper.parse(DocumentMapper.java:544)
+	at org.elasticsearch.index.mapper.DocumentMapper.parse(DocumentMapper.java:493)
+	at org.elasticsearch.index.shard.IndexShard.prepareIndex(IndexShard.java:493)
+	at org.elasticsearch.action.bulk.TransportShardBulkAction.shardIndexOperation(TransportShardBulkAction.java:409)
+	at org.elasticsearch.action.bulk.TransportShardBulkAction.shardOperationOnPrimary(TransportShardBulkAction.java:148)
+	at org.elasticsearch.action.support.replication.TransportShardReplicationOperationAction$PrimaryPhase.performOnPrimary(TransportShardReplicationOperationAction.java:574)
+	at org.elasticsearch.action.support.replication.TransportShardReplicationOperationAction$PrimaryPhase$1.doRun(TransportShardReplicationOperationAction.java:440)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.NumberFormatException: For input string: "3003b7e9eb9-583f-4279"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Long.parseLong(Long.java:589)
+	at java.lang.Long.parseLong(Long.java:631)
+	at org.elasticsearch.common.xcontent.support.AbstractXContentParser.longValue(AbstractXContentParser.java:145)
+	at org.elasticsearch.index.mapper.core.LongFieldMapper.innerParseCreateField(LongFieldMapper.java:288)
+	at org.elasticsearch.index.mapper.core.NumberFieldMapper.parseCreateField(NumberFieldMapper.java:239)
+	at org.elasticsearch.index.mapper.core.AbstractFieldMapper.parse(AbstractFieldMapper.java:401)
+	... 13 more
+[2016-10-03 17:41:48,543][DEBUG][action.bulk              ] [locations] [geo_index_1][0] failed to execute bulk item (index) index {[geo_index_1][hotel][3003be7d837-df10-4d70], source[{"id":"3003be7d837-df10-4d70","priority":1.0,"name":"Hotel Platino Termas","city":"Termas de Rio Hondo","country":"AR"}]}
+org.elasticsearch.index.mapper.MapperParsingException: failed to parse [id]
+	at org.elasticsearch.index.mapper.core.AbstractFieldMapper.parse(AbstractFieldMapper.java:411)
+	at org.elasticsearch.index.mapper.object.ObjectMapper.serializeValue(ObjectMapper.java:706)
+	at org.elasticsearch.index.mapper.object.ObjectMapper.parse(ObjectMapper.java:497)
+	at org.elasticsearch.index.mapper.DocumentMapper.parse(DocumentMapper.java:544)
+	at org.elasticsearch.index.mapper.DocumentMapper.parse(DocumentMapper.java:493)
+	at org.elasticsearch.index.shard.IndexShard.prepareIndex(IndexShard.java:493)
+	at org.elasticsearch.action.bulk.TransportShardBulkAction.shardIndexOperation(TransportShardBulkAction.java:409)
+	at org.elasticsearch.action.bulk.TransportShardBulkAction.shardOperationOnPrimary(TransportShardBulkAction.java:148)
+	at org.elasticsearch.action.support.replication.TransportShardReplicationOperationAction$PrimaryPhase.performOnPrimary(TransportShardReplicationOperationAction.java:574)
+	at org.elasticsearch.action.support.replication.TransportShardReplicationOperationAction$PrimaryPhase$1.doRun(TransportShardReplicationOperationAction.java:440)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.NumberFormatException: For input string: "3003be7d837-df10-4d70"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Long.parseLong(Long.java:589)
+	at java.lang.Long.parseLong(Long.java:631)
+	at org.elasticsearch.common.xcontent.support.AbstractXContentParser.longValue(AbstractXContentParser.java:145)
+	at org.elasticsearch.index.mapper.core.LongFieldMapper.innerParseCreateField(LongFieldMapper.java:288)
+	at org.elasticsearch.index.mapper.core.NumberFieldMapper.parseCreateField(NumberFieldMapper.java:239)
+	at org.elasticsearch.index.mapper.core.AbstractFieldMapper.parse(AbstractFieldMapper.java:401)
+	... 13 more
+[2016-10-03 17:41:48,544][DEBUG][action.bulk              ] [locations] [geo_index_1][0] failed to execute bulk item (index) index {[geo_index_1][hotel][3004af57ef0-0837-4c0f], source[{"id":"3004af57ef0-0837-4c0f","priority":1.0,"name":"Hotel Punta del Este","city":"Mar del Plata","country":"AR"}]}
+org.elasticsearch.index.mapper.MapperParsingException: failed to parse [id]
+	at org.elasticsearch.index.mapper.core.AbstractFieldMapper.parse(AbstractFieldMapper.java:411)
+	at org.elasticsearch.index.mapper.object.ObjectMapper.serializeValue(ObjectMapper.java:706)
+	at org.elasticsearch.index.mapper.object.ObjectMapper.parse(ObjectMapper.java:497)
+	at org.elasticsearch.index.mapper.DocumentMapper.parse(DocumentMapper.java:544)
+	at org.elasticsearch.index.mapper.DocumentMapper.parse(DocumentMapper.java:493)
+	at org.elasticsearch.index.shard.IndexShard.prepareIndex(IndexShard.java:493)
+	at org.elasticsearch.action.bulk.TransportShardBulkAction.shardIndexOperation(TransportShardBulkAction.java:409)
+	at org.elasticsearch.action.bulk.TransportShardBulkAction.shardOperationOnPrimary(TransportShardBulkAction.java:148)
+	at org.elasticsearch.action.support.replication.TransportShardReplicationOperationAction$PrimaryPhase.performOnPrimary(TransportShardReplicationOperationAction.java:574)
+	at org.elasticsearch.action.support.replication.TransportShardReplicationOperationAction$PrimaryPhase$1.doRun(TransportShardReplicationOperationAction.java:440)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.NumberFormatException: For input string: "3004af57ef0-0837-4c0f"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Long.parseLong(Long.java:589)
+	at java.lang.Long.parseLong(Long.java:631)
+	at org.elasticsearch.common.xcontent.support.AbstractXContentParser.longValue(AbstractXContentParser.java:145)
+	at org.elasticsearch.index.mapper.core.LongFieldMapper.innerParseCreateField(LongFieldMapper.java:288)
+	at org.elasticsearch.index.mapper.core.NumberFieldMapper.parseCreateField(NumberFieldMapper.java:239)
+	at org.elasticsearch.index.mapper.core.AbstractFieldMapper.parse(AbstractFieldMapper.java:401)
+	... 13 more
+[2016-10-03 17:41:48,545][DEBUG][action.bulk              ] [locations] [geo_index_1][0] failed to execute bulk item (index) index {[geo_index_1][hotel][3005b72de0c-3d1e-45d9], source[{"id":"3005b72de0c-3d1e-45d9","priority":1.0,"name":"Hotel del Casco","city":"San Isidro","country":"AR"}]}
+org.elasticsearch.index.mapper.MapperParsingException: failed to parse [id]
+	at org.elasticsearch.index.mapper.core.AbstractFieldMapper.parse(AbstractFieldMapper.java:411)
+	at org.elasticsearch.index.mapper.object.ObjectMapper.serializeValue(ObjectMapper.java:706)
+	at org.elasticsearch.index.mapper.object.ObjectMapper.parse(ObjectMapper.java:497)
+	at org.elasticsearch.index.mapper.DocumentMapper.parse(DocumentMapper.java:544)
+	at org.elasticsearch.index.mapper.DocumentMapper.parse(DocumentMapper.java:493)
+	at org.elasticsearch.index.shard.IndexShard.prepareIndex(IndexShard.java:493)
+	at org.elasticsearch.action.bulk.TransportShardBulkAction.shardIndexOperation(TransportShardBulkAction.java:409)
+	at org.elasticsearch.action.bulk.TransportShardBulkAction.shardOperationOnPrimary(TransportShardBulkAction.java:148)
+	at org.elasticsearch.action.support.replication.TransportShardReplicationOperationAction$PrimaryPhase.performOnPrimary(TransportShardReplicationOperationAction.java:574)
+	at org.elasticsearch.action.support.replication.TransportShardReplicationOperationAction$PrimaryPhase$1.doRun(TransportShardReplicationOperationAction.java:440)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.NumberFormatException: For input string: "3005b72de0c-3d1e-45d9"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Long.parseLong(Long.java:589)
+	at java.lang.Long.parseLong(Long.java:631)
+	at org.elasticsearch.common.xcontent.support.AbstractXContentParser.longValue(AbstractXContentParser.java:145)
+	at org.elasticsearch.index.mapper.core.LongFieldMapper.innerParseCreateField(LongFieldMapper.java:288)
+	at org.elasticsearch.index.mapper.core.NumberFieldMapper.parseCreateField(NumberFieldMapper.java:239)
+	at org.elasticsearch.index.mapper.core.AbstractFieldMapper.parse(AbstractFieldMapper.java:401)
+	... 13 more
+[2016-10-03 17:41:48,546][DEBUG][action.bulk              ] [locations] [geo_index_1][0] failed to execute bulk item (index) index {[geo_index_1][hotel][3005c0fba9c-f6d6-4fa2], source[{"id":"3005c0fba9c-f6d6-4fa2","priority":1.0,"name":"Amancay Lodge Catedral","city":"Bariloche","country":"AR"}]}
+org.elasticsearch.index.mapper.MapperParsingException: failed to parse [id]
+	at org.elasticsearch.index.mapper.core.AbstractFieldMapper.parse(AbstractFieldMapper.java:411)
+	at org.elasticsearch.index.mapper.object.ObjectMapper.serializeValue(ObjectMapper.java:706)
+	at org.elasticsearch.index.mapper.object.ObjectMapper.parse(ObjectMapper.java:497)
+	at org.elasticsearch.index.mapper.DocumentMapper.parse(DocumentMapper.java:544)
+	at org.elasticsearch.index.mapper.DocumentMapper.parse(DocumentMapper.java:493)
+	at org.elasticsearch.index.shard.IndexShard.prepareIndex(IndexShard.java:493)
+	at org.elasticsearch.action.bulk.TransportShardBulkAction.shardIndexOperation(TransportShardBulkAction.java:409)
+	at org.elasticsearch.action.bulk.TransportShardBulkAction.shardOperationOnPrimary(TransportShardBulkAction.java:148)
+	at org.elasticsearch.action.support.replication.TransportShardReplicationOperationAction$PrimaryPhase.performOnPrimary(TransportShardReplicationOperationAction.java:574)
+	at org.elasticsearch.action.support.replication.TransportShardReplicationOperationAction$PrimaryPhase$1.doRun(TransportShardReplicationOperationAction.java:440)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.NumberFormatException: For input string: "3005c0fba9c-f6d6-4fa2"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Long.parseLong(Long.java:589)
+	at java.lang.Long.parseLong(Long.java:631)
+	at org.elasticsearch.common.xcontent.support.AbstractXContentParser.longValue(AbstractXContentParser.java:145)
+	at org.elasticsearch.index.mapper.core.LongFieldMapper.innerParseCreateField(LongFieldMapper.java:288)
+	at org.elasticsearch.index.mapper.core.NumberFieldMapper.parseCreateField(NumberFieldMapper.java:239)
+	at org.elasticsearch.index.mapper.core.AbstractFieldMapper.parse(AbstractFieldMapper.java:401)
+	... 13 more
+[2016-10-03 17:41:48,547][DEBUG][action.bulk              ] [locations] [geo_index_1][0] failed to execute bulk item (index) index {[geo_index_1][hotel][3008c9bba0d-db1b-4d93], source[{"id":"3008c9bba0d-db1b-4d93","priority":1.0,"name":"Grand Hotel Sierra de la Ventana","city":"Sierra de la Ventana","country":"AR"}]}
+org.elasticsearch.index.mapper.MapperParsingException: failed to parse [id]
+	at org.elasticsearch.index.mapper.core.AbstractFieldMapper.parse(AbstractFieldMapper.java:411)
+	at org.elasticsearch.index.mapper.object.ObjectMapper.serializeValue(ObjectMapper.java:706)
+	at org.elasticsearch.index.mapper.object.ObjectMapper.parse(ObjectMapper.java:497)
+	at org.elasticsearch.index.mapper.DocumentMapper.parse(DocumentMapper.java:544)
+	at org.elasticsearch.index.mapper.DocumentMapper.parse(DocumentMapper.java:493)
+	at org.elasticsearch.index.shard.IndexShard.prepareIndex(IndexShard.java:493)
+	at org.elasticsearch.action.bulk.TransportShardBulkAction.shardIndexOperation(TransportShardBulkAction.java:409)
+	at org.elasticsearch.action.bulk.TransportShardBulkAction.shardOperationOnPrimary(TransportShardBulkAction.java:148)
+	at org.elasticsearch.action.support.replication.TransportShardReplicationOperationAction$PrimaryPhase.performOnPrimary(TransportShardReplicationOperationAction.java:574)
+	at org.elasticsearch.action.support.replication.TransportShardReplicationOperationAction$PrimaryPhase$1.doRun(TransportShardReplicationOperationAction.java:440)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.NumberFormatException: For input string: "3008c9bba0d-db1b-4d93"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Long.parseLong(Long.java:589)
+	at java.lang.Long.parseLong(Long.java:631)
+	at org.elasticsearch.common.xcontent.support.AbstractXContentParser.longValue(AbstractXContentParser.java:145)
+	at org.elasticsearch.index.mapper.core.LongFieldMapper.innerParseCreateField(LongFieldMapper.java:288)
+	at org.elasticsearch.index.mapper.core.NumberFieldMapper.parseCreateField(NumberFieldMapper.java:239)
+	at org.elasticsearch.index.mapper.core.AbstractFieldMapper.parse(AbstractFieldMapper.java:401)
+	... 13 more
+[2016-10-03 17:41:48,548][DEBUG][action.bulk              ] [locations] [geo_index_1][0] failed to execute bulk item (index) index {[geo_index_1][hotel][3009b9d0a7c-a06c-4897], source[{"id":"3009b9d0a7c-a06c-4897","priority":1.0,"name":"Gran Hotel Presidente","city":"Salta","country":"AR"}]}
+org.elasticsearch.index.mapper.MapperParsingException: failed to parse [id]
+	at org.elasticsearch.index.mapper.core.AbstractFieldMapper.parse(AbstractFieldMapper.java:411)
+	at org.elasticsearch.index.mapper.object.ObjectMapper.serializeValue(ObjectMapper.java:706)
+	at org.elasticsearch.index.mapper.object.ObjectMapper.parse(ObjectMapper.java:497)
+	at org.elasticsearch.index.mapper.DocumentMapper.parse(DocumentMapper.java:544)
+	at org.elasticsearch.index.mapper.DocumentMapper.parse(DocumentMapper.java:493)
+	at org.elasticsearch.index.shard.IndexShard.prepareIndex(IndexShard.java:493)
+	at org.elasticsearch.action.bulk.TransportShardBulkAction.shardIndexOperation(TransportShardBulkAction.java:409)
+	at org.elasticsearch.action.bulk.TransportShardBulkAction.shardOperationOnPrimary(TransportShardBulkAction.java:148)
+	at org.elasticsearch.action.support.replication.TransportShardReplicationOperationAction$PrimaryPhase.performOnPrimary(TransportShardReplicationOperationAction.java:574)
+	at org.elasticsearch.action.support.replication.TransportShardReplicationOperationAction$PrimaryPhase$1.doRun(TransportShardReplicationOperationAction.java:440)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.NumberFormatException: For input string: "3009b9d0a7c-a06c-4897"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Long.parseLong(Long.java:589)
+	at java.lang.Long.parseLong(Long.java:631)
+	at org.elasticsearch.common.xcontent.support.AbstractXContentParser.longValue(AbstractXContentParser.java:145)
+	at org.elasticsearch.index.mapper.core.LongFieldMapper.innerParseCreateField(LongFieldMapper.java:288)
+	at org.elasticsearch.index.mapper.core.NumberFieldMapper.parseCreateField(NumberFieldMapper.java:239)
+	at org.elasticsearch.index.mapper.core.AbstractFieldMapper.parse(AbstractFieldMapper.java:401)
+	... 13 more
+[2016-10-03 17:41:48,548][DEBUG][action.bulk              ] [locations] [geo_index_1][0] failed to execute bulk item (index) index {[geo_index_1][hotel][300a5f3bfdb-b40b-42cc], source[{"id":"300a5f3bfdb-b40b-42cc","priority":1.0,"name":"Super Resort Las Lenas","city":"Malargue","country":"AR"}]}
+org.elasticsearch.index.mapper.MapperParsingException: failed to parse [id]
+	at org.elasticsearch.index.mapper.core.AbstractFieldMapper.parse(AbstractFieldMapper.java:411)
+	at org.elasticsearch.index.mapper.object.ObjectMapper.serializeValue(ObjectMapper.java:706)
+	at org.elasticsearch.index.mapper.object.ObjectMapper.parse(ObjectMapper.java:497)
+	at org.elasticsearch.index.mapper.DocumentMapper.parse(DocumentMapper.java:544)
+	at org.elasticsearch.index.mapper.DocumentMapper.parse(DocumentMapper.java:493)
+	at org.elasticsearch.index.shard.IndexShard.prepareIndex(IndexShard.java:493)
+	at org.elasticsearch.action.bulk.TransportShardBulkAction.shardIndexOperation(TransportShardBulkAction.java:409)
+	at org.elasticsearch.action.bulk.TransportShardBulkAction.shardOperationOnPrimary(TransportShardBulkAction.java:148)
+	at org.elasticsearch.action.support.replication.TransportShardReplicationOperationAction$PrimaryPhase.performOnPrimary(TransportShardReplicationOperationAction.java:574)
+	at org.elasticsearch.action.support.replication.TransportShardReplicationOperationAction$PrimaryPhase$1.doRun(TransportShardReplicationOperationAction.java:440)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.NumberFormatException: For input string: "300a5f3bfdb-b40b-42cc"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Long.parseLong(Long.java:589)
+	at java.lang.Long.parseLong(Long.java:631)
+	at org.elasticsearch.common.xcontent.support.AbstractXContentParser.longValue(AbstractXContentParser.java:145)
+	at org.elasticsearch.index.mapper.core.LongFieldMapper.innerParseCreateField(LongFieldMapper.java:288)
+	at org.elasticsearch.index.mapper.core.NumberFieldMapper.parseCreateField(NumberFieldMapper.java:239)
+	at org.elasticsearch.index.mapper.core.AbstractFieldMapper.parse(AbstractFieldMapper.java:401)
+	... 13 more
+[2016-10-03 17:41:48,549][DEBUG][action.bulk              ] [locations] [geo_index_1][0] failed to execute bulk item (index) index {[geo_index_1][hotel][300a9859bad-b38e-49a7], source[{"id":"300a9859bad-b38e-49a7","priority":1.0,"name":"Ocre BA Suites","city":"Buenos Aires","country":"AR"}]}
+org.elasticsearch.index.mapper.MapperParsingException: failed to parse [id]
+	at org.elasticsearch.index.mapper.core.AbstractFieldMapper.parse(AbstractFieldMapper.java:411)
+	at org.elasticsearch.index.mapper.object.ObjectMapper.serializeValue(ObjectMapper.java:706)
+	at org.elasticsearch.index.mapper.object.ObjectMapper.parse(ObjectMapper.java:497)
+	at org.elasticsearch.index.mapper.DocumentMapper.parse(DocumentMapper.java:544)
+	at org.elasticsearch.index.mapper.DocumentMapper.parse(DocumentMapper.java:493)
+	at org.elasticsearch.index.shard.IndexShard.prepareIndex(IndexShard.java:493)
+	at org.elasticsearch.action.bulk.TransportShardBulkAction.shardIndexOperation(TransportShardBulkAction.java:409)
+	at org.elasticsearch.action.bulk.TransportShardBulkAction.shardOperationOnPrimary(TransportShardBulkAction.java:148)
+	at org.elasticsearch.action.support.replication.TransportShardReplicationOperationAction$PrimaryPhase.performOnPrimary(TransportShardReplicationOperationAction.java:574)
+	at org.elasticsearch.action.support.replication.TransportShardReplicationOperationAction$PrimaryPhase$1.doRun(TransportShardReplicationOperationAction.java:440)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.NumberFormatException: For input string: "300a9859bad-b38e-49a7"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Long.parseLong(Long.java:589)
+	at java.lang.Long.parseLong(Long.java:631)
+	at org.elasticsearch.common.xcontent.support.AbstractXContentParser.longValue(AbstractXContentParser.java:145)
+	at org.elasticsearch.index.mapper.core.LongFieldMapper.innerParseCreateField(LongFieldMapper.java:288)
+	at org.elasticsearch.index.mapper.core.NumberFieldMapper.parseCreateField(NumberFieldMapper.java:239)
+	at org.elasticsearch.index.mapper.core.AbstractFieldMapper.parse(AbstractFieldMapper.java:401)
+	... 13 more
+[2016-10-03 17:41:48,551][DEBUG][action.bulk              ] [locations] [geo_index_1][0] failed to execute bulk item (index) index {[geo_index_1][hotel][300b084a9c0-e15f-4d64], source[{"id":"300b084a9c0-e15f-4d64","priority":1.0,"name":"Unique Palacio Chic","city":"Buenos Aires","country":"AR"}]}
+org.elasticsearch.index.mapper.MapperParsingException: failed to parse [id]
+	at org.elasticsearch.index.mapper.core.AbstractFieldMapper.parse(AbstractFieldMapper.java:411)
+	at org.elasticsearch.index.mapper.object.ObjectMapper.serializeValue(ObjectMapper.java:706)
+	at org.elasticsearch.index.mapper.object.ObjectMapper.parse(ObjectMapper.java:497)
+	at org.elasticsearch.index.mapper.DocumentMapper.parse(DocumentMapper.java:544)
+	at org.elasticsearch.index.mapper.DocumentMapper.parse(DocumentMapper.java:493)
+	at org.elasticsearch.index.shard.IndexShard.prepareIndex(IndexShard.java:493)
+	at org.elasticsearch.action.bulk.TransportShardBulkAction.shardIndexOperation(TransportShardBulkAction.java:409)
+	at org.elasticsearch.action.bulk.TransportShardBulkAction.shardOperationOnPrimary(TransportShardBulkAction.java:148)
+	at org.elasticsearch.action.support.replication.TransportShardReplicationOperationAction$PrimaryPhase.performOnPrimary(TransportShardReplicationOperationAction.java:574)
+	at org.elasticsearch.action.support.replication.TransportShardReplicationOperationAction$PrimaryPhase$1.doRun(TransportShardReplicationOperationAction.java:440)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.NumberFormatException: For input string: "300b084a9c0-e15f-4d64"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Long.parseLong(Long.java:589)
+	at java.lang.Long.parseLong(Long.java:631)
+	at org.elasticsearch.common.xcontent.support.AbstractXContentParser.longValue(AbstractXContentParser.java:145)
+	at org.elasticsearch.index.mapper.core.LongFieldMapper.innerParseCreateField(LongFieldMapper.java:288)
+	at org.elasticsearch.index.mapper.core.NumberFieldMapper.parseCreateField(NumberFieldMapper.java:239)
+	at org.elasticsearch.index.mapper.core.AbstractFieldMapper.parse(AbstractFieldMapper.java:401)
+	... 13 more
+[2016-10-03 17:41:48,551][DEBUG][action.bulk              ] [locations] [geo_index_1][0] failed to execute bulk item (index) index {[geo_index_1][hotel][300b9227a91-25cc-4694], source[{"id":"300b9227a91-25cc-4694","priority":1.0,"name":"Cordoba 860 Suites","city":"Buenos Aires","country":"AR"}]}
+org.elasticsearch.index.mapper.MapperParsingException: failed to parse [id]
+	at org.elasticsearch.index.mapper.core.AbstractFieldMapper.parse(AbstractFieldMapper.java:411)
+	at org.elasticsearch.index.mapper.object.ObjectMapper.serializeValue(ObjectMapper.java:706)
+	at org.elasticsearch.index.mapper.object.ObjectMapper.parse(ObjectMapper.java:497)
+	at org.elasticsearch.index.mapper.DocumentMapper.parse(DocumentMapper.java:544)
+	at org.elasticsearch.index.mapper.DocumentMapper.parse(DocumentMapper.java:493)
+	at org.elasticsearch.index.shard.IndexShard.prepareIndex(IndexShard.java:493)
+	at org.elasticsearch.action.bulk.TransportShardBulkAction.shardIndexOperation(TransportShardBulkAction.java:409)
+	at org.elasticsearch.action.bulk.TransportShardBulkAction.shardOperationOnPrimary(TransportShardBulkAction.java:148)
+	at org.elasticsearch.action.support.replication.TransportShardReplicationOperationAction$PrimaryPhase.performOnPrimary(TransportShardReplicationOperationAction.java:574)
+	at org.elasticsearch.action.support.replication.TransportShardReplicationOperationAction$PrimaryPhase$1.doRun(TransportShardReplicationOperationAction.java:440)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.NumberFormatException: For input string: "300b9227a91-25cc-4694"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Long.parseLong(Long.java:589)
+	at java.lang.Long.parseLong(Long.java:631)
+	at org.elasticsearch.common.xcontent.support.AbstractXContentParser.longValue(AbstractXContentParser.java:145)
+	at org.elasticsearch.index.mapper.core.LongFieldMapper.innerParseCreateField(LongFieldMapper.java:288)
+	at org.elasticsearch.index.mapper.core.NumberFieldMapper.parseCreateField(NumberFieldMapper.java:239)
+	at org.elasticsearch.index.mapper.core.AbstractFieldMapper.parse(AbstractFieldMapper.java:401)
+	... 13 more
+[2016-10-03 17:41:48,552][DEBUG][action.bulk              ] [locations] [geo_index_1][0] failed to execute bulk item (index) index {[geo_index_1][hotel][300b9384eae-39ac-42ff], source[{"id":"300b9384eae-39ac-42ff","priority":1.0,"name":"Vibes Music Hotel","city":"Buenos Aires","country":"AR"}]}
+org.elasticsearch.index.mapper.MapperParsingException: failed to parse [id]
+	at org.elasticsearch.index.mapper.core.AbstractFieldMapper.parse(AbstractFieldMapper.java:411)
+	at org.elasticsearch.index.mapper.object.ObjectMapper.serializeValue(ObjectMapper.java:706)
+	at org.elasticsearch.index.mapper.object.ObjectMapper.parse(ObjectMapper.java:497)
+	at org.elasticsearch.index.mapper.DocumentMapper.parse(DocumentMapper.java:544)
+	at org.elasticsearch.index.mapper.DocumentMapper.parse(DocumentMapper.java:493)
+	at org.elasticsearch.index.shard.IndexShard.prepareIndex(IndexShard.java:493)
+	at org.elasticsearch.action.bulk.TransportShardBulkAction.shardIndexOperation(TransportShardBulkAction.java:409)
+	at org.elasticsearch.action.bulk.TransportShardBulkAction.shardOperationOnPrimary(TransportShardBulkAction.java:148)
+	at org.elasticsearch.action.support.replication.TransportShardReplicationOperationAction$PrimaryPhase.performOnPrimary(TransportShardReplicationOperationAction.java:574)
+	at org.elasticsearch.action.support.replication.TransportShardReplicationOperationAction$PrimaryPhase$1.doRun(TransportShardReplicationOperationAction.java:440)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.NumberFormatException: For input string: "300b9384eae-39ac-42ff"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Long.parseLong(Long.java:589)
+	at java.lang.Long.parseLong(Long.java:631)
+	at org.elasticsearch.common.xcontent.support.AbstractXContentParser.longValue(AbstractXContentParser.java:145)
+	at org.elasticsearch.index.mapper.core.LongFieldMapper.innerParseCreateField(LongFieldMapper.java:288)
+	at org.elasticsearch.index.mapper.core.NumberFieldMapper.parseCreateField(NumberFieldMapper.java:239)
+	at org.elasticsearch.index.mapper.core.AbstractFieldMapper.parse(AbstractFieldMapper.java:401)
+	... 13 more
+[2016-10-03 17:41:48,553][DEBUG][action.bulk              ] [locations] [geo_index_1][0] failed to execute bulk item (index) index {[geo_index_1][hotel][300bb9a4c71-51ab-4546], source[{"id":"300bb9a4c71-51ab-4546","priority":1.0,"name":"Hotel Masliah","city":"Buenos Aires","country":"AR"}]}
+org.elasticsearch.index.mapper.MapperParsingException: failed to parse [id]
+	at org.elasticsearch.index.mapper.core.AbstractFieldMapper.parse(AbstractFieldMapper.java:411)
+	at org.elasticsearch.index.mapper.object.ObjectMapper.serializeValue(ObjectMapper.java:706)
+	at org.elasticsearch.index.mapper.object.ObjectMapper.parse(ObjectMapper.java:497)
+	at org.elasticsearch.index.mapper.DocumentMapper.parse(DocumentMapper.java:544)
+	at org.elasticsearch.index.mapper.DocumentMapper.parse(DocumentMapper.java:493)
+	at org.elasticsearch.index.shard.IndexShard.prepareIndex(IndexShard.java:493)
+	at org.elasticsearch.action.bulk.TransportShardBulkAction.shardIndexOperation(TransportShardBulkAction.java:409)
+	at org.elasticsearch.action.bulk.TransportShardBulkAction.shardOperationOnPrimary(TransportShardBulkAction.java:148)
+	at org.elasticsearch.action.support.replication.TransportShardReplicationOperationAction$PrimaryPhase.performOnPrimary(TransportShardReplicationOperationAction.java:574)
+	at org.elasticsearch.action.support.replication.TransportShardReplicationOperationAction$PrimaryPhase$1.doRun(TransportShardReplicationOperationAction.java:440)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.NumberFormatException: For input string: "300bb9a4c71-51ab-4546"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Long.parseLong(Long.java:589)
+	at java.lang.Long.parseLong(Long.java:631)
+	at org.elasticsearch.common.xcontent.support.AbstractXContentParser.longValue(AbstractXContentParser.java:145)
+	at org.elasticsearch.index.mapper.core.LongFieldMapper.innerParseCreateField(LongFieldMapper.java:288)
+	at org.elasticsearch.index.mapper.core.NumberFieldMapper.parseCreateField(NumberFieldMapper.java:239)
+	at org.elasticsearch.index.mapper.core.AbstractFieldMapper.parse(AbstractFieldMapper.java:401)
+	... 13 more
+[2016-10-03 17:41:48,554][DEBUG][action.bulk              ] [locations] [geo_index_1][0] failed to execute bulk item (index) index {[geo_index_1][hotel][300bba260d5-31be-4420], source[{"id":"300bba260d5-31be-4420","priority":1.0,"name":"Huerta Grande CabaÃ±as","city":"Huerta Grande","country":"AR"}]}
+org.elasticsearch.index.mapper.MapperParsingException: failed to parse [id]
+	at org.elasticsearch.index.mapper.core.AbstractFieldMapper.parse(AbstractFieldMapper.java:411)
+	at org.elasticsearch.index.mapper.object.ObjectMapper.serializeValue(ObjectMapper.java:706)
+	at org.elasticsearch.index.mapper.object.ObjectMapper.parse(ObjectMapper.java:497)
+	at org.elasticsearch.index.mapper.DocumentMapper.parse(DocumentMapper.java:544)
+	at org.elasticsearch.index.mapper.DocumentMapper.parse(DocumentMapper.java:493)
+	at org.elasticsearch.index.shard.IndexShard.prepareIndex(IndexShard.java:493)
+	at org.elasticsearch.action.bulk.TransportShardBulkAction.shardIndexOperation(TransportShardBulkAction.java:409)
+	at org.elasticsearch.action.bulk.TransportShardBulkAction.shardOperationOnPrimary(TransportShardBulkAction.java:148)
+	at org.elasticsearch.action.support.replication.TransportShardReplicationOperationAction$PrimaryPhase.performOnPrimary(TransportShardReplicationOperationAction.java:574)
+	at org.elasticsearch.action.support.replication.TransportShardReplicationOperationAction$PrimaryPhase$1.doRun(TransportShardReplicationOperationAction.java:440)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.NumberFormatException: For input string: "300bba260d5-31be-4420"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Long.parseLong(Long.java:589)
+	at java.lang.Long.parseLong(Long.java:631)
+	at org.elasticsearch.common.xcontent.support.AbstractXContentParser.longValue(AbstractXContentParser.java:145)
+	at org.elasticsearch.index.mapper.core.LongFieldMapper.innerParseCreateField(LongFieldMapper.java:288)
+	at org.elasticsearch.index.mapper.core.NumberFieldMapper.parseCreateField(NumberFieldMapper.java:239)
+	at org.elasticsearch.index.mapper.core.AbstractFieldMapper.parse(AbstractFieldMapper.java:401)
+	... 13 more
+[2016-10-03 17:41:48,554][DEBUG][action.bulk              ] [locations] [geo_index_1][0] failed to execute bulk item (index) index {[geo_index_1][hotel][300bceb88db-5670-4c24], source[{"id":"300bceb88db-5670-4c24","priority":1.0,"name":"Milan Hotel","city":"Buenos Aires","country":"AR"}]}
+org.elasticsearch.index.mapper.MapperParsingException: failed to parse [id]
+	at org.elasticsearch.index.mapper.core.AbstractFieldMapper.parse(AbstractFieldMapper.java:411)
+	at org.elasticsearch.index.mapper.object.ObjectMapper.serializeValue(ObjectMapper.java:706)
+	at org.elasticsearch.index.mapper.object.ObjectMapper.parse(ObjectMapper.java:497)
+	at org.elasticsearch.index.mapper.DocumentMapper.parse(DocumentMapper.java:544)
+	at org.elasticsearch.index.mapper.DocumentMapper.parse(DocumentMapper.java:493)
+	at org.elasticsearch.index.shard.IndexShard.prepareIndex(IndexShard.java:493)
+	at org.elasticsearch.action.bulk.TransportShardBulkAction.shardIndexOperation(TransportShardBulkAction.java:409)
+	at org.elasticsearch.action.bulk.TransportShardBulkAction.shardOperationOnPrimary(TransportShardBulkAction.java:148)
+	at org.elasticsearch.action.support.replication.TransportShardReplicationOperationAction$PrimaryPhase.performOnPrimary(TransportShardReplicationOperationAction.java:574)
+	at org.elasticsearch.action.support.replication.TransportShardReplicationOperationAction$PrimaryPhase$1.doRun(TransportShardReplicationOperationAction.java:440)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.NumberFormatException: For input string: "300bceb88db-5670-4c24"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Long.parseLong(Long.java:589)
+	at java.lang.Long.parseLong(Long.java:631)
+	at org.elasticsearch.common.xcontent.support.AbstractXContentParser.longValue(AbstractXContentParser.java:145)
+	at org.elasticsearch.index.mapper.core.LongFieldMapper.innerParseCreateField(LongFieldMapper.java:288)
+	at org.elasticsearch.index.mapper.core.NumberFieldMapper.parseCreateField(NumberFieldMapper.java:239)
+	at org.elasticsearch.index.mapper.core.AbstractFieldMapper.parse(AbstractFieldMapper.java:401)
+	... 13 more
+[2016-10-03 17:41:48,555][DEBUG][action.bulk              ] [locations] [geo_index_1][0] failed to execute bulk item (index) index {[geo_index_1][hotel][300c942f6ee-e7b9-4db1], source[{"id":"300c942f6ee-e7b9-4db1","priority":1.0,"name":"Tres Pircas Hotel & Spa","city":"Huerta Grande","country":"AR"}]}
+org.elasticsearch.index.mapper.MapperParsingException: failed to parse [id]
+	at org.elasticsearch.index.mapper.core.AbstractFieldMapper.parse(AbstractFieldMapper.java:411)
+	at org.elasticsearch.index.mapper.object.ObjectMapper.serializeValue(ObjectMapper.java:706)
+	at org.elasticsearch.index.mapper.object.ObjectMapper.parse(ObjectMapper.java:497)
+	at org.elasticsearch.index.mapper.DocumentMapper.parse(DocumentMapper.java:544)
+	at org.elasticsearch.index.mapper.DocumentMapper.parse(DocumentMapper.java:493)
+	at org.elasticsearch.index.shard.IndexShard.prepareIndex(IndexShard.java:493)
+	at org.elasticsearch.action.bulk.TransportShardBulkAction.shardIndexOperation(TransportShardBulkAction.java:409)
+	at org.elasticsearch.action.bulk.TransportShardBulkAction.shardOperationOnPrimary(TransportShardBulkAction.java:148)
+	at org.elasticsearch.action.support.replication.TransportShardReplicationOperationAction$PrimaryPhase.performOnPrimary(TransportShardReplicationOperationAction.java:574)
+	at org.elasticsearch.action.support.replication.TransportShardReplicationOperationAction$PrimaryPhase$1.doRun(TransportShardReplicationOperationAction.java:440)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.NumberFormatException: For input string: "300c942f6ee-e7b9-4db1"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Long.parseLong(Long.java:589)
+	at java.lang.Long.parseLong(Long.java:631)
+	at org.elasticsearch.common.xcontent.support.AbstractXContentParser.longValue(AbstractXContentParser.java:145)
+	at org.elasticsearch.index.mapper.core.LongFieldMapper.innerParseCreateField(LongFieldMapper.java:288)
+	at org.elasticsearch.index.mapper.core.NumberFieldMapper.parseCreateField(NumberFieldMapper.java:239)
+	at org.elasticsearch.index.mapper.core.AbstractFieldMapper.parse(AbstractFieldMapper.java:401)
+	... 13 more
+[2016-10-03 17:41:48,556][DEBUG][action.bulk              ] [locations] [geo_index_1][0] failed to execute bulk item (index) index {[geo_index_1][hotel][300cb29127b-932f-4946], source[{"id":"300cb29127b-932f-4946","priority":1.0,"name":"Hotel Potrero de los Funes","city":"Potrero de los Funes","country":"AR"}]}
+org.elasticsearch.index.mapper.MapperParsingException: failed to parse [id]
+	at org.elasticsearch.index.mapper.core.AbstractFieldMapper.parse(AbstractFieldMapper.java:411)
+	at org.elasticsearch.index.mapper.object.ObjectMapper.serializeValue(ObjectMapper.java:706)
+	at org.elasticsearch.index.mapper.object.ObjectMapper.parse(ObjectMapper.java:497)
+	at org.elasticsearch.index.mapper.DocumentMapper.parse(DocumentMapper.java:544)
+	at org.elasticsearch.index.mapper.DocumentMapper.parse(DocumentMapper.java:493)
+	at org.elasticsearch.index.shard.IndexShard.prepareIndex(IndexShard.java:493)
+	at org.elasticsearch.action.bulk.TransportShardBulkAction.shardIndexOperation(TransportShardBulkAction.java:409)
+	at org.elasticsearch.action.bulk.TransportShardBulkAction.shardOperationOnPrimary(TransportShardBulkAction.java:148)
+	at org.elasticsearch.action.support.replication.TransportShardReplicationOperationAction$PrimaryPhase.performOnPrimary(TransportShardReplicationOperationAction.java:574)
+	at org.elasticsearch.action.support.replication.TransportShardReplicationOperationAction$PrimaryPhase$1.doRun(TransportShardReplicationOperationAction.java:440)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.NumberFormatException: For input string: "300cb29127b-932f-4946"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Long.parseLong(Long.java:589)
+	at java.lang.Long.parseLong(Long.java:631)
+	at org.elasticsearch.common.xcontent.support.AbstractXContentParser.longValue(AbstractXContentParser.java:145)
+	at org.elasticsearch.index.mapper.core.LongFieldMapper.innerParseCreateField(LongFieldMapper.java:288)
+	at org.elasticsearch.index.mapper.core.NumberFieldMapper.parseCreateField(NumberFieldMapper.java:239)
+	at org.elasticsearch.index.mapper.core.AbstractFieldMapper.parse(AbstractFieldMapper.java:401)
+	... 13 more
+[2016-10-03 17:41:48,556][DEBUG][action.bulk              ] [locations] [geo_index_1][0] failed to execute bulk item (index) index {[geo_index_1][hotel][300cf1cd754-406a-443d], source[{"id":"300cf1cd754-406a-443d","priority":1.0,"name":"O'Rei","city":"Buenos Aires","country":"AR"}]}
+org.elasticsearch.index.mapper.MapperParsingException: failed to parse [id]
+	at org.elasticsearch.index.mapper.core.AbstractFieldMapper.parse(AbstractFieldMapper.java:411)
+	at org.elasticsearch.index.mapper.object.ObjectMapper.serializeValue(ObjectMapper.java:706)
+	at org.elasticsearch.index.mapper.object.ObjectMapper.parse(ObjectMapper.java:497)
+	at org.elasticsearch.index.mapper.DocumentMapper.parse(DocumentMapper.java:544)
+	at org.elasticsearch.index.mapper.DocumentMapper.parse(DocumentMapper.java:493)
+	at org.elasticsearch.index.shard.IndexShard.prepareIndex(IndexShard.java:493)
+	at org.elasticsearch.action.bulk.TransportShardBulkAction.shardIndexOperation(TransportShardBulkAction.java:409)
+	at org.elasticsearch.action.bulk.TransportShardBulkAction.shardOperationOnPrimary(TransportShardBulkAction.java:148)
+	at org.elasticsearch.action.support.replication.TransportShardReplicationOperationAction$PrimaryPhase.performOnPrimary(TransportShardReplicationOperationAction.java:574)
+	at org.elasticsearch.action.support.replication.TransportShardReplicationOperationAction$PrimaryPhase$1.doRun(TransportShardReplicationOperationAction.java:440)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.NumberFormatException: For input string: "300cf1cd754-406a-443d"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Long.parseLong(Long.java:589)
+	at java.lang.Long.parseLong(Long.java:631)
+	at org.elasticsearch.common.xcontent.support.AbstractXContentParser.longValue(AbstractXContentParser.java:145)
+	at org.elasticsearch.index.mapper.core.LongFieldMapper.innerParseCreateField(LongFieldMapper.java:288)
+	at org.elasticsearch.index.mapper.core.NumberFieldMapper.parseCreateField(NumberFieldMapper.java:239)
+	at org.elasticsearch.index.mapper.core.AbstractFieldMapper.parse(AbstractFieldMapper.java:401)
+	... 13 more
+[2016-10-03 17:41:48,557][DEBUG][action.bulk              ] [locations] [geo_index_1][0] failed to execute bulk item (index) index {[geo_index_1][hotel][300d050cc0a-b39c-4fbd], source[{"id":"300d050cc0a-b39c-4fbd","priority":1.0,"name":"Casa Antucura","city":"Tunuyan","country":"AR"}]}
+org.elasticsearch.index.mapper.MapperParsingException: failed to parse [id]
+	at org.elasticsearch.index.mapper.core.AbstractFieldMapper.parse(AbstractFieldMapper.java:411)
+	at org.elasticsearch.index.mapper.object.ObjectMapper.serializeValue(ObjectMapper.java:706)
+	at org.elasticsearch.index.mapper.object.ObjectMapper.parse(ObjectMapper.java:497)
+	at org.elasticsearch.index.mapper.DocumentMapper.parse(DocumentMapper.java:544)
+	at org.elasticsearch.index.mapper.DocumentMapper.parse(DocumentMapper.java:493)
+	at org.elasticsearch.index.shard.IndexShard.prepareIndex(IndexShard.java:493)
+	at org.elasticsearch.action.bulk.TransportShardBulkAction.shardIndexOperation(TransportShardBulkAction.java:409)
+	at org.elasticsearch.action.bulk.TransportShardBulkAction.shardOperationOnPrimary(TransportShardBulkAction.java:148)
+	at org.elasticsearch.action.support.replication.TransportShardReplicationOperationAction$PrimaryPhase.performOnPrimary(TransportShardReplicationOperationAction.java:574)
+	at org.elasticsearch.action.support.replication.TransportShardReplicationOperationAction$PrimaryPhase$1.doRun(TransportShardReplicationOperationAction.java:440)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.NumberFormatException: For input string: "300d050cc0a-b39c-4fbd"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Long.parseLong(Long.java:589)
+	at java.lang.Long.parseLong(Long.java:631)
+	at org.elasticsearch.common.xcontent.support.AbstractXContentParser.longValue(AbstractXContentParser.java:145)
+	at org.elasticsearch.index.mapper.core.LongFieldMapper.innerParseCreateField(LongFieldMapper.java:288)
+	at org.elasticsearch.index.mapper.core.NumberFieldMapper.parseCreateField(NumberFieldMapper.java:239)
+	at org.elasticsearch.index.mapper.core.AbstractFieldMapper.parse(AbstractFieldMapper.java:401)
+	... 13 more
+[2016-10-03 17:41:48,557][DEBUG][action.bulk              ] [locations] [geo_index_1][0] failed to execute bulk item (index) index {[geo_index_1][hotel][300da2c6c90-2d5a-49da], source[{"id":"300da2c6c90-2d5a-49da","priority":1.0,"name":"Dazzler Camberland Hotel","city":"Pilar","country":"AR"}]}
+org.elasticsearch.index.mapper.MapperParsingException: failed to parse [id]
+	at org.elasticsearch.index.mapper.core.AbstractFieldMapper.parse(AbstractFieldMapper.java:411)
+	at org.elasticsearch.index.mapper.object.ObjectMapper.serializeValue(ObjectMapper.java:706)
+	at org.elasticsearch.index.mapper.object.ObjectMapper.parse(ObjectMapper.java:497)
+	at org.elasticsearch.index.mapper.DocumentMapper.parse(DocumentMapper.java:544)
+	at org.elasticsearch.index.mapper.DocumentMapper.parse(DocumentMapper.java:493)
+	at org.elasticsearch.index.shard.IndexShard.prepareIndex(IndexShard.java:493)
+	at org.elasticsearch.action.bulk.TransportShardBulkAction.shardIndexOperation(TransportShardBulkAction.java:409)
+	at org.elasticsearch.action.bulk.TransportShardBulkAction.shardOperationOnPrimary(TransportShardBulkAction.java:148)
+	at org.elasticsearch.action.support.replication.TransportShardReplicationOperationAction$PrimaryPhase.performOnPrimary(TransportShardReplicationOperationAction.java:574)
+	at org.elasticsearch.action.support.replication.TransportShardReplicationOperationAction$PrimaryPhase$1.doRun(TransportShardReplicationOperationAction.java:440)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.NumberFormatException: For input string: "300da2c6c90-2d5a-49da"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Long.parseLong(Long.java:589)
+	at java.lang.Long.parseLong(Long.java:631)
+	at org.elasticsearch.common.xcontent.support.AbstractXContentParser.longValue(AbstractXContentParser.java:145)
+	at org.elasticsearch.index.mapper.core.LongFieldMapper.innerParseCreateField(LongFieldMapper.java:288)
+	at org.elasticsearch.index.mapper.core.NumberFieldMapper.parseCreateField(NumberFieldMapper.java:239)
+	at org.elasticsearch.index.mapper.core.AbstractFieldMapper.parse(AbstractFieldMapper.java:401)
+	... 13 more
+[2016-10-03 17:41:48,558][DEBUG][action.bulk              ] [locations] [geo_index_1][0] failed to execute bulk item (index) index {[geo_index_1][hotel][300e0aafeee-2a84-4ac6], source[{"id":"300e0aafeee-2a84-4ac6","priority":1.0,"name":"Hostel Suites Palermo","city":"Buenos Aires","country":"AR"}]}
+org.elasticsearch.index.mapper.MapperParsingException: failed to parse [id]
+	at org.elasticsearch.index.mapper.core.AbstractFieldMapper.parse(AbstractFieldMapper.java:411)
+	at org.elasticsearch.index.mapper.object.ObjectMapper.serializeValue(ObjectMapper.java:706)
+	at org.elasticsearch.index.mapper.object.ObjectMapper.parse(ObjectMapper.java:497)
+	at org.elasticsearch.index.mapper.DocumentMapper.parse(DocumentMapper.java:544)
+	at org.elasticsearch.index.mapper.DocumentMapper.parse(DocumentMapper.java:493)
+	at org.elasticsearch.index.shard.IndexShard.prepareIndex(IndexShard.java:493)
+	at org.elasticsearch.action.bulk.TransportShardBulkAction.shardIndexOperation(TransportShardBulkAction.java:409)
+	at org.elasticsearch.action.bulk.TransportShardBulkAction.shardOperationOnPrimary(TransportShardBulkAction.java:148)
+	at org.elasticsearch.action.support.replication.TransportShardReplicationOperationAction$PrimaryPhase.performOnPrimary(TransportShardReplicationOperationAction.java:574)
+	at org.elasticsearch.action.support.replication.TransportShardReplicationOperationAction$PrimaryPhase$1.doRun(TransportShardReplicationOperationAction.java:440)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.NumberFormatException: For input string: "300e0aafeee-2a84-4ac6"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Long.parseLong(Long.java:589)
+	at java.lang.Long.parseLong(Long.java:631)
+	at org.elasticsearch.common.xcontent.support.AbstractXContentParser.longValue(AbstractXContentParser.java:145)
+	at org.elasticsearch.index.mapper.core.LongFieldMapper.innerParseCreateField(LongFieldMapper.java:288)
+	at org.elasticsearch.index.mapper.core.NumberFieldMapper.parseCreateField(NumberFieldMapper.java:239)
+	at org.elasticsearch.index.mapper.core.AbstractFieldMapper.parse(AbstractFieldMapper.java:401)
+	... 13 more
+[2016-10-03 17:41:48,559][DEBUG][action.bulk              ] [locations] [geo_index_1][0] failed to execute bulk item (index) index {[geo_index_1][hotel][300e924ef54-0846-41ae], source[{"id":"300e924ef54-0846-41ae","priority":1.0,"name":"San Isidro Plaza Hotel","city":"San Isidro","country":"AR"}]}
+org.elasticsearch.index.mapper.MapperParsingException: failed to parse [id]
+	at org.elasticsearch.index.mapper.core.AbstractFieldMapper.parse(AbstractFieldMapper.java:411)
+	at org.elasticsearch.index.mapper.object.ObjectMapper.serializeValue(ObjectMapper.java:706)
+	at org.elasticsearch.index.mapper.object.ObjectMapper.parse(ObjectMapper.java:497)
+	at org.elasticsearch.index.mapper.DocumentMapper.parse(DocumentMapper.java:544)
+	at org.elasticsearch.index.mapper.DocumentMapper.parse(DocumentMapper.java:493)
+	at org.elasticsearch.index.shard.IndexShard.prepareIndex(IndexShard.java:493)
+	at org.elasticsearch.action.bulk.TransportShardBulkAction.shardIndexOperation(TransportShardBulkAction.java:409)
+	at org.elasticsearch.action.bulk.TransportShardBulkAction.shardOperationOnPrimary(TransportShardBulkAction.java:148)
+	at org.elasticsearch.action.support.replication.TransportShardReplicationOperationAction$PrimaryPhase.performOnPrimary(TransportShardReplicationOperationAction.java:574)
+	at org.elasticsearch.action.support.replication.TransportShardReplicationOperationAction$PrimaryPhase$1.doRun(TransportShardReplicationOperationAction.java:440)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.NumberFormatException: For input string: "300e924ef54-0846-41ae"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Long.parseLong(Long.java:589)
+	at java.lang.Long.parseLong(Long.java:631)
+	at org.elasticsearch.common.xcontent.support.AbstractXContentParser.longValue(AbstractXContentParser.java:145)
+	at org.elasticsearch.index.mapper.core.LongFieldMapper.innerParseCreateField(LongFieldMapper.java:288)
+	at org.elasticsearch.index.mapper.core.NumberFieldMapper.parseCreateField(NumberFieldMapper.java:239)
+	at org.elasticsearch.index.mapper.core.AbstractFieldMapper.parse(AbstractFieldMapper.java:401)
+	... 13 more
+[2016-10-03 17:41:48,559][DEBUG][action.bulk              ] [locations] [geo_index_1][0] failed to execute bulk item (index) index {[geo_index_1][hotel][300ebda7b62-34c3-4f8c], source[{"id":"300ebda7b62-34c3-4f8c","priority":1.0,"name":"Hotel Astor","city":"Buenos Aires","country":"AR"}]}
+org.elasticsearch.index.mapper.MapperParsingException: failed to parse [id]
+	at org.elasticsearch.index.mapper.core.AbstractFieldMapper.parse(AbstractFieldMapper.java:411)
+	at org.elasticsearch.index.mapper.object.ObjectMapper.serializeValue(ObjectMapper.java:706)
+	at org.elasticsearch.index.mapper.object.ObjectMapper.parse(ObjectMapper.java:497)
+	at org.elasticsearch.index.mapper.DocumentMapper.parse(DocumentMapper.java:544)
+	at org.elasticsearch.index.mapper.DocumentMapper.parse(DocumentMapper.java:493)
+	at org.elasticsearch.index.shard.IndexShard.prepareIndex(IndexShard.java:493)
+	at org.elasticsearch.action.bulk.TransportShardBulkAction.shardIndexOperation(TransportShardBulkAction.java:409)
+	at org.elasticsearch.action.bulk.TransportShardBulkAction.shardOperationOnPrimary(TransportShardBulkAction.java:148)
+	at org.elasticsearch.action.support.replication.TransportShardReplicationOperationAction$PrimaryPhase.performOnPrimary(TransportShardReplicationOperationAction.java:574)
+	at org.elasticsearch.action.support.replication.TransportShardReplicationOperationAction$PrimaryPhase$1.doRun(TransportShardReplicationOperationAction.java:440)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.NumberFormatException: For input string: "300ebda7b62-34c3-4f8c"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Long.parseLong(Long.java:589)
+	at java.lang.Long.parseLong(Long.java:631)
+	at org.elasticsearch.common.xcontent.support.AbstractXContentParser.longValue(AbstractXContentParser.java:145)
+	at org.elasticsearch.index.mapper.core.LongFieldMapper.innerParseCreateField(LongFieldMapper.java:288)
+	at org.elasticsearch.index.mapper.core.NumberFieldMapper.parseCreateField(NumberFieldMapper.java:239)
+	at org.elasticsearch.index.mapper.core.AbstractFieldMapper.parse(AbstractFieldMapper.java:401)
+	... 13 more
+[2016-10-03 17:41:48,560][DEBUG][action.bulk              ] [locations] [geo_index_1][0] failed to execute bulk item (index) index {[geo_index_1][hotel][300f07d981d-adab-4526], source[{"id":"300f07d981d-adab-4526","priority":1.0,"name":"Los Lapachos","city":"Tucuman","country":"AR"}]}
+org.elasticsearch.index.mapper.MapperParsingException: failed to parse [id]
+	at org.elasticsearch.index.mapper.core.AbstractFieldMapper.parse(AbstractFieldMapper.java:411)
+	at org.elasticsearch.index.mapper.object.ObjectMapper.serializeValue(ObjectMapper.java:706)
+	at org.elasticsearch.index.mapper.object.ObjectMapper.parse(ObjectMapper.java:497)
+	at org.elasticsearch.index.mapper.DocumentMapper.parse(DocumentMapper.java:544)
+	at org.elasticsearch.index.mapper.DocumentMapper.parse(DocumentMapper.java:493)
+	at org.elasticsearch.index.shard.IndexShard.prepareIndex(IndexShard.java:493)
+	at org.elasticsearch.action.bulk.TransportShardBulkAction.shardIndexOperation(TransportShardBulkAction.java:409)
+	at org.elasticsearch.action.bulk.TransportShardBulkAction.shardOperationOnPrimary(TransportShardBulkAction.java:148)
+	at org.elasticsearch.action.support.replication.TransportShardReplicationOperationAction$PrimaryPhase.performOnPrimary(TransportShardReplicationOperationAction.java:574)
+	at org.elasticsearch.action.support.replication.TransportShardReplicationOperationAction$PrimaryPhase$1.doRun(TransportShardReplicationOperationAction.java:440)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.NumberFormatException: For input string: "300f07d981d-adab-4526"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Long.parseLong(Long.java:589)
+	at java.lang.Long.parseLong(Long.java:631)
+	at org.elasticsearch.common.xcontent.support.AbstractXContentParser.longValue(AbstractXContentParser.java:145)
+	at org.elasticsearch.index.mapper.core.LongFieldMapper.innerParseCreateField(LongFieldMapper.java:288)
+	at org.elasticsearch.index.mapper.core.NumberFieldMapper.parseCreateField(NumberFieldMapper.java:239)
+	at org.elasticsearch.index.mapper.core.AbstractFieldMapper.parse(AbstractFieldMapper.java:401)
+	... 13 more
+[2016-10-03 17:41:48,587][INFO ][cluster.service          ] [locations] removed {[Tusk][Q2CCbBY3T-ajhHHw5-U21w][users-imac][inet[/192.168.1.116:9301]]{data=false, client=true},}, reason: zen-disco-node_left([Tusk][Q2CCbBY3T-ajhHHw5-U21w][users-imac][inet[/192.168.1.116:9301]]{data=false, client=true})
+[2016-10-03 18:33:18,940][DEBUG][action.admin.indices.mapping.put] [locations] failed to put mappings on indices [[geo_index_1]], type [hotel]
+org.elasticsearch.index.mapper.MergeMappingException: Merge failed with failures {[mapper [id] of different type, current_type [long], merged_type [string]]}
+	at org.elasticsearch.cluster.metadata.MetaDataMappingService$4.execute(MetaDataMappingService.java:511)
+	at org.elasticsearch.cluster.service.InternalClusterService$UpdateTask.run(InternalClusterService.java:374)
+	at org.elasticsearch.common.util.concurrent.PrioritizedEsThreadPoolExecutor$TieBreakingPrioritizedRunnable.runAndClean(PrioritizedEsThreadPoolExecutor.java:196)
+	at org.elasticsearch.common.util.concurrent.PrioritizedEsThreadPoolExecutor$TieBreakingPrioritizedRunnable.run(PrioritizedEsThreadPoolExecutor.java:162)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[2016-10-03 18:34:11,266][INFO ][cluster.metadata         ] [locations] [[geo_index_1]] remove_mapping [[hotel]]
+[2016-10-03 18:34:16,662][INFO ][cluster.metadata         ] [locations] [geo_index_1] create_mapping [hotel]
+[2016-10-03 18:37:01,388][INFO ][cluster.metadata         ] [locations] [[geo_index_1]] remove_mapping [[hotel]]
+[2016-10-03 18:38:25,231][DEBUG][action.admin.indices.mapping.put] [locations] failed to put mappings on indices [[geo_index_1]], type [hotel]
+org.elasticsearch.ElasticsearchParseException: Failed to parse content to map
+	at org.elasticsearch.common.xcontent.XContentHelper.convertToMap(XContentHelper.java:130)
+	at org.elasticsearch.common.xcontent.XContentHelper.convertToMap(XContentHelper.java:107)
+	at org.elasticsearch.index.mapper.DocumentMapperParser.parseCompressed(DocumentMapperParser.java:184)
+	at org.elasticsearch.index.mapper.MapperService.parse(MapperService.java:449)
+	at org.elasticsearch.cluster.metadata.MetaDataMappingService$4.execute(MetaDataMappingService.java:505)
+	at org.elasticsearch.cluster.service.InternalClusterService$UpdateTask.run(InternalClusterService.java:374)
+	at org.elasticsearch.common.util.concurrent.PrioritizedEsThreadPoolExecutor$TieBreakingPrioritizedRunnable.runAndClean(PrioritizedEsThreadPoolExecutor.java:196)
+	at org.elasticsearch.common.util.concurrent.PrioritizedEsThreadPoolExecutor$TieBreakingPrioritizedRunnable.run(PrioritizedEsThreadPoolExecutor.java:162)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.common.jackson.core.JsonParseException: Unexpected character ('{' (code 123)): was expecting either valid name character (for unquoted name) or double-quote (for quoted) to start field name
+ at [Source: org.elasticsearch.common.compress.lzf.LZFCompressedStreamInput@3181d35; line: 1, column: 3]
+	at org.elasticsearch.common.jackson.core.JsonParser._constructError(JsonParser.java:1487)
+	at org.elasticsearch.common.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:518)
+	at org.elasticsearch.common.jackson.core.base.ParserMinimalBase._reportUnexpectedChar(ParserMinimalBase.java:447)
+	at org.elasticsearch.common.jackson.core.json.UTF8StreamJsonParser._handleOddName(UTF8StreamJsonParser.java:1928)
+	at org.elasticsearch.common.jackson.core.json.UTF8StreamJsonParser._parseName(UTF8StreamJsonParser.java:1617)
+	at org.elasticsearch.common.jackson.core.json.UTF8StreamJsonParser.nextToken(UTF8StreamJsonParser.java:700)
+	at org.elasticsearch.common.xcontent.json.JsonXContentParser.nextToken(JsonXContentParser.java:51)
+	at org.elasticsearch.common.xcontent.support.AbstractXContentParser.readMap(AbstractXContentParser.java:268)
+	at org.elasticsearch.common.xcontent.support.AbstractXContentParser.readOrderedMap(AbstractXContentParser.java:258)
+	at org.elasticsearch.common.xcontent.support.AbstractXContentParser.mapOrdered(AbstractXContentParser.java:213)
+	at org.elasticsearch.common.xcontent.support.AbstractXContentParser.mapOrderedAndClose(AbstractXContentParser.java:228)
+	at org.elasticsearch.common.xcontent.XContentHelper.convertToMap(XContentHelper.java:125)
+	... 10 more
+[2016-10-03 18:40:33,446][INFO ][cluster.metadata         ] [locations] [geo_index_1] create_mapping [hotel]
+[2016-10-03 18:43:07,789][INFO ][node                     ] [locations] stopping ...
+[2016-10-03 18:43:08,012][INFO ][node                     ] [locations] stopped
+[2016-10-03 18:43:08,013][INFO ][node                     ] [locations] closing ...
+[2016-10-03 18:43:08,020][INFO ][node                     ] [locations] closed
+[2016-10-03 18:43:41,028][INFO ][node                     ] [locations] version[1.7.1], pid[65053], build[b88f43f/2015-07-29T09:54:16Z]
+[2016-10-03 18:43:41,029][INFO ][node                     ] [locations] initializing ...
+[2016-10-03 18:43:41,104][INFO ][plugins                  ] [locations] loaded [], sites []
+[2016-10-03 18:43:41,147][INFO ][env                      ] [locations] using [1] data paths, mounts [[/ (/dev/disk2)]], net usable_space [611gb], net total_space [691.4gb], types [hfs]
+[2016-10-03 18:44:13,788][INFO ][node                     ] [locations] initialized
+[2016-10-03 18:44:13,788][INFO ][node                     ] [locations] starting ...
+[2016-10-03 18:44:13,867][INFO ][transport                ] [locations] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.1.116:9300]}
+[2016-10-03 18:44:13,908][INFO ][discovery                ] [locations] cocha/dd_H5yqGSUKuDQ5VB0yY8Q
+[2016-10-03 18:44:17,692][INFO ][cluster.service          ] [locations] new_master [locations][dd_H5yqGSUKuDQ5VB0yY8Q][Users-iMac][inet[/192.168.1.116:9300]], reason: zen-disco-join (elected_as_master)
+[2016-10-03 18:44:17,723][INFO ][http                     ] [locations] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.1.116:9200]}
+[2016-10-03 18:44:17,724][INFO ][node                     ] [locations] started
+[2016-10-03 18:44:17,754][INFO ][gateway                  ] [locations] recovered [1] indices into cluster_state
+[2016-10-03 18:52:28,654][INFO ][cluster.metadata         ] [locations] [[geo_index_1]] remove_mapping [[hotel]]
+[2016-10-03 18:52:32,786][INFO ][cluster.metadata         ] [locations] [geo_index_1] create_mapping [hotel]
+[2016-10-03 18:59:15,961][INFO ][cluster.service          ] [locations] added {[Jigsaw][9XLZyZyXTgKoNMxZn-J3DQ][users-imac][inet[/192.168.1.116:9301]]{data=false, client=true},}, reason: zen-disco-receive(join from node[[Jigsaw][9XLZyZyXTgKoNMxZn-J3DQ][users-imac][inet[/192.168.1.116:9301]]{data=false, client=true}])
+[2016-10-03 18:59:18,883][INFO ][cluster.service          ] [locations] removed {[Jigsaw][9XLZyZyXTgKoNMxZn-J3DQ][users-imac][inet[/192.168.1.116:9301]]{data=false, client=true},}, reason: zen-disco-node_left([Jigsaw][9XLZyZyXTgKoNMxZn-J3DQ][users-imac][inet[/192.168.1.116:9301]]{data=false, client=true})
+[2016-10-03 19:09:21,820][INFO ][cluster.service          ] [locations] added {[Aged Genghis][ttO3J2Y1Tdiveq7o-9KLnA][users-imac][inet[/192.168.1.116:9301]]{data=false, client=true},}, reason: zen-disco-receive(join from node[[Aged Genghis][ttO3J2Y1Tdiveq7o-9KLnA][users-imac][inet[/192.168.1.116:9301]]{data=false, client=true}])
+[2016-10-03 19:09:23,890][INFO ][cluster.service          ] [locations] removed {[Aged Genghis][ttO3J2Y1Tdiveq7o-9KLnA][users-imac][inet[/192.168.1.116:9301]]{data=false, client=true},}, reason: zen-disco-node_left([Aged Genghis][ttO3J2Y1Tdiveq7o-9KLnA][users-imac][inet[/192.168.1.116:9301]]{data=false, client=true})
+[2016-10-03 19:14:08,062][INFO ][node                     ] [locations] stopping ...
+[2016-10-03 19:14:08,110][INFO ][node                     ] [locations] stopped
+[2016-10-03 19:14:08,110][INFO ][node                     ] [locations] closing ...
+[2016-10-03 19:14:08,115][INFO ][node                     ] [locations] closed

@@ -1,0 +1,266 @@
+[2016-11-14 10:08:27,716][INFO ][node                     ] [locations] version[1.7.1], pid[1191], build[b88f43f/2015-07-29T09:54:16Z]
+[2016-11-14 10:08:27,717][INFO ][node                     ] [locations] initializing ...
+[2016-11-14 10:08:27,850][INFO ][plugins                  ] [locations] loaded [], sites []
+[2016-11-14 10:08:27,914][INFO ][env                      ] [locations] using [1] data paths, mounts [[/ (/dev/disk2)]], net usable_space [607gb], net total_space [691.4gb], types [hfs]
+[2016-11-14 10:08:30,820][INFO ][node                     ] [locations] initialized
+[2016-11-14 10:08:30,820][INFO ][node                     ] [locations] starting ...
+[2016-11-14 10:08:30,909][INFO ][transport                ] [locations] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.1.116:9300]}
+[2016-11-14 10:08:30,933][INFO ][discovery                ] [locations] cocha/JOZK2pcGSs6F51tlbS-bJQ
+[2016-11-14 10:08:34,712][INFO ][cluster.service          ] [locations] new_master [locations][JOZK2pcGSs6F51tlbS-bJQ][Users-iMac][inet[/192.168.1.116:9300]], reason: zen-disco-join (elected_as_master)
+[2016-11-14 10:08:34,743][INFO ][http                     ] [locations] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.1.116:9200]}
+[2016-11-14 10:08:34,743][INFO ][node                     ] [locations] started
+[2016-11-14 10:08:34,776][INFO ][gateway                  ] [locations] recovered [1] indices into cluster_state
+[2016-11-14 10:48:50,261][INFO ][node                     ] [locations] version[1.7.1], pid[2579], build[b88f43f/2015-07-29T09:54:16Z]
+[2016-11-14 10:48:50,264][INFO ][node                     ] [locations] initializing ...
+[2016-11-14 10:48:50,355][INFO ][plugins                  ] [locations] loaded [], sites []
+[2016-11-14 10:48:50,401][INFO ][env                      ] [locations] using [1] data paths, mounts [[/ (/dev/disk2)]], net usable_space [606.7gb], net total_space [691.4gb], types [hfs]
+[2016-11-14 10:49:22,591][WARN ][common.network           ] failed to resolve local host, fallback to loopback
+java.net.UnknownHostException: Users-iMac: Users-iMac: nodename nor servname provided, or not known
+	at java.net.InetAddress.getLocalHost(InetAddress.java:1475)
+	at org.elasticsearch.common.network.NetworkUtils.<clinit>(NetworkUtils.java:55)
+	at org.elasticsearch.http.netty.NettyHttpServerTransport.<init>(NettyHttpServerTransport.java:165)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at org.elasticsearch.common.inject.DefaultConstructionProxyFactory$1.newInstance(DefaultConstructionProxyFactory.java:54)
+	at org.elasticsearch.common.inject.ConstructorInjector.construct(ConstructorInjector.java:86)
+	at org.elasticsearch.common.inject.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:98)
+	at org.elasticsearch.common.inject.FactoryProxy.get(FactoryProxy.java:52)
+	at org.elasticsearch.common.inject.ProviderToInternalFactoryAdapter$1.call(ProviderToInternalFactoryAdapter.java:45)
+	at org.elasticsearch.common.inject.InjectorImpl.callInContext(InjectorImpl.java:837)
+	at org.elasticsearch.common.inject.ProviderToInternalFactoryAdapter.get(ProviderToInternalFactoryAdapter.java:42)
+	at org.elasticsearch.common.inject.Scopes$1$1.get(Scopes.java:57)
+	at org.elasticsearch.common.inject.InternalFactoryToProviderAdapter.get(InternalFactoryToProviderAdapter.java:45)
+	at org.elasticsearch.common.inject.InjectorBuilder$1.call(InjectorBuilder.java:200)
+	at org.elasticsearch.common.inject.InjectorBuilder$1.call(InjectorBuilder.java:193)
+	at org.elasticsearch.common.inject.InjectorImpl.callInContext(InjectorImpl.java:830)
+	at org.elasticsearch.common.inject.InjectorBuilder.loadEagerSingletons(InjectorBuilder.java:193)
+	at org.elasticsearch.common.inject.InjectorBuilder.injectDynamically(InjectorBuilder.java:175)
+	at org.elasticsearch.common.inject.InjectorBuilder.build(InjectorBuilder.java:110)
+	at org.elasticsearch.common.inject.Guice.createInjector(Guice.java:93)
+	at org.elasticsearch.common.inject.Guice.createInjector(Guice.java:70)
+	at org.elasticsearch.common.inject.ModulesBuilder.createInjector(ModulesBuilder.java:59)
+	at org.elasticsearch.node.internal.InternalNode.<init>(InternalNode.java:210)
+	at org.elasticsearch.node.NodeBuilder.build(NodeBuilder.java:159)
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:77)
+	at org.elasticsearch.bootstrap.Bootstrap.main(Bootstrap.java:245)
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:32)
+Caused by: java.net.UnknownHostException: Users-iMac: nodename nor servname provided, or not known
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$1.lookupAllHostAddr(InetAddress.java:901)
+	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1295)
+	at java.net.InetAddress.getLocalHost(InetAddress.java:1471)
+	... 29 more
+[2016-11-14 10:49:22,680][INFO ][node                     ] [locations] initialized
+[2016-11-14 10:49:22,680][INFO ][node                     ] [locations] starting ...
+[2016-11-14 10:49:22,743][INFO ][transport                ] [locations] bound_address {inet[/0:0:0:0:0:0:0:0:9301]}, publish_address {inet[/192.168.1.116:9301]}
+[2016-11-14 10:49:22,759][INFO ][discovery                ] [locations] cocha/ENXmNTcPREOQJYkv8eHuWQ
+[2016-11-14 10:49:25,786][INFO ][cluster.service          ] [locations] added {[locations][ENXmNTcPREOQJYkv8eHuWQ][localhost][inet[/192.168.1.116:9301]],}, reason: zen-disco-receive(join from node[[locations][ENXmNTcPREOQJYkv8eHuWQ][localhost][inet[/192.168.1.116:9301]]])
+[2016-11-14 10:49:25,803][INFO ][cluster.service          ] [locations] detected_master [locations][JOZK2pcGSs6F51tlbS-bJQ][Users-iMac][inet[/192.168.1.116:9300]], added {[locations][JOZK2pcGSs6F51tlbS-bJQ][Users-iMac][inet[/192.168.1.116:9300]],}, reason: zen-disco-receive(from master [[locations][JOZK2pcGSs6F51tlbS-bJQ][Users-iMac][inet[/192.168.1.116:9300]]])
+[2016-11-14 10:49:25,838][INFO ][http                     ] [locations] bound_address {inet[/0:0:0:0:0:0:0:0:9201]}, publish_address {inet[/192.168.1.116:9201]}
+[2016-11-14 10:49:25,839][INFO ][node                     ] [locations] started
+[2016-11-14 10:57:14,532][INFO ][node                     ] [locations] stopping ...
+[2016-11-14 10:57:14,538][INFO ][cluster.service          ] [locations] removed {[locations][ENXmNTcPREOQJYkv8eHuWQ][localhost][inet[/192.168.1.116:9301]],}, reason: zen-disco-node_left([locations][ENXmNTcPREOQJYkv8eHuWQ][localhost][inet[/192.168.1.116:9301]])
+[2016-11-14 10:57:14,539][INFO ][cluster.routing          ] [locations] delaying allocation for [1] unassigned shards, next check in [59.9s]
+[2016-11-14 10:57:14,570][INFO ][node                     ] [locations] stopped
+[2016-11-14 10:57:14,570][INFO ][node                     ] [locations] closing ...
+[2016-11-14 10:57:14,575][INFO ][node                     ] [locations] closed
+[2016-11-14 10:57:26,454][INFO ][node                     ] [locations] version[1.7.1], pid[2665], build[b88f43f/2015-07-29T09:54:16Z]
+[2016-11-14 10:57:26,454][INFO ][node                     ] [locations] initializing ...
+[2016-11-14 10:57:26,551][INFO ][plugins                  ] [locations] loaded [], sites []
+[2016-11-14 10:57:26,595][INFO ][env                      ] [locations] using [1] data paths, mounts [[/ (/dev/disk2)]], net usable_space [606.6gb], net total_space [691.4gb], types [hfs]
+[2016-11-14 10:57:28,939][INFO ][node                     ] [locations] initialized
+[2016-11-14 10:57:28,939][INFO ][node                     ] [locations] starting ...
+[2016-11-14 10:57:29,003][INFO ][transport                ] [locations] bound_address {inet[/0:0:0:0:0:0:0:0:9301]}, publish_address {inet[/192.168.1.116:9301]}
+[2016-11-14 10:57:29,019][INFO ][discovery                ] [locations] cocha/1QR3XgG3SHWZOd0gHfVvOg
+[2016-11-14 10:57:32,048][INFO ][cluster.service          ] [locations] added {[locations][1QR3XgG3SHWZOd0gHfVvOg][Users-iMac][inet[/192.168.1.116:9301]],}, reason: zen-disco-receive(join from node[[locations][1QR3XgG3SHWZOd0gHfVvOg][Users-iMac][inet[/192.168.1.116:9301]]])
+[2016-11-14 10:57:32,061][INFO ][cluster.service          ] [locations] detected_master [locations][JOZK2pcGSs6F51tlbS-bJQ][Users-iMac][inet[/192.168.1.116:9300]], added {[locations][JOZK2pcGSs6F51tlbS-bJQ][Users-iMac][inet[/192.168.1.116:9300]],}, reason: zen-disco-receive(from master [[locations][JOZK2pcGSs6F51tlbS-bJQ][Users-iMac][inet[/192.168.1.116:9300]]])
+[2016-11-14 10:57:32,090][INFO ][http                     ] [locations] bound_address {inet[/0:0:0:0:0:0:0:0:9201]}, publish_address {inet[/192.168.1.116:9201]}
+[2016-11-14 10:57:32,090][INFO ][node                     ] [locations] started
+[2016-11-14 10:58:39,862][INFO ][node                     ] [locations] stopping ...
+[2016-11-14 10:58:39,871][INFO ][cluster.service          ] [locations] removed {[locations][1QR3XgG3SHWZOd0gHfVvOg][Users-iMac][inet[/192.168.1.116:9301]],}, reason: zen-disco-node_left([locations][1QR3XgG3SHWZOd0gHfVvOg][Users-iMac][inet[/192.168.1.116:9301]])
+[2016-11-14 10:58:39,871][INFO ][cluster.routing          ] [locations] delaying allocation for [1] unassigned shards, next check in [59.9s]
+[2016-11-14 10:58:39,899][INFO ][node                     ] [locations] stopped
+[2016-11-14 10:58:39,899][INFO ][node                     ] [locations] closing ...
+[2016-11-14 10:58:39,902][INFO ][node                     ] [locations] closed
+[2016-11-14 12:53:47,293][DEBUG][action.search.type       ] [locations] [geo_index_1][0], node[JOZK2pcGSs6F51tlbS-bJQ], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@1346e527]
+org.elasticsearch.search.SearchParseException: [geo_index_1][0]: from[-1],size[-1]: Parse Failure [Failed to parse source [{
+  "bool" : {
+    "must" : {
+      "multi_match" : {
+        "query" : "san",
+        "fields" : [ "name_es", "name_en" ],
+        "type" : "phrase_prefix",
+        "operator" : "AND"
+      }
+    },
+    "should" : {
+      "multi_match" : {
+        "query" : "san",
+        "fields" : [ "name_es", "name_en" ],
+        "type" : "phrase"
+      }
+    }
+  }
+}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeFetchPhase(SearchService.java:385)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$11.call(SearchServiceTransportAction.java:333)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$11.call(SearchServiceTransportAction.java:330)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [geo_index_1][0]: from[-1],size[-1]: Parse Failure [No parser for element [bool]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:729)
+	... 9 more
+[2016-11-14 12:53:47,296][DEBUG][action.search.type       ] [locations] All shards failed for phase: [query_fetch]
+org.elasticsearch.search.SearchParseException: [geo_index_1][0]: from[-1],size[-1]: Parse Failure [Failed to parse source [{
+  "bool" : {
+    "must" : {
+      "multi_match" : {
+        "query" : "san",
+        "fields" : [ "name_es", "name_en" ],
+        "type" : "phrase_prefix",
+        "operator" : "AND"
+      }
+    },
+    "should" : {
+      "multi_match" : {
+        "query" : "san",
+        "fields" : [ "name_es", "name_en" ],
+        "type" : "phrase"
+      }
+    }
+  }
+}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeFetchPhase(SearchService.java:385)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$11.call(SearchServiceTransportAction.java:333)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$11.call(SearchServiceTransportAction.java:330)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [geo_index_1][0]: from[-1],size[-1]: Parse Failure [No parser for element [bool]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:729)
+	... 9 more
+[2016-11-14 12:54:13,329][DEBUG][action.search.type       ] [locations] [geo_index_1][0], node[JOZK2pcGSs6F51tlbS-bJQ], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@4de34498]
+org.elasticsearch.search.SearchParseException: [geo_index_1][0]: from[-1],size[-1]: Parse Failure [Failed to parse source [{
+  "bool" : {
+    "must" : {
+      "multi_match" : {
+        "query" : "san",
+        "fields" : [ "name_es", "name_en" ],
+        "type" : "phrase_prefix",
+        "operator" : "AND"
+      }
+    },
+    "should" : {
+      "multi_match" : {
+        "query" : "san",
+        "fields" : [ "name_es", "name_en" ],
+        "type" : "phrase"
+      }
+    }
+  }
+}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeFetchPhase(SearchService.java:385)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$11.call(SearchServiceTransportAction.java:333)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$11.call(SearchServiceTransportAction.java:330)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [geo_index_1][0]: from[-1],size[-1]: Parse Failure [No parser for element [bool]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:729)
+	... 9 more
+[2016-11-14 12:54:13,330][DEBUG][action.search.type       ] [locations] All shards failed for phase: [query_fetch]
+org.elasticsearch.search.SearchParseException: [geo_index_1][0]: from[-1],size[-1]: Parse Failure [Failed to parse source [{
+  "bool" : {
+    "must" : {
+      "multi_match" : {
+        "query" : "san",
+        "fields" : [ "name_es", "name_en" ],
+        "type" : "phrase_prefix",
+        "operator" : "AND"
+      }
+    },
+    "should" : {
+      "multi_match" : {
+        "query" : "san",
+        "fields" : [ "name_es", "name_en" ],
+        "type" : "phrase"
+      }
+    }
+  }
+}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeFetchPhase(SearchService.java:385)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$11.call(SearchServiceTransportAction.java:333)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$11.call(SearchServiceTransportAction.java:330)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [geo_index_1][0]: from[-1],size[-1]: Parse Failure [No parser for element [bool]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:729)
+	... 9 more
+[2016-11-14 14:31:32,310][INFO ][node                     ] [locations] stopping ...
+[2016-11-14 14:31:32,342][INFO ][node                     ] [locations] stopped
+[2016-11-14 14:31:32,343][INFO ][node                     ] [locations] closing ...
+[2016-11-14 14:31:32,347][INFO ][node                     ] [locations] closed
+[2016-11-14 14:31:56,483][INFO ][node                     ] [locations] version[1.7.1], pid[4320], build[b88f43f/2015-07-29T09:54:16Z]
+[2016-11-14 14:31:56,483][INFO ][node                     ] [locations] initializing ...
+[2016-11-14 14:31:56,577][INFO ][plugins                  ] [locations] loaded [], sites []
+[2016-11-14 14:31:56,619][INFO ][env                      ] [locations] using [1] data paths, mounts [[/ (/dev/disk2)]], net usable_space [605.9gb], net total_space [691.4gb], types [hfs]
+[2016-11-14 14:31:58,926][INFO ][node                     ] [locations] initialized
+[2016-11-14 14:31:58,926][INFO ][node                     ] [locations] starting ...
+[2016-11-14 14:31:58,988][INFO ][transport                ] [locations] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.1.116:9300]}
+[2016-11-14 14:31:59,004][INFO ][discovery                ] [locations] cocha/vbyobDQ9Rk6GrNA7G61mRg
+[2016-11-14 14:32:02,782][INFO ][cluster.service          ] [locations] new_master [locations][vbyobDQ9Rk6GrNA7G61mRg][Users-iMac][inet[/192.168.1.116:9300]], reason: zen-disco-join (elected_as_master)
+[2016-11-14 14:32:02,817][INFO ][http                     ] [locations] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.1.116:9200]}
+[2016-11-14 14:32:02,817][INFO ][node                     ] [locations] started
+[2016-11-14 14:32:02,844][INFO ][gateway                  ] [locations] recovered [1] indices into cluster_state
+[2016-11-14 14:41:59,661][INFO ][cluster.service          ] [locations] added {[Powerpax][bTPSqnK6QUKROI1M0m-bJg][users-imac][inet[/192.168.1.116:9303]]{data=false, client=true},[Ymir][eTLRO9WVR96M8mIIdC67TA][users-imac][inet[/192.168.1.116:9301]]{data=false, client=true},[Red Skull][iSb8ZC72R6aq2TXFFyhcvA][users-imac][inet[/192.168.1.116:9302]]{data=false, client=true},}, reason: zen-disco-receive(join from node[[Ymir][eTLRO9WVR96M8mIIdC67TA][users-imac][inet[/192.168.1.116:9301]]{data=false, client=true}])
+[2016-11-14 14:42:16,719][INFO ][index.engine             ] [locations] [geo_index_1][0] now throttling indexing: numMergesInFlight=5, maxNumMerges=4
+[2016-11-14 14:42:18,084][INFO ][index.engine             ] [locations] [geo_index_1][0] stop throttling indexing: numMergesInFlight=3, maxNumMerges=4
+[2016-11-14 14:42:19,777][INFO ][index.engine             ] [locations] [geo_index_1][0] now throttling indexing: numMergesInFlight=5, maxNumMerges=4
+[2016-11-14 14:42:19,975][INFO ][index.engine             ] [locations] [geo_index_1][0] stop throttling indexing: numMergesInFlight=3, maxNumMerges=4
+[2016-11-14 14:42:20,815][INFO ][index.engine             ] [locations] [geo_index_1][0] now throttling indexing: numMergesInFlight=5, maxNumMerges=4
+[2016-11-14 14:42:21,478][INFO ][index.engine             ] [locations] [geo_index_1][0] stop throttling indexing: numMergesInFlight=3, maxNumMerges=4
+[2016-11-14 14:42:21,916][INFO ][index.engine             ] [locations] [geo_index_1][0] now throttling indexing: numMergesInFlight=5, maxNumMerges=4
+[2016-11-14 14:42:21,956][INFO ][index.engine             ] [locations] [geo_index_1][0] stop throttling indexing: numMergesInFlight=3, maxNumMerges=4
+[2016-11-14 14:42:23,970][INFO ][index.engine             ] [locations] [geo_index_1][0] now throttling indexing: numMergesInFlight=5, maxNumMerges=4
+[2016-11-14 14:42:24,091][INFO ][index.engine             ] [locations] [geo_index_1][0] stop throttling indexing: numMergesInFlight=3, maxNumMerges=4
+[2016-11-14 14:44:26,121][INFO ][cluster.service          ] [locations] removed {[Red Skull][iSb8ZC72R6aq2TXFFyhcvA][users-imac][inet[/192.168.1.116:9302]]{data=false, client=true},}, reason: zen-disco-node_left([Red Skull][iSb8ZC72R6aq2TXFFyhcvA][users-imac][inet[/192.168.1.116:9302]]{data=false, client=true})
+[2016-11-14 14:52:40,829][INFO ][node                     ] [locations] stopping ...
+[2016-11-14 14:52:40,895][INFO ][node                     ] [locations] stopped
+[2016-11-14 14:52:40,895][INFO ][node                     ] [locations] closing ...
+[2016-11-14 14:52:40,902][INFO ][node                     ] [locations] closed
+[2016-11-14 18:42:30,473][INFO ][node                     ] [locations] version[1.7.1], pid[15119], build[b88f43f/2015-07-29T09:54:16Z]
+[2016-11-14 18:42:30,474][INFO ][node                     ] [locations] initializing ...
+[2016-11-14 18:42:30,607][INFO ][plugins                  ] [locations] loaded [], sites []
+[2016-11-14 18:42:30,671][INFO ][env                      ] [locations] using [1] data paths, mounts [[/ (/dev/disk2)]], net usable_space [605.6gb], net total_space [691.4gb], types [hfs]
+[2016-11-14 18:42:33,713][INFO ][node                     ] [locations] initialized
+[2016-11-14 18:42:33,713][INFO ][node                     ] [locations] starting ...
+[2016-11-14 18:42:33,804][INFO ][transport                ] [locations] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.1.116:9300]}
+[2016-11-14 18:42:33,827][INFO ][discovery                ] [locations] cocha/EfR-NLEvT_uARTB5lqWo5A
+[2016-11-14 18:42:37,598][INFO ][cluster.service          ] [locations] new_master [locations][EfR-NLEvT_uARTB5lqWo5A][Users-iMac][inet[/192.168.1.116:9300]], reason: zen-disco-join (elected_as_master)
+[2016-11-14 18:42:37,624][INFO ][http                     ] [locations] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.1.116:9200]}
+[2016-11-14 18:42:37,625][INFO ][node                     ] [locations] started
+[2016-11-14 18:42:37,653][INFO ][gateway                  ] [locations] recovered [1] indices into cluster_state
+[2016-11-14 19:00:57,129][INFO ][node                     ] [locations] stopping ...
+[2016-11-14 19:00:57,166][INFO ][node                     ] [locations] stopped
+[2016-11-14 19:00:57,166][INFO ][node                     ] [locations] closing ...
+[2016-11-14 19:00:57,170][INFO ][node                     ] [locations] closed

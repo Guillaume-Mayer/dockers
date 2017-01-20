@@ -1,0 +1,81 @@
+[2016-11-17 09:32:59,130][INFO ][node                     ] [locations] version[1.7.1], pid[4002], build[b88f43f/2015-07-29T09:54:16Z]
+[2016-11-17 09:32:59,131][INFO ][node                     ] [locations] initializing ...
+[2016-11-17 09:32:59,319][INFO ][plugins                  ] [locations] loaded [], sites [migration]
+[2016-11-17 09:32:59,392][INFO ][env                      ] [locations] using [1] data paths, mounts [[/ (/dev/disk2)]], net usable_space [605.9gb], net total_space [691.4gb], types [hfs]
+[2016-11-17 09:33:03,323][INFO ][node                     ] [locations] initialized
+[2016-11-17 09:33:03,324][INFO ][node                     ] [locations] starting ...
+[2016-11-17 09:33:03,458][INFO ][transport                ] [locations] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.1.116:9300]}
+[2016-11-17 09:33:03,483][INFO ][discovery                ] [locations] cocha/bqhxudLoT2eFkqrGwGip9Q
+[2016-11-17 09:33:07,264][INFO ][cluster.service          ] [locations] new_master [locations][bqhxudLoT2eFkqrGwGip9Q][Users-iMac][inet[/192.168.1.116:9300]], reason: zen-disco-join (elected_as_master)
+[2016-11-17 09:33:07,288][INFO ][http                     ] [locations] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.1.116:9200]}
+[2016-11-17 09:33:07,288][INFO ][node                     ] [locations] started
+[2016-11-17 09:33:07,314][INFO ][gateway                  ] [locations] recovered [1] indices into cluster_state
+[2016-11-17 11:48:21,936][INFO ][cluster.metadata         ] [locations] [[geo_index_1]] remove_mapping [[hotel]]
+[2016-11-17 11:48:31,354][INFO ][cluster.metadata         ] [locations] [geo_index_1] create_mapping [hotel]
+[2016-11-17 11:50:23,395][INFO ][cluster.metadata         ] [locations] [[geo_index_1]] remove_mapping [[place]]
+[2016-11-17 11:51:12,890][INFO ][cluster.metadata         ] [locations] [geo_index_1] create_mapping [place]
+[2016-11-17 11:52:06,413][INFO ][cluster.metadata         ] [locations] [[geo_index_1]] remove_mapping [[hotel]]
+[2016-11-17 11:52:14,208][INFO ][cluster.metadata         ] [locations] [geo_index_1] create_mapping [hotel]
+[2016-11-17 11:54:05,134][INFO ][cluster.metadata         ] [locations] [[geo_index_1]] remove_mapping [[hotel]]
+[2016-11-17 11:56:54,789][INFO ][cluster.metadata         ] [locations] [geo_index_1] create_mapping [hotel]
+[2016-11-17 11:57:48,619][INFO ][cluster.metadata         ] [locations] [[geo_index_1]] remove_mapping [[hotel]]
+[2016-11-17 11:57:59,824][INFO ][cluster.metadata         ] [locations] [geo_index_1] create_mapping [hotel]
+[2016-11-17 12:03:27,847][INFO ][cluster.metadata         ] [locations] [[geo_index_1]] remove_mapping [[hotel]]
+[2016-11-17 12:03:33,398][INFO ][cluster.metadata         ] [locations] [[geo_index_1]] remove_mapping [[city]]
+[2016-11-17 12:03:40,848][INFO ][cluster.metadata         ] [locations] [[geo_index_1]] remove_mapping [[place]]
+[2016-11-17 12:05:11,553][INFO ][cluster.metadata         ] [locations] [geo_index_1] create_mapping [city]
+[2016-11-17 12:06:35,116][DEBUG][action.admin.indices.mapping.put] [locations] failed to put mappings on indices [[geo_index_1]], type [city]
+org.elasticsearch.index.mapper.MapperParsingException: Root type mapping not empty after parsing! Remaining fields:   [place : {_parent={type=city}, properties={id={index=not_analyzed, store=yes, type=string}, name={analyzer=autocomplete, index=analyzed, type=string}, name_en={analyzer=autocomplete_en, index=analyzed, type=string}, name_es={analyzer=autocomplete_es, index=analyzed, type=string}, type={index=no, type=string}}}]
+	at org.elasticsearch.index.mapper.DocumentMapperParser.parse(DocumentMapperParser.java:278)
+	at org.elasticsearch.index.mapper.DocumentMapperParser.parseCompressed(DocumentMapperParser.java:192)
+	at org.elasticsearch.index.mapper.MapperService.parse(MapperService.java:449)
+	at org.elasticsearch.cluster.metadata.MetaDataMappingService$4.execute(MetaDataMappingService.java:505)
+	at org.elasticsearch.cluster.service.InternalClusterService$UpdateTask.run(InternalClusterService.java:374)
+	at org.elasticsearch.common.util.concurrent.PrioritizedEsThreadPoolExecutor$TieBreakingPrioritizedRunnable.runAndClean(PrioritizedEsThreadPoolExecutor.java:196)
+	at org.elasticsearch.common.util.concurrent.PrioritizedEsThreadPoolExecutor$TieBreakingPrioritizedRunnable.run(PrioritizedEsThreadPoolExecutor.java:162)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+[2016-11-17 12:06:44,431][INFO ][cluster.metadata         ] [locations] [geo_index_1] create_mapping [place]
+[2016-11-17 12:07:30,055][INFO ][cluster.metadata         ] [locations] [geo_index_1] create_mapping [hotel]
+[2016-11-17 12:16:40,264][INFO ][node                     ] [locations] stopping ...
+[2016-11-17 12:16:40,351][INFO ][node                     ] [locations] stopped
+[2016-11-17 12:16:40,351][INFO ][node                     ] [locations] closing ...
+[2016-11-17 12:16:40,358][INFO ][node                     ] [locations] closed
+[2016-11-17 12:18:11,791][INFO ][node                     ] [locations] version[1.7.1], pid[9456], build[b88f43f/2015-07-29T09:54:16Z]
+[2016-11-17 12:18:11,791][INFO ][node                     ] [locations] initializing ...
+[2016-11-17 12:18:12,136][INFO ][plugins                  ] [locations] loaded [], sites [migration]
+[2016-11-17 12:18:12,186][INFO ][env                      ] [locations] using [1] data paths, mounts [[/ (/dev/disk2)]], net usable_space [604.6gb], net total_space [691.4gb], types [hfs]
+[2016-11-17 12:18:15,108][INFO ][node                     ] [locations] initialized
+[2016-11-17 12:18:15,109][INFO ][node                     ] [locations] starting ...
+[2016-11-17 12:18:15,182][INFO ][transport                ] [locations] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.1.116:9300]}
+[2016-11-17 12:18:15,200][INFO ][discovery                ] [locations] cocha/y5r9pEjdR1SpA3DSR4ndLQ
+[2016-11-17 12:18:18,977][INFO ][cluster.service          ] [locations] new_master [locations][y5r9pEjdR1SpA3DSR4ndLQ][Users-iMac][inet[/192.168.1.116:9300]], reason: zen-disco-join (elected_as_master)
+[2016-11-17 12:18:19,001][INFO ][http                     ] [locations] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.1.116:9200]}
+[2016-11-17 12:18:19,001][INFO ][node                     ] [locations] started
+[2016-11-17 12:18:19,042][INFO ][gateway                  ] [locations] recovered [1] indices into cluster_state
+[2016-11-17 12:25:59,826][INFO ][node                     ] [locations] stopping ...
+[2016-11-17 12:25:59,857][INFO ][node                     ] [locations] stopped
+[2016-11-17 12:25:59,857][INFO ][node                     ] [locations] closing ...
+[2016-11-17 12:25:59,862][INFO ][node                     ] [locations] closed
+[2016-11-17 14:58:58,733][INFO ][node                     ] [locations] version[1.7.1], pid[12293], build[b88f43f/2015-07-29T09:54:16Z]
+[2016-11-17 14:58:58,734][INFO ][node                     ] [locations] initializing ...
+[2016-11-17 14:58:58,862][INFO ][plugins                  ] [locations] loaded [], sites [migration]
+[2016-11-17 14:58:58,914][INFO ][env                      ] [locations] using [1] data paths, mounts [[/ (/dev/disk2)]], net usable_space [604.8gb], net total_space [691.4gb], types [hfs]
+[2016-11-17 14:59:01,727][INFO ][node                     ] [locations] initialized
+[2016-11-17 14:59:01,728][INFO ][node                     ] [locations] starting ...
+[2016-11-17 14:59:01,806][INFO ][transport                ] [locations] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.1.116:9300]}
+[2016-11-17 14:59:01,826][INFO ][discovery                ] [locations] cocha/nEhH0IBPSBq-my7N286WKQ
+[2016-11-17 14:59:05,605][INFO ][cluster.service          ] [locations] new_master [locations][nEhH0IBPSBq-my7N286WKQ][Users-iMac][inet[/192.168.1.116:9300]], reason: zen-disco-join (elected_as_master)
+[2016-11-17 14:59:05,632][INFO ][http                     ] [locations] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.1.116:9200]}
+[2016-11-17 14:59:05,633][INFO ][node                     ] [locations] started
+[2016-11-17 14:59:05,660][INFO ][gateway                  ] [locations] recovered [1] indices into cluster_state
+[2016-11-17 15:03:26,882][INFO ][cluster.service          ] [locations] added {[Volcana][fgFoXdlJRkWhMGykb2QDTg][users-imac][inet[/192.168.1.116:9302]]{data=false, client=true},}, reason: zen-disco-receive(join from node[[Volcana][fgFoXdlJRkWhMGykb2QDTg][users-imac][inet[/192.168.1.116:9302]]{data=false, client=true}])
+[2016-11-17 15:03:27,145][INFO ][cluster.service          ] [locations] added {[Oneg the Prober][ANDKWYLzR8qpMyhvGNeFYw][users-imac][inet[/192.168.1.116:9303]]{data=false, client=true},}, reason: zen-disco-receive(join from node[[Oneg the Prober][ANDKWYLzR8qpMyhvGNeFYw][users-imac][inet[/192.168.1.116:9303]]{data=false, client=true}])
+[2016-11-17 15:03:27,151][INFO ][cluster.service          ] [locations] added {[Prime Mover][7LE3L1C8Tb27JX-GVy9abg][users-imac][inet[/192.168.1.116:9301]]{data=false, client=true},}, reason: zen-disco-receive(join from node[[Prime Mover][7LE3L1C8Tb27JX-GVy9abg][users-imac][inet[/192.168.1.116:9301]]{data=false, client=true}])
+[2016-11-17 15:03:27,266][INFO ][cluster.metadata         ] [locations] [geo_index_1] update_mapping [hotel] (dynamic)
+[2016-11-17 15:03:30,675][INFO ][cluster.service          ] [locations] removed {[Prime Mover][7LE3L1C8Tb27JX-GVy9abg][users-imac][inet[/192.168.1.116:9301]]{data=false, client=true},}, reason: zen-disco-node_left([Prime Mover][7LE3L1C8Tb27JX-GVy9abg][users-imac][inet[/192.168.1.116:9301]]{data=false, client=true})
+[2016-11-17 15:05:21,614][INFO ][node                     ] [locations] stopping ...
+[2016-11-17 15:05:21,666][INFO ][node                     ] [locations] stopped
+[2016-11-17 15:05:21,666][INFO ][node                     ] [locations] closing ...
+[2016-11-17 15:05:21,671][INFO ][node                     ] [locations] closed

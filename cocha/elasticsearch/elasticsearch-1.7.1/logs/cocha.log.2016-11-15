@@ -1,0 +1,62 @@
+[2016-11-15 14:54:17,457][INFO ][node                     ] [locations] version[1.7.1], pid[4733], build[b88f43f/2015-07-29T09:54:16Z]
+[2016-11-15 14:54:17,458][INFO ][node                     ] [locations] initializing ...
+[2016-11-15 14:54:17,584][INFO ][plugins                  ] [locations] loaded [], sites []
+[2016-11-15 14:54:17,647][INFO ][env                      ] [locations] using [1] data paths, mounts [[/ (/dev/disk2)]], net usable_space [606.1gb], net total_space [691.4gb], types [hfs]
+[2016-11-15 14:54:20,541][INFO ][node                     ] [locations] initialized
+[2016-11-15 14:54:20,541][INFO ][node                     ] [locations] starting ...
+[2016-11-15 14:54:20,627][INFO ][transport                ] [locations] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.1.116:9300]}
+[2016-11-15 14:54:20,648][INFO ][discovery                ] [locations] cocha/BJP3f_PoTKu2k1dm2DKaRg
+[2016-11-15 14:54:24,425][INFO ][cluster.service          ] [locations] new_master [locations][BJP3f_PoTKu2k1dm2DKaRg][Users-iMac][inet[/192.168.1.116:9300]], reason: zen-disco-join (elected_as_master)
+[2016-11-15 14:54:24,448][INFO ][http                     ] [locations] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.1.116:9200]}
+[2016-11-15 14:54:24,449][INFO ][node                     ] [locations] started
+[2016-11-15 14:54:24,476][INFO ][gateway                  ] [locations] recovered [1] indices into cluster_state
+[2016-11-15 14:58:43,007][DEBUG][action.index             ] [locations] [geo_index_1][0], node[BJP3f_PoTKu2k1dm2DKaRg], [P], s[STARTED]: Failed to execute [index {[geo_index_1][city][AVhpJBg-I-zHfzjM063Q], source[{
+          "_id": "3095",
+          "id": "3095",
+          "type": "CITY",
+          "priority": 27,
+          "name": "Santiago, Chile",
+          "name_es": "Santiago, Chile",
+          "name_en": "Santiago, Chile"
+}]}]
+org.elasticsearch.index.mapper.MapperParsingException: failed to parse [_id]
+	at org.elasticsearch.index.mapper.core.AbstractFieldMapper.parse(AbstractFieldMapper.java:411)
+	at org.elasticsearch.index.mapper.internal.IdFieldMapper.parse(IdFieldMapper.java:295)
+	at org.elasticsearch.index.mapper.object.ObjectMapper.serializeValue(ObjectMapper.java:706)
+	at org.elasticsearch.index.mapper.object.ObjectMapper.parse(ObjectMapper.java:497)
+	at org.elasticsearch.index.mapper.DocumentMapper.parse(DocumentMapper.java:544)
+	at org.elasticsearch.index.mapper.DocumentMapper.parse(DocumentMapper.java:493)
+	at org.elasticsearch.index.shard.IndexShard.prepareCreate(IndexShard.java:466)
+	at org.elasticsearch.action.index.TransportIndexAction.shardOperationOnPrimary(TransportIndexAction.java:201)
+	at org.elasticsearch.action.support.replication.TransportShardReplicationOperationAction$PrimaryPhase.performOnPrimary(TransportShardReplicationOperationAction.java:574)
+	at org.elasticsearch.action.support.replication.TransportShardReplicationOperationAction$PrimaryPhase$1.doRun(TransportShardReplicationOperationAction.java:440)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.index.mapper.MapperParsingException: Provided id [AVhpJBg-I-zHfzjM063Q] does not match the content one [3095]
+	at org.elasticsearch.index.mapper.internal.IdFieldMapper.parseCreateField(IdFieldMapper.java:310)
+	at org.elasticsearch.index.mapper.core.AbstractFieldMapper.parse(AbstractFieldMapper.java:401)
+	... 13 more
+[2016-11-15 15:10:04,872][INFO ][cluster.metadata         ] [locations] [[geo_index_1]] remove_mapping [[city]]
+[2016-11-15 15:12:00,630][DEBUG][action.admin.indices.mapping.put] [locations] failed to put mappings on indices [[geo_index_1]], type [hotel]
+org.elasticsearch.index.mapper.MapperParsingException: Root type mapping not empty after parsing! Remaining fields:   [city : {_boost={name=priority, null_value=1.0}, properties={id={type=long, store=yes, index=not_analyzed}, name={type=string, index=analyzed, analyzer=autocomplete}, name_en={type=string, index=analyzed, analyzer=autocomplete_en}, name_es={type=string, index=analyzed, analyzer=autocomplete_es}, type={type=string, index=no}}}]
+	at org.elasticsearch.index.mapper.DocumentMapperParser.parse(DocumentMapperParser.java:278)
+	at org.elasticsearch.index.mapper.DocumentMapperParser.parseCompressed(DocumentMapperParser.java:192)
+	at org.elasticsearch.index.mapper.MapperService.parse(MapperService.java:449)
+	at org.elasticsearch.cluster.metadata.MetaDataMappingService$4.execute(MetaDataMappingService.java:505)
+	at org.elasticsearch.cluster.service.InternalClusterService$UpdateTask.run(InternalClusterService.java:374)
+	at org.elasticsearch.common.util.concurrent.PrioritizedEsThreadPoolExecutor$TieBreakingPrioritizedRunnable.runAndClean(PrioritizedEsThreadPoolExecutor.java:196)
+	at org.elasticsearch.common.util.concurrent.PrioritizedEsThreadPoolExecutor$TieBreakingPrioritizedRunnable.run(PrioritizedEsThreadPoolExecutor.java:162)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+[2016-11-15 15:14:09,474][INFO ][cluster.metadata         ] [locations] [geo_index_1] create_mapping [city]
+[2016-11-15 15:27:49,257][INFO ][cluster.service          ] [locations] added {[Hrimhari][ryEPzTdkTn-VSCC-DeVmIg][users-imac][inet[/192.168.1.116:9301]]{data=false, client=true},[Oddball][eQ3P2LHzTB2xHDqo8sjMOg][users-imac][inet[/192.168.1.116:9303]]{data=false, client=true},[Hydron][At0ZSsMoTjq5wRQHqj_V2w][users-imac][inet[/192.168.1.116:9302]]{data=false, client=true},}, reason: zen-disco-receive(join from node[[Oddball][eQ3P2LHzTB2xHDqo8sjMOg][users-imac][inet[/192.168.1.116:9303]]{data=false, client=true}])
+[2016-11-15 15:30:06,284][INFO ][cluster.service          ] [locations] removed {[Oddball][eQ3P2LHzTB2xHDqo8sjMOg][users-imac][inet[/192.168.1.116:9303]]{data=false, client=true},}, reason: zen-disco-node_left([Oddball][eQ3P2LHzTB2xHDqo8sjMOg][users-imac][inet[/192.168.1.116:9303]]{data=false, client=true})
+[2016-11-15 15:42:14,330][INFO ][cluster.service          ] [locations] removed {[Hydron][At0ZSsMoTjq5wRQHqj_V2w][users-imac][inet[/192.168.1.116:9302]]{data=false, client=true},}, reason: zen-disco-node_failed([Hydron][At0ZSsMoTjq5wRQHqj_V2w][users-imac][inet[/192.168.1.116:9302]]{data=false, client=true}), reason transport disconnected
+[2016-11-15 15:42:14,334][INFO ][cluster.service          ] [locations] removed {[Hrimhari][ryEPzTdkTn-VSCC-DeVmIg][users-imac][inet[/192.168.1.116:9301]]{data=false, client=true},}, reason: zen-disco-node_failed([Hrimhari][ryEPzTdkTn-VSCC-DeVmIg][users-imac][inet[/192.168.1.116:9301]]{data=false, client=true}), reason transport disconnected
+[2016-11-15 18:50:47,656][INFO ][node                     ] [locations] stopping ...
+[2016-11-15 18:50:47,688][INFO ][node                     ] [locations] stopped
+[2016-11-15 18:50:47,688][INFO ][node                     ] [locations] closing ...
+[2016-11-15 18:50:47,698][INFO ][node                     ] [locations] closed

@@ -1,0 +1,34 @@
+[2016-10-05 17:10:55,462][INFO ][node                     ] [locations] version[1.7.1], pid[10870], build[b88f43f/2015-07-29T09:54:16Z]
+[2016-10-05 17:10:55,466][INFO ][node                     ] [locations] initializing ...
+[2016-10-05 17:10:55,540][INFO ][plugins                  ] [locations] loaded [], sites []
+[2016-10-05 17:10:55,580][INFO ][env                      ] [locations] using [1] data paths, mounts [[/ (/dev/disk2)]], net usable_space [611gb], net total_space [691.4gb], types [hfs]
+[2016-10-05 17:10:57,774][INFO ][node                     ] [locations] initialized
+[2016-10-05 17:10:57,775][INFO ][node                     ] [locations] starting ...
+[2016-10-05 17:10:57,856][INFO ][transport                ] [locations] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.1.116:9300]}
+[2016-10-05 17:10:57,877][INFO ][discovery                ] [locations] cocha/4uR3_kb8TTGgGyyt-M1kow
+[2016-10-05 17:11:01,660][INFO ][cluster.service          ] [locations] new_master [locations][4uR3_kb8TTGgGyyt-M1kow][Users-iMac][inet[/192.168.1.116:9300]], reason: zen-disco-join (elected_as_master)
+[2016-10-05 17:11:01,683][INFO ][http                     ] [locations] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.1.116:9200]}
+[2016-10-05 17:11:01,683][INFO ][node                     ] [locations] started
+[2016-10-05 17:11:01,709][INFO ][gateway                  ] [locations] recovered [1] indices into cluster_state
+[2016-10-05 17:27:44,436][INFO ][cluster.service          ] [locations] added {[Jericho Drumm][060OcIowSVWsZruiGUVMpA][users-imac][inet[/192.168.1.116:9301]]{data=false, client=true},}, reason: zen-disco-receive(join from node[[Jericho Drumm][060OcIowSVWsZruiGUVMpA][users-imac][inet[/192.168.1.116:9301]]{data=false, client=true}])
+[2016-10-05 17:27:47,426][INFO ][cluster.service          ] [locations] removed {[Jericho Drumm][060OcIowSVWsZruiGUVMpA][users-imac][inet[/192.168.1.116:9301]]{data=false, client=true},}, reason: zen-disco-node_left([Jericho Drumm][060OcIowSVWsZruiGUVMpA][users-imac][inet[/192.168.1.116:9301]]{data=false, client=true})
+[2016-10-05 17:57:18,998][INFO ][node                     ] [locations] stopping ...
+[2016-10-05 17:57:19,031][INFO ][node                     ] [locations] stopped
+[2016-10-05 17:57:19,031][INFO ][node                     ] [locations] closing ...
+[2016-10-05 17:57:19,039][INFO ][node                     ] [locations] closed
+[2016-10-05 18:24:35,434][INFO ][node                     ] [locations] version[1.7.1], pid[21514], build[b88f43f/2015-07-29T09:54:16Z]
+[2016-10-05 18:24:35,435][INFO ][node                     ] [locations] initializing ...
+[2016-10-05 18:24:35,507][INFO ][plugins                  ] [locations] loaded [], sites []
+[2016-10-05 18:24:35,548][INFO ][env                      ] [locations] using [1] data paths, mounts [[/ (/dev/disk2)]], net usable_space [610.8gb], net total_space [691.4gb], types [hfs]
+[2016-10-05 18:24:37,752][INFO ][node                     ] [locations] initialized
+[2016-10-05 18:24:37,755][INFO ][node                     ] [locations] starting ...
+[2016-10-05 18:24:37,842][INFO ][transport                ] [locations] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.1.116:9300]}
+[2016-10-05 18:24:37,863][INFO ][discovery                ] [locations] cocha/wcjnzrZASPe6P7n3ZMSNPw
+[2016-10-05 18:24:41,640][INFO ][cluster.service          ] [locations] new_master [locations][wcjnzrZASPe6P7n3ZMSNPw][Users-iMac][inet[/192.168.1.116:9300]], reason: zen-disco-join (elected_as_master)
+[2016-10-05 18:24:41,664][INFO ][http                     ] [locations] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.1.116:9200]}
+[2016-10-05 18:24:41,664][INFO ][node                     ] [locations] started
+[2016-10-05 18:24:41,691][INFO ][gateway                  ] [locations] recovered [1] indices into cluster_state
+[2016-10-05 18:57:46,639][INFO ][node                     ] [locations] stopping ...
+[2016-10-05 18:57:46,709][INFO ][node                     ] [locations] stopped
+[2016-10-05 18:57:46,709][INFO ][node                     ] [locations] closing ...
+[2016-10-05 18:57:46,718][INFO ][node                     ] [locations] closed
