@@ -22,13 +22,28 @@ services:
         - 9200:9200
     jboss:
         build: ./jboss
+        volumes:
+        - files:/data
         networks:
         - nw
         ports:
         - 8080:8080
         - 9990:9990
         - 9999:9999
+        depends_on:
+        - mysql
+        - elasticsearch
+        - hazelcast
+    downloader:
+        build: ./downloader
+        volumes:
+        - files:/data
+        networks:
+        - nw
+        depends_on: 
+        - jboss
 volumes: 
     data:
+    files:
 networks: 
     nw:
