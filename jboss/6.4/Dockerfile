@@ -1,6 +1,6 @@
-FROM anapsix/alpine-java
+FROM java:debian
 
-MAINTAINER Guillaume Mayer <gmayer@arkho.tech>
+LABEL maintainer gmayer@arkho.tech
 
 ADD jboss-eap-6.4.0.tar.gz /opt
 
