@@ -22,6 +22,7 @@ services:
         - 9200:9200
     jboss:
         build: ./jboss
+        entrypoint: /opt/jboss/bin/standalone.sh --debug
         volumes:
         - files:/data
         - ./deployments:/opt/jboss/standalone/deployments
@@ -29,6 +30,7 @@ services:
         - nw
         ports:
         - 8080:8080
+        - 8787:8787
         - 9990:9990
         - 9999:9999
         depends_on:
