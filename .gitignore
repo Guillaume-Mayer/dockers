@@ -5,3 +5,4 @@
 escritorio_empresa/
 id_rsa*
 rust-musl-builder/
+cocha/deployments/

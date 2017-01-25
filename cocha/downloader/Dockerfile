@@ -10,6 +10,6 @@ RUN apt-get update && \
 
 VOLUME /data
 
-CMD /scripts/eanHotels.sh && \
-    /scripts/eanRegions.sh && \
+CMD /scripts/eanHotels.sh ; \
+    /scripts/eanRegions.sh ; \
     /scripts/bkgHotelsLastChange.sh

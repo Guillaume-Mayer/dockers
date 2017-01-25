@@ -24,6 +24,7 @@ services:
         build: ./jboss
         volumes:
         - files:/data
+        - ./deployments:/opt/jboss/standalone/deployments
         networks:
         - nw
         ports:
