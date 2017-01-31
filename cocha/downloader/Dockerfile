@@ -1,4 +1,4 @@
-FROM java:debian
+FROM debian:latest
 
 LABEL maintainer gmayer@arkho.tech
 
@@ -10,6 +10,8 @@ RUN apt-get update && \
 
 VOLUME /data
 
-CMD /scripts/eanHotels.sh ; \
-    /scripts/eanRegions.sh ; \
-    /scripts/bkgHotelsLastChange.sh
+WORKDIR /scripts
+
+CMD ./eanHotels.sh ; \
+    ./eanRegions.sh ; \
+    ./bkgHotelsLastChange.sh

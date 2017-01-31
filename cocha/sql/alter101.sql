@@ -1,0 +1,3 @@
+USE feeds;
+
+ALTER TABLE `FeedHotel` ADD COLUMN `eanId` VARCHAR(255);
