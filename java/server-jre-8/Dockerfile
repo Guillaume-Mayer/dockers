@@ -1,4 +1,4 @@
-FROM debian:latest
+FROM filebeat:debian
 
 MAINTAINER Guillaume Mayer <gmayer@arkho.tech>
 

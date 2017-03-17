@@ -1,4 +1,4 @@
-FROM debian:latest
+FROM filebeat:debian
 
 LABEL maintainer gmayer@arkho.tech
 

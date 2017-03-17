@@ -1,4 +1,4 @@
-FROM java:debian
+FROM java-filebeat-debian
 
 LABEL maintainer gmayer@arkho.tech
 

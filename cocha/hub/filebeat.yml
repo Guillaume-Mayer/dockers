@@ -1,0 +1,6 @@
+filebeat.prospectors:
+- input_type: log
+  paths:
+  - /opt/jboss/standalone/log/*.log
+output.logstash:
+  hosts: ["logstash:5044"]

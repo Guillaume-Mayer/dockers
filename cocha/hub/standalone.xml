@@ -128,7 +128,7 @@
         <subsystem xmlns="urn:jboss:domain:datasources:1.2">
             <datasources>
                 <datasource jta="true" jndi-name="java:jboss/datasources/hotelDS" pool-name="hotelDS" enabled="true" use-ccm="true" statistics-enabled="false">
-                    <connection-url>jdbc:mysql://hub-hoteles-desa01/exhotel</connection-url>
+                    <connection-url>jdbc:mysql://mysql/exhotel</connection-url>
                     <connection-property name="autoReconnect">true</connection-property>
                     <driver>mysql</driver>
                     <security>
@@ -137,7 +137,7 @@
                     </security>
                 </datasource>
                 <datasource jta="true" jndi-name="java:jboss/datasources/bookingDS" pool-name="bookingDS" enabled="true" use-ccm="true" statistics-enabled="false">
-                    <connection-url>jdbc:mysql://hub-hoteles-desa01/booking</connection-url>
+                    <connection-url>jdbc:mysql://mysql/booking</connection-url>
                     <connection-property name="autoReconnect">true</connection-property>
                     <driver>mysql</driver>
                     <security>
@@ -146,7 +146,7 @@
                     </security>
                 </datasource>
                 <datasource jta="true" jndi-name="java:jboss/datasources/meta-database" pool-name="metaDS" enabled="true" use-ccm="true" statistics-enabled="false">
-                    <connection-url>jdbc:mysql://192.168.254.242/feeds</connection-url>
+                    <connection-url>jdbc:mysql://mysql/feeds</connection-url>
                     <connection-property name="autoReconnect">true</connection-property>
                     <driver>mysql</driver>
                     <security>
@@ -155,7 +155,7 @@
                     </security>
                 </datasource>
                 <datasource jta="true" jndi-name="java:jboss/datasources/meta-database2" pool-name="metaDS2" enabled="true" use-ccm="true" statistics-enabled="false">
-                    <connection-url>jdbc:mysql://192.168.254.242/content</connection-url>
+                    <connection-url>jdbc:mysql://mysql/content</connection-url>
                     <connection-property name="autoReconnect">true</connection-property>
                     <driver>mysql</driver>
                     <security>

@@ -21,30 +21,64 @@ services:
         - nw
         ports:
         - 9200:9200
-    jboss:
-        build: ./jboss
-        entrypoint: /opt/jboss/bin/standalone.sh --debug
+    meta:
+        build: ./meta
+        command: bash -c "/etc/init.d/filebeat start && /opt/jboss/bin/standalone.sh"
         volumes:
         - files:/data
-        - ./deployments:/opt/jboss/standalone/deployments
-        - ./logs:/opt/jboss/standalone/log
+        - ./deployments/meta:/opt/jboss/standalone/deployments
         networks:
         - nw
         ports:
         - 8080:8080
-        - 8787:8787
         - 9990:9990
-        - 9999:9999
         depends_on:
         - mysql
         - elasticsearch
         - hazelcast
+    hub:
+        build: ./hub
+        command: bash -c "/etc/init.d/filebeat start && /opt/jboss/bin/standalone.sh"
+        #volumes:
+        #- ./deployments/hub:/opt/jboss/standalone/deployments
+        networks:
+        - nw
+        ports:
+        - 8081:8080
+        - 9991:9990
+        depends_on:
+        - meta
     downloader:
         build: ./downloader
         volumes:
         - files:/data
         networks:
         - nw
+    logstash:
+        build: ./logstash
+        networks:
+        - nw
+        depends_on:
+        - meta
+        - hub
+    elastic:
+        image: elasticsearch:alpine
+        networks:
+        - nw
+        ports:
+        - 9201:9200
+        depends_on:
+        - logstash
+    kibana:
+        image: kibana
+        environment:
+        - ELASTICSEARCH_URL=http://elastic:9200
+        networks:
+        - nw
+        ports:
+        - 5601:5601
+        depends_on:
+        - elastic
 volumes: 
     data:
     files:

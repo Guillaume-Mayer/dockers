@@ -2,14 +2,14 @@ FROM jboss-eap:6.4
 
 LABEL Author gmayer@arkho.tech
 
+# JBoss Configuration
+COPY standalone.xml /opt/jboss/standalone/configuration/standalone.xml
+
 # Driver MySql
 COPY com /opt/jboss/modules/com
 
-# Configuration
-COPY standalone.xml /opt/jboss/standalone/configuration/standalone.xml
+# FileBeat configuration
+COPY filebeat.yml /etc/filebeat/filebeat.yml
 
-# Debug port
-EXPOSE 8787
-
-# Standalone + debug
-ENTRYPOINT /opt/jboss/bin/standalone.sh --debug
+# EAR
+COPY cocha-hotels-core.ear /opt/jboss/standalone/deployments/cocha-hotels-core.ear
