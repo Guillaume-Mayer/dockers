@@ -4,7 +4,7 @@ services:
         image: mysql:5
         volumes:
         - data:/var/lib/mysql
-        - ./sql:/docker-entrypoint-initdb.d
+        # - ./sql:/docker-entrypoint-initdb.d JUST FOR INITIALIZATION
         networks:
         - nw
         ports: 
@@ -27,6 +27,7 @@ services:
         volumes:
         - files:/data
         - ./deployments:/opt/jboss/standalone/deployments
+        - ./logs:/opt/jboss/standalone/log
         networks:
         - nw
         ports:

@@ -23,7 +23,7 @@ DROP TABLE IF EXISTS `Country`;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `Country` (
   `id` varchar(2) COLLATE utf8_unicode_ci NOT NULL,
-  `name` varchar(64) COLLATE utf8_unicode_ci NOT NULL,
+  `name` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
