@@ -1,4 +1,4 @@
-#FROM java:centos
+#FROM java-filebeat-centos
 FROM java-filebeat-debian
 
 LABEL maintainer gmayer@arkho.tech
@@ -10,6 +10,7 @@ RUN ln -s /opt/jboss-eap-6.4 /opt/jboss
 ENV JBOSS_HOME /opt/jboss
 
 #RUN yum update -y && yum -y install xmlstarlet saxon augeas bsdtar unzip && yum clean all
+RUN apt-get update && apt-get install -y bsdtar unzip && apt-get clean
 
 RUN $JBOSS_HOME/bin/add-user.sh admin admin123., --silent
 

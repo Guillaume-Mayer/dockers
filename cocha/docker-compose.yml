@@ -39,8 +39,8 @@ services:
     hub:
         build: ./hub
         command: bash -c "/etc/init.d/filebeat start && /opt/jboss/bin/standalone.sh"
-        #volumes:
-        #- ./deployments/hub:/opt/jboss/standalone/deployments
+        volumes:
+        - ./deployments/hub:/opt/jboss/standalone/deployments
         networks:
         - nw
         ports:
