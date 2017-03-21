@@ -23,10 +23,10 @@ services:
         - 9200:9200
     meta:
         build: ./meta
-        command: bash -c "/etc/init.d/filebeat start && /opt/jboss/bin/standalone.sh"
+        #command: bash -c "/etc/init.d/filebeat start && /opt/jboss/bin/standalone.sh"
         volumes:
-        - files:/data
-        - ./deployments/meta:/opt/jboss/standalone/deployments
+        - files:/opt/jboss/data
+        - ./deployments/meta:/opt/jboss/jboss-eap-6.4/standalone/deployments
         networks:
         - nw
         ports:
@@ -38,9 +38,9 @@ services:
         - hazelcast
     hub:
         build: ./hub
-        command: bash -c "/etc/init.d/filebeat start && /opt/jboss/bin/standalone.sh"
+        #command: bash -c "/etc/init.d/filebeat start && /opt/jboss/bin/standalone.sh"
         volumes:
-        - ./deployments/hub:/opt/jboss/standalone/deployments
+        - ./deployments/hub:/opt/jboss/jboss-eap-6.4/standalone/deployments
         networks:
         - nw
         ports:
