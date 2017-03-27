@@ -1,11 +1,9 @@
-<datasources-configuration xmlns:svns="http://org.wso2.securevault/configuration">
-  
+<datasources-configuration 
+    xmlns:svns="http://org.wso2.securevault/configuration">
     <providers>
         <provider>org.wso2.carbon.ndatasource.rdbms.RDBMSDataSourceReader</provider>
     </providers>
-  
     <datasources>
-      
         <datasource>
             <name>WSO2_CARBON_DB</name>
             <description>The datasource used for registry and user manager</description>
@@ -27,74 +25,35 @@
                 </configuration>
             </definition>
         </datasource>
-
         <datasource>
-            <name>Minju-MySql</name>
+            <name>MySql</name>
             <description>Datasource para multas</description>
             <jndiConfig>
                 <name>jdbc/minju-mysql</name>
             </jndiConfig>
             <definition type="RDBMS">
                 <configuration>
-                    <url>jdbc:mysql://mysql:3306/minju</url>
-                    <username>minju</username>
-                    <password>minju123</password>
+                    <url>jdbc:mysql://mysql:3306/chilec</url>
+                    <username>chilec</username>
+                    <password>chilec123</password>
                     <driverClassName>com.mysql.jdbc.Driver</driverClassName>
-                 </configuration>
+                </configuration>
             </definition>
         </datasource>
-
         <datasource>
-            <name>Minju-PostgreSql</name>
+            <name>PostgreSql</name>
             <description>Datasource para ciudadanos</description>
             <jndiConfig>
                 <name>jdbc/minju-postgresql</name>
             </jndiConfig>
             <definition type="RDBMS">
                 <configuration>
-                    <url>jdbc:postgresql://postgresql:5432/minju</url>
-                    <username>minju</username>
-                    <password>minju123</password>
+                    <url>jdbc:postgresql://postgresql:5432/chilec</url>
+                    <username>chilec</username>
+                    <password>chilec123</password>
                     <driverClassName>org.postgresql.Driver</driverClassName>
                 </configuration>
             </definition>
         </datasource>
-
-        <!-- For an explanation of the properties, see: http://people.apache.org/~fhanik/jdbc-pool/jdbc-pool.html -->
-        <!--datasource>
-            <name>SAMPLE_DATA_SOURCE</name>
-            <jndiConfig>
-                <name></name>
-                <environment>
-                    <property name="java.naming.factory.initial"></property>
-                    <property name="java.naming.provider.url"></property>
-                </environment>
-            </jndiConfig>
-            <definition type="RDBMS">
-                <configuration>
-
-                    <defaultAutoCommit></defaultAutoCommit>
-                    <defaultReadOnly></defaultReadOnly>
-                    <defaultTransactionIsolation>NONE|READ_COMMITTED|READ_UNCOMMITTED|REPEATABLE_READ|SERIALIZABLE</defaultTransactionIsolation>
-                    <defaultCatalog></defaultCatalog>
-                    <username></username>
-                    <password svns:secretAlias="WSO2.DB.Password"></password>
-                    <maxActive></maxActive>
-                    <maxIdle></maxIdle>
-                    <initialSize></initialSize>
-                    <maxWait></maxWait>
-
-                    <dataSourceClassName>com.mysql.jdbc.jdbc2.optional.MysqlXADataSource</dataSourceClassName>
-                    <dataSourceProps>
-                        <property name="url">jdbc:mysql://localhost:3306/Test1</property>
-                        <property name="user">root</property>
-                        <property name="password">123</property>
-                    </dataSourceProps>
-
-                </configuration>
-            </definition>
-        </datasource-->
-
     </datasources>
-
 </datasources-configuration>

@@ -1,0 +1,33 @@
+version: "3"
+services:
+  mysql:
+    image: mysql:5
+    networks:
+    - nw
+    ports: 
+    - 3306:3306
+    volumes:
+    - data_mysql:/var/lib/mysql
+    environment: 
+    - MYSQL_ROOT_PASSWORD=rOot123.,
+  postgres:
+    image: postgres:alpine
+    networks:
+    - nw
+    ports:
+    - 5432:5432
+    volumes:
+    - data_pg:/var/lib/postgresql/data
+    environment:
+    - POSTGRES_PASSWORD=post123
+  wso2esb:
+    image: wso2esb:5.0.0
+    networks:
+    - nw
+    ports: 
+    - 9443:9443
+volumes: 
+  data_mysql:
+  data_pg:
+networks: 
+  nw:
