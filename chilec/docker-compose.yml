@@ -10,39 +10,21 @@ services:
     - data_mysql:/var/lib/mysql
     environment: 
     - MYSQL_ROOT_PASSWORD=rOot123.,
-  postgres:
-    image: postgres:alpine
-    networks:
-    - nw
-    ports:
-    - 5432:5432
-    volumes:
-    - data_pg:/var/lib/postgresql/data
-    environment:
-    - POSTGRES_PASSWORD=post123
-  wso2dss:
-    image: wso2dss:3.5.1
-    networks:
-    - nw
-    ports: 
-    - 9444:9443
-    - 9763:9763
-    depends_on: 
-    - mysql
-    - postgres
-  wso2esb:
-    image: wso2esb:5.0.0
+  wso2:
+    image: wso2esb-feat-dss
     networks:
     - nw
     ports: 
     - 8280:8280
     - 9443:9443
     volumes:
+    - ./datasources:/opt/wso2esb-5.0.0/repository/conf/datasources
+    - ./lib:/opt/wso2esb-5.0.0/repository/components/lib
     - ./carbonapps:/opt/wso2esb-5.0.0/repository/deployment/server/carbonapps
+    - ./dataservices:/opt/wso2esb-5.0.0/repository/deployment/server/dataservices
     depends_on: 
-    - wso2dss
+    - mysql
 volumes: 
   data_mysql:
-  data_pg:
 networks: 
   nw:
