@@ -20,12 +20,27 @@ services:
     - data_pg:/var/lib/postgresql/data
     environment:
     - POSTGRES_PASSWORD=post123
+  wso2dss:
+    image: wso2dss:3.5.1
+    networks:
+    - nw
+    ports: 
+    - 9444:9443
+    - 9763:9763
+    depends_on: 
+    - mysql
+    - postgres
   wso2esb:
     image: wso2esb:5.0.0
     networks:
     - nw
     ports: 
+    - 8280:8280
     - 9443:9443
+    volumes:
+    - ./carbonapps:/opt/wso2esb-5.0.0/repository/deployment/server/carbonapps
+    depends_on: 
+    - wso2dss
 volumes: 
   data_mysql:
   data_pg:
