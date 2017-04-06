@@ -1,6 +1,6 @@
 FROM debian:latest
 
-MAINTAINER Guillaume Mayer <gmayer@arkho.tech>
+LABEL Maintainer <gmayer@arkho.tech>
 
 COPY server-jre-8u121-linux-x64.tar.gz /opt/server-jre-8u121-linux-x64.tar.gz
 
