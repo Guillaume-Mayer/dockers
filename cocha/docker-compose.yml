@@ -36,6 +36,7 @@ services:
         - mysql
         - elasticsearch
         - hazelcast
+        - logstash
     hub:
         build: ./hub
         #command: bash -c "/etc/init.d/filebeat start && /opt/jboss/bin/standalone.sh"
@@ -48,27 +49,27 @@ services:
         - 9991:9990
         depends_on:
         - meta
+        - logstash
     downloader:
         build: ./downloader
         volumes:
         - files:/data
         networks:
         - nw
+        depends_on:
+        - meta
     logstash:
         build: ./logstash
         networks:
         - nw
         depends_on:
-        - meta
-        - hub
+        - elastic
     elastic:
         image: elasticsearch:alpine
         networks:
         - nw
         ports:
         - 9201:9200
-        depends_on:
-        - logstash
     kibana:
         image: kibana
         environment:

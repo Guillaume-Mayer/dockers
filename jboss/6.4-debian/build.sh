@@ -1,0 +1,1 @@
+docker build -t jboss-eap:6.4 .

@@ -1,19 +1,20 @@
-#FROM server-jre:8
-FROM anapsix/alpine-java
+FROM jboss/base-jdk:8
 
 MAINTAINER Guillaume Mayer <gmayer@arkho.tech>
 
-ADD jboss-eap-7.0.0.tar.gz /
+ADD jboss-eap-7.0.0.tar.gz /opt/jboss
 
-ENV JBOSS_HOME /jboss-eap-7.0
+ENV JBOSS_HOME /opt/jboss/jboss-eap-7.0
 
-RUN $JBOSS_HOME/bin/add-user.sh admin admin123., --silent
+USER root
 
-RUN echo "JAVA_OPTS=\"\$JAVA_OPTS -Djboss.bind.address=0.0.0.0 -Djboss.bind.address.management=0.0.0.0\"" >> $JBOSS_HOME/bin/standalone.conf
+RUN chown -R jboss:jboss $JBOSS_HOME && \
+    $JBOSS_HOME/bin/add-user.sh admin admin123., --silent && \
+    echo "JAVA_OPTS=\"\$JAVA_OPTS -Djboss.bind.address=0.0.0.0 -Djboss.bind.address.management=0.0.0.0\"" >> $JBOSS_HOME/bin/standalone.conf
 
-VOLUME /jboss-eap-7.0/standalone/deployments
+USER jboss
 
 EXPOSE 8080 9990
 
-ENTRYPOINT /jboss-eap-7.0/bin/standalone.sh
+CMD $JBOSS_HOME/bin/standalone.sh
 
