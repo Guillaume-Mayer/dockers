@@ -115,6 +115,9 @@
             <logger category="jacorb.config">
                 <level name="ERROR"/>
             </logger>
+            <logger category="org.apache.camel.processor.interceptor">
+                <level name="ERROR"/>
+            </logger>
             <root-logger>
                 <level name="INFO"/>
                 <handlers>
@@ -123,11 +126,321 @@
                 </handlers>
             </root-logger>
             <formatter name="PATTERN">
-                <pattern-formatter pattern="%d{HH:mm:ss,SSS} %-5p [%c] (%t) %s%E%n"/>
+                <pattern-formatter pattern="[%d{dd/MM/yyyy HH:mm:ss,SSS}] [%X{userId}] [%p] [%c]:%L - %m%n"/>
             </formatter>
             <formatter name="COLOR-PATTERN">
-                <pattern-formatter pattern="%K{level}%d{HH:mm:ss,SSS} %-5p [%c] (%t) %s%E%n"/>
+                <pattern-formatter pattern="%K{level}[%d{dd/MM/yyyy HH:mm:ss,SSS}] [%X{userId}] [%p] [th:%t] [%c]:%L - %m%n"/>
             </formatter>
+            <logging-profiles>
+                <logging-profile name="meta-search-profile">
+                    <size-rotating-file-handler name="META-SEARCH-FILE" autoflush="true">
+                        <formatter>
+                            <named-formatter name="COLOR-PATTERN"/>
+                        </formatter>
+                        <file relative-to="jboss.server.log.dir" path="meta-search.log"/>
+                        <rotate-size value="1073741824"/>
+                        <append value="true"/>
+                    </size-rotating-file-handler>
+                    <size-rotating-file-handler name="TIMES-FILE" autoflush="true">
+                        <formatter>
+                            <named-formatter name="PATTERN"/>
+                        </formatter>
+                        <file relative-to="jboss.server.log.dir" path="meta-search-times.log"/>
+                        <rotate-size value="1073741824"/>
+                        <append value="true"/>
+                    </size-rotating-file-handler>
+                    <size-rotating-file-handler name="CXF-FILE" autoflush="true">
+                        <formatter>
+                            <named-formatter name="PATTERN"/>
+                        </formatter>
+                        <file relative-to="jboss.server.log.dir" path="cxf.log"/>
+                        <rotate-size value="1073741824"/>
+                        <append value="true"/>
+                    </size-rotating-file-handler>
+                    <size-rotating-file-handler name="CAMEL-FILE" autoflush="true">
+                        <formatter>
+                            <named-formatter name="PATTERN"/>
+                        </formatter>
+                        <file relative-to="jboss.server.log.dir" path="camel.log"/>
+                        <rotate-size value="1073741824"/>
+                        <append value="true"/>
+                    </size-rotating-file-handler>
+                    <logger category="chronometer" use-parent-handlers="false">
+                        <level name="DEBUG"/>
+                        <handlers>
+                            <handler name="TIMES-FILE"/>
+                        </handlers>
+                    </logger>
+                    <logger category="com.arjuna">
+                        <level name="WARN"/>
+                    </logger>
+                    <logger category="org.apache.tomcat.util.modeler">
+                        <level name="WARN"/>
+                    </logger>
+                    <logger category="org.jboss.as.config">
+                        <level name="DEBUG"/>
+                    </logger>
+                    <logger category="sun.rmi">
+                        <level name="WARN"/>
+                    </logger>
+                    <logger category="jacorb">
+                        <level name="WARN"/>
+                    </logger>
+                    <logger category="jacorb.config">
+                        <level name="ERROR"/>
+                    </logger>
+                    <logger category="org.apache.cxf.interceptor" use-parent-handlers="false">
+                        <level name="DEBUG"/>
+                        <handlers>
+                            <handler name="CXF-FILE"/>
+                        </handlers>
+                    </logger>
+                    <logger category="org.apache.camel.processor.interceptor" use-parent-handlers="false">
+                        <level name="DEBUG"/>
+                        <handlers>
+                            <handler name="CAMEL-FILE"/>
+                        </handlers>
+                    </logger>
+                    <root-logger>
+                        <level name="INFO"/>
+                        <handlers>
+                            <handler name="META-SEARCH-FILE"/>
+                        </handlers>
+                    </root-logger>
+                    <formatter name="PATTERN">
+                        <pattern-formatter pattern="[%d{dd/MM/yyyy HH:mm:ss,SSS}] [%X{userId}] [%p] [%c]:%L - %m%n"/>
+                    </formatter>
+                    <formatter name="COLOR-PATTERN">
+                        <pattern-formatter pattern="%K{level}[%d{dd/MM/yyyy HH:mm:ss,SSS}] [%X{userId}] [%p] [th:%t] [%c]:%L - %m%n"/>
+                    </formatter>
+                </logging-profile>
+                <logging-profile name="feed-downloader-profile">
+                    <size-rotating-file-handler name="FEED-DOWNLOADER-FILE" autoflush="true">
+                        <formatter>
+                            <named-formatter name="PATTERN"/>
+                        </formatter>
+                        <file relative-to="jboss.server.log.dir" path="feed-downloader.log"/>
+                        <rotate-size value="1073741824"/>
+                        <append value="true"/>
+                    </size-rotating-file-handler>
+                    <size-rotating-file-handler name="CAMEL-FILE" autoflush="true">
+                        <formatter>
+                            <named-formatter name="PATTERN"/>
+                        </formatter>
+                        <file relative-to="jboss.server.log.dir" path="camel.log"/>
+                        <rotate-size value="1073741824"/>
+                        <append value="true"/>
+                    </size-rotating-file-handler>
+                    <logger category="com.arjuna">
+                        <level name="WARN"/>
+                    </logger>
+                    <logger category="org.apache.tomcat.util.modeler">
+                        <level name="WARN"/>
+                    </logger>
+                    <logger category="org.jboss.as.config">
+                        <level name="DEBUG"/>
+                    </logger>
+                    <logger category="sun.rmi">
+                        <level name="WARN"/>
+                    </logger>
+                    <logger category="jacorb">
+                        <level name="WARN"/>
+                    </logger>
+                    <logger category="jacorb.config">
+                        <level name="ERROR"/>
+                    </logger>
+                    <logger category="org.apache.camel.processor.interceptor" use-parent-handlers="false">
+                        <level name="DEBUG"/>
+                        <handlers>
+                            <handler name="CAMEL-FILE"/>
+                        </handlers>
+                    </logger>
+                    <root-logger>
+                        <level name="INFO"/>
+                        <handlers>
+                            <handler name="FEED-DOWNLOADER-FILE"/>
+                        </handlers>
+                    </root-logger>
+                    <formatter name="PATTERN">
+                        <pattern-formatter pattern="[%d{dd/MM/yyyy HH:mm:ss,SSS}] [%X{userId}] [%p] [%c]:%L - %m%n"/>
+                    </formatter>
+                    <formatter name="COLOR-PATTERN">
+                        <pattern-formatter pattern="%K{level}[%d{dd/MM/yyyy HH:mm:ss,SSS}] [%X{userId}] [%p] [th:%t] [%c]:%L - %m%n"/>
+                    </formatter>
+                </logging-profile>
+                <logging-profile name="hotel-mapper-profile">
+                    <size-rotating-file-handler name="HOTEL-MAPPER-FILE" autoflush="true">
+                        <formatter>
+                            <named-formatter name="PATTERN"/>
+                        </formatter>
+                        <file relative-to="jboss.server.log.dir" path="hotel-mapper.log"/>
+                        <rotate-size value="1073741824"/>
+                        <append value="true"/>
+                    </size-rotating-file-handler>
+                    <size-rotating-file-handler name="CAMEL-FILE" autoflush="true">
+                        <formatter>
+                            <named-formatter name="PATTERN"/>
+                        </formatter>
+                        <file relative-to="jboss.server.log.dir" path="camel.log"/>
+                        <rotate-size value="1073741824"/>
+                        <append value="true"/>
+                    </size-rotating-file-handler>
+                    <size-rotating-file-handler name="SLACK-FILE" autoflush="true">
+                        <formatter>
+                            <named-formatter name="PATTERN"/>
+                        </formatter>
+                        <file relative-to="jboss.server.log.dir" path="hotel-mapper-slack.log"/>
+                        <rotate-size value="1073741824"/>
+                        <append value="true"/>
+                    </size-rotating-file-handler>
+                    <logger category="slack" use-parent-handlers="false">
+                        <level name="INFO"/>
+                        <handlers>
+                            <handler name="SLACK-FILE"/>
+                        </handlers>
+                    </logger>
+                    <logger category="com.arjuna">
+                        <level name="WARN"/>
+                    </logger>
+                    <logger category="org.apache.tomcat.util.modeler">
+                        <level name="WARN"/>
+                    </logger>
+                    <logger category="org.jboss.as.config">
+                        <level name="DEBUG"/>
+                    </logger>
+                    <logger category="sun.rmi">
+                        <level name="WARN"/>
+                    </logger>
+                    <logger category="jacorb">
+                        <level name="WARN"/>
+                    </logger>
+                    <logger category="jacorb.config">
+                        <level name="ERROR"/>
+                    </logger>
+                    <logger category="org.apache.camel.processor.interceptor" use-parent-handlers="false">
+                        <level name="DEBUG"/>
+                        <handlers>
+                            <handler name="CAMEL-FILE"/>
+                        </handlers>
+                    </logger>
+                    <root-logger>
+                        <level name="INFO"/>
+                        <handlers>
+                            <handler name="HOTEL-MAPPER-FILE"/>
+                        </handlers>
+                    </root-logger>
+                    <formatter name="PATTERN">
+                        <pattern-formatter pattern="[%d{dd/MM/yyyy HH:mm:ss,SSS}] [%X{userId}] [%p] [%c]:%L - %m%n"/>
+                    </formatter>
+                    <formatter name="COLOR-PATTERN">
+                        <pattern-formatter pattern="%K{level}[%d{dd/MM/yyyy HH:mm:ss,SSS}] [%X{userId}] [%p] [th:%t] [%c]:%L - %m%n"/>
+                    </formatter>
+                </logging-profile>
+                <logging-profile name="destination-mapper-profile">
+                    <size-rotating-file-handler name="DESTINATION-MAPPER-FILE" autoflush="true">
+                        <formatter>
+                            <named-formatter name="PATTERN"/>
+                        </formatter>
+                        <file relative-to="jboss.server.log.dir" path="destination-mapper.log"/>
+                        <rotate-size value="1073741824"/>
+                        <append value="true"/>
+                    </size-rotating-file-handler>
+                    <size-rotating-file-handler name="CAMEL-FILE" autoflush="true">
+                        <formatter>
+                            <named-formatter name="PATTERN"/>
+                        </formatter>
+                        <file relative-to="jboss.server.log.dir" path="camel.log"/>
+                        <rotate-size value="1073741824"/>
+                        <append value="true"/>
+                    </size-rotating-file-handler>
+                    <size-rotating-file-handler name="SLACK-FILE" autoflush="true">
+                        <formatter>
+                            <named-formatter name="PATTERN"/>
+                        </formatter>
+                        <file relative-to="jboss.server.log.dir" path="destination-mapper-slack.log"/>
+                        <rotate-size value="1073741824"/>
+                        <append value="true"/>
+                    </size-rotating-file-handler>
+                    <logger category="slack" use-parent-handlers="false">
+                        <level name="INFO"/>
+                        <handlers>
+                            <handler name="SLACK-FILE"/>
+                        </handlers>
+                    </logger>
+                    <logger category="com.arjuna">
+                        <level name="WARN"/>
+                    </logger>
+                    <logger category="org.apache.tomcat.util.modeler">
+                        <level name="WARN"/>
+                    </logger>
+                    <logger category="org.jboss.as.config">
+                        <level name="DEBUG"/>
+                    </logger>
+                    <logger category="sun.rmi">
+                        <level name="WARN"/>
+                    </logger>
+                    <logger category="jacorb">
+                        <level name="WARN"/>
+                    </logger>
+                    <logger category="jacorb.config">
+                        <level name="ERROR"/>
+                    </logger>
+                    <logger category="org.apache.camel.processor.interceptor" use-parent-handlers="false">
+                        <level name="DEBUG"/>
+                        <handlers>
+                            <handler name="CAMEL-FILE"/>
+                        </handlers>
+                    </logger>
+                    <root-logger>
+                        <level name="INFO"/>
+                        <handlers>
+                            <handler name="DESTINATION-MAPPER-FILE"/>
+                        </handlers>
+                    </root-logger>
+                    <formatter name="PATTERN">
+                        <pattern-formatter pattern="[%d{dd/MM/yyyy HH:mm:ss,SSS}] [%X{userId}] [%p] [%c]:%L - %m%n"/>
+                    </formatter>
+                    <formatter name="COLOR-PATTERN">
+                        <pattern-formatter pattern="%K{level}[%d{dd/MM/yyyy HH:mm:ss,SSS}] [%X{userId}] [%p] [th:%t] [%c]:%L - %m%n"/>
+                    </formatter>
+                </logging-profile>
+                <logging-profile name="backoffice-profile">
+                    <size-rotating-file-handler name="BACKOFFICE-FILE" autoflush="true">
+                        <formatter>
+                            <named-formatter name="PATTERN"/>
+                        </formatter>
+                        <file relative-to="jboss.server.log.dir" path="backoffice.log"/>
+                        <rotate-size value="1073741824"/>
+                        <append value="true"/>
+                    </size-rotating-file-handler>
+                    <size-rotating-file-handler name="REQUEST-INFO-FILE" autoflush="true">
+                        <formatter>
+                            <named-formatter name="PATTERN"/>
+                        </formatter>
+                        <file relative-to="jboss.server.log.dir" path="backoffice-request-info.log"/>
+                        <rotate-size value="1073741824"/>
+                        <append value="true"/>
+                    </size-rotating-file-handler>
+                    <logger category="requestInfoFileLogger" use-parent-handlers="false">
+                        <level name="DEBUG"/>
+                        <handlers>
+                            <handler name="REQUEST-INFO-FILE"/>
+                        </handlers>
+                    </logger>
+                    <root-logger>
+                        <level name="INFO"/>
+                        <handlers>
+                            <handler name="BACKOFFICE-FILE"/>
+                        </handlers>
+                    </root-logger>
+                    <formatter name="PATTERN">
+                        <pattern-formatter pattern="[%d{dd/MM/yyyy HH:mm:ss,SSS}] [%X{userId}] [%p] [%c]:%L - %m%n"/>
+                    </formatter>
+                    <formatter name="COLOR-PATTERN">
+                        <pattern-formatter pattern="%K{level}[%d{dd/MM/yyyy HH:mm:ss,SSS}] [%X{userId}] [%p] [th:%t] [%c]:%L - %m%n"/>
+                    </formatter>
+                </logging-profile>
+            </logging-profiles>
         </subsystem>
         <subsystem xmlns="urn:jboss:domain:datasources:1.2">
             <datasources>
@@ -369,5 +682,4 @@
             <remote-destination host="localhost" port="25"/>
         </outbound-socket-binding>
     </socket-binding-group>
-
 </server>
