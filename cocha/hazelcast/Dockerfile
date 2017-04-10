@@ -1,4 +1,4 @@
-FROM java-filebeat-debian
+FROM java:8-server-jre
 
 LABEL maintainer gmayer@arkho.tech
 

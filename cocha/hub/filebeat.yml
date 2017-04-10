@@ -2,5 +2,6 @@ filebeat.prospectors:
 - input_type: log
   paths:
   - /opt/jboss/jboss-eap-6.4/standalone/log/*.log
+  tags: ["hub"]
 output.logstash:
   hosts: ["logstash:5044"]

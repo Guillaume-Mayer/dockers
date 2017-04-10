@@ -1,0 +1,1 @@
+/etc/init.d/filebeat start && /elasticsearch-1.7.1/bin/elasticsearch

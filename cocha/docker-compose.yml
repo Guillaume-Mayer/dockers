@@ -4,7 +4,6 @@ services:
         image: mysql:5
         volumes:
         - data:/var/lib/mysql
-        # - ./sql:/docker-entrypoint-initdb.d JUST FOR INITIALIZATION
         networks:
         - nw
         ports: 
@@ -15,10 +14,18 @@ services:
         build: ./hazelcast
         networks:
         - nw
+        logging:
+          driver: gelf
+          options:
+            gelf-address: "udp://localhost:12201"
+        depends_on:
+        - logstash
     elasticsearch:
         build: ./elasticsearch
         networks:
         - nw
+        depends_on:
+        - logstash
     meta:
         build: ./meta
         volumes:
@@ -58,10 +65,14 @@ services:
         build: ./logstash
         networks:
         - nw
+        ports:
+        - 12201:12201/udp
         depends_on:
         - elastic
     elastic:
         image: elasticsearch:alpine
+        volumes:
+        - logs:/usr/share/elasticsearch/data
         networks:
         - nw
     kibana:
@@ -77,5 +88,6 @@ services:
 volumes: 
     data:
     files:
+    logs:
 networks: 
     nw:

@@ -1,9 +1,8 @@
 FROM debian:latest
 
-LABEL maintainer gmayer@arkho.tech
+LABEL Maintainer gmayer@arkho.tech
 
-COPY filebeat-5.2.2-amd64.deb /filebeat-5.2.2-amd64.deb
-
-RUN dpkg -i /filebeat-5.2.2-amd64.deb && \
-    rm /filebeat-5.2.2-amd64.deb
-
+RUN apt-get update && apt-get install -y curl && apt-get clean && \
+    curl -L -O https://artifacts.elastic.co/downloads/beats/filebeat/filebeat-5.3.0-amd64.deb && \
+    dpkg -i filebeat-5.3.0-amd64.deb && \
+    rm filebeat-5.3.0-amd64.deb

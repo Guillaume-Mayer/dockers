@@ -1,9 +1,14 @@
 FROM java-filebeat-debian
 
-LABEL maintainer gmayer@arkho.tech
+LABEL Maintainer gmayer@arkho.tech
 
 COPY elasticsearch-1.7.1 /elasticsearch-1.7.1
 
 EXPOSE 9200 9300
 
-ENTRYPOINT elasticsearch-1.7.1/bin/elasticsearch
+# FileBeat configuration
+COPY filebeat.yml /etc/filebeat/filebeat.yml
+
+COPY docker-entrypoint.sh /docker-entrypoint.sh
+
+ENTRYPOINT /docker-entrypoint.sh

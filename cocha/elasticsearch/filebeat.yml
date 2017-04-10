@@ -1,0 +1,7 @@
+filebeat.prospectors:
+- input_type: log
+  paths:
+  - /elasticsearch-1.7.1/logs/cocha.log
+  tags: ["elasticsearch"]
+output.logstash:
+  hosts: ["logstash:5044"]
