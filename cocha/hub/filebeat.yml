@@ -2,7 +2,11 @@ filebeat.prospectors:
 - input_type: log
   paths:
   - /opt/jboss/jboss-eap-6.4/standalone/log/server.log
-  - /opt/jboss/jboss-eap-6.4/standalone/log/core-hoteles/*.log
-  tags: ["hub"]
+  - /opt/jboss/jboss-eap-6.4/standalone/log/core-hoteles/*.log     
+  multiline:
+    pattern: '^[[:space:]]+|^Caused by:'
+    negate: false
+    match: after
+name: "hub"
 output.logstash:
   hosts: ["logstash:5044"]

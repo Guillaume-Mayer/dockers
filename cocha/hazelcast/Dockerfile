@@ -1,4 +1,4 @@
-FROM java:8-server-jre
+FROM java-filebeat-debian
 
 LABEL maintainer gmayer@arkho.tech
 
@@ -6,4 +6,9 @@ COPY hazelcast-server.jar /hazelcast-server.jar
 
 EXPOSE 5701
 
-ENTRYPOINT java -jar hazelcast-server.jar
+# FileBeat configuration
+COPY filebeat.yml /etc/filebeat/filebeat.yml
+
+COPY docker-entrypoint.sh /docker-entrypoint.sh
+
+ENTRYPOINT /docker-entrypoint.sh

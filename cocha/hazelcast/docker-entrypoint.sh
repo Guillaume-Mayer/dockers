@@ -1,0 +1,1 @@
+/etc/init.d/filebeat start && java -jar hazelcast-server.jar 2>&1 | tee hazelcast.log

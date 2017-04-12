@@ -2,6 +2,10 @@ filebeat.prospectors:
 - input_type: log
   paths:
   - /opt/jboss/jboss-eap-6.4/standalone/log/*.log
-  tags: ["meta"]
+  multiline:
+    pattern: '^[[:space:]]+|^Caused by:'
+    negate: false
+    match: after
+name: "meta"
 output.logstash:
   hosts: ["logstash:5044"]

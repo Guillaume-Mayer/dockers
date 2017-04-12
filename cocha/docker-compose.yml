@@ -10,20 +10,21 @@ services:
         - 3306:3306
         environment: 
         - MYSQL_ROOT_PASSWORD=rOot123.,
+        - TZ=America/Santiago
     hazelcast:
         build: ./hazelcast
         networks:
         - nw
-        logging:
-          driver: gelf
-          options:
-            gelf-address: "udp://localhost:12201"
+        environment:
+        - TZ=America/Santiago
         depends_on:
         - logstash
     elasticsearch:
         build: ./elasticsearch
         networks:
         - nw
+        environment:
+        - TZ=America/Santiago
         depends_on:
         - logstash
     meta:
@@ -36,6 +37,8 @@ services:
         ports:
         - 8080:8080
         - 9990:9990
+        environment:
+        - TZ=America/Santiago
         depends_on:
         - mysql
         - elasticsearch
@@ -50,6 +53,8 @@ services:
         ports:
         - 8081:8080
         - 9991:9990
+        environment:
+        - TZ=America/Santiago
         depends_on:
         - meta
         - logstash
@@ -67,6 +72,8 @@ services:
         - nw
         ports:
         - 12201:12201/udp
+        environment:
+        - TZ=America/Santiago
         depends_on:
         - elastic
     elastic:
@@ -75,6 +82,10 @@ services:
         - logs:/usr/share/elasticsearch/data
         networks:
         - nw
+        ports:
+        - 9200:9200
+        environment:
+        - TZ=America/Santiago
     kibana:
         image: kibana
         environment:

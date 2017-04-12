@@ -1,6 +1,6 @@
 FROM java-filebeat-debian
 
-LABEL Maintainer gmayer@arkho.tech
+LABEL maintainer gmayer@arkho.tech
 
 COPY elasticsearch-1.7.1 /elasticsearch-1.7.1
 
