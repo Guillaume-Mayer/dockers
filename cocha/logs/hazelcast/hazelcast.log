@@ -1,0 +1,44 @@
+Apr 12, 2017 9:26:10 PM com.hazelcast.instance.DefaultAddressPicker
+INFO: [LOCAL] [meta-search] [3.5.3] Prefer IPv4 stack is true.
+Apr 12, 2017 9:26:10 PM com.hazelcast.instance.DefaultAddressPicker
+INFO: [LOCAL] [meta-search] [3.5.3] Picked Address[172.18.0.6]:5701, using socket ServerSocket[addr=/0:0:0:0:0:0:0:0,localport=5701], bind any local is true
+Apr 12, 2017 9:26:13 PM com.hazelcast.spi.OperationService
+INFO: [172.18.0.6]:5701 [meta-search] [3.5.3] Backpressure is disabled
+Apr 12, 2017 9:26:13 PM com.hazelcast.spi.impl.operationexecutor.classic.ClassicOperationExecutor
+INFO: [172.18.0.6]:5701 [meta-search] [3.5.3] Starting with 2 generic operation threads and 2 partition operation threads.
+Apr 12, 2017 9:26:16 PM com.hazelcast.system
+INFO: [172.18.0.6]:5701 [meta-search] [3.5.3] Hazelcast 3.5.3 (20151011 - 64c663a) starting at Address[172.18.0.6]:5701
+Apr 12, 2017 9:26:16 PM com.hazelcast.system
+INFO: [172.18.0.6]:5701 [meta-search] [3.5.3] Copyright (c) 2008-2015, Hazelcast, Inc. All Rights Reserved.
+Apr 12, 2017 9:26:16 PM com.hazelcast.instance.Node
+INFO: [172.18.0.6]:5701 [meta-search] [3.5.3] Creating MulticastJoiner
+Apr 12, 2017 9:26:16 PM com.hazelcast.core.LifecycleService
+INFO: [172.18.0.6]:5701 [meta-search] [3.5.3] Address[172.18.0.6]:5701 is STARTING
+Apr 12, 2017 9:26:19 PM com.hazelcast.cluster.impl.MulticastJoiner
+INFO: [172.18.0.6]:5701 [meta-search] [3.5.3] 
+
+
+Members [1] {
+	Member [172.18.0.6]:5701 this
+}
+
+Apr 12, 2017 9:26:19 PM com.hazelcast.core.LifecycleService
+INFO: [172.18.0.6]:5701 [meta-search] [3.5.3] Address[172.18.0.6]:5701 is STARTED
+Apr 12, 2017 9:26:59 PM com.hazelcast.internal.monitors.HealthMonitor
+INFO: [172.18.0.6]:5701 [meta-search] [3.5.3] processors=2, physical.memory.total=3.9G, physical.memory.free=119.1M, swap.space.total=3.9G, swap.space.free=3.3G, heap.memory.used=58.2M, heap.memory.free=109.8M, heap.memory.total=168.0M, heap.memory.max=878.5M, heap.memory.used/total=34.65%, heap.memory.used/max=6.63%, minor.gc.count=8, minor.gc.time=122ms, major.gc.count=0, major.gc.time=0ms, load.process=1.00%, load.system=75.00%, load.systemAverage=11.63, thread.count=33, thread.peakCount=33, cluster.timeDiff=0, event.q.size=0, executor.q.async.size=0, executor.q.client.size=0, executor.q.query.size=0, executor.q.scheduled.size=0, executor.q.io.size=0, executor.q.system.size=0, executor.q.operation.size=0, executor.q.priorityOperation.size=0, executor.q.response.size=0, operations.remote.size=0, operations.running.size=0, operations.pending.invocations.count=0, operations.pending.invocations.percentage=0.00%, proxy.count=0, clientEndpoint.count=0, connection.active.count=0, client.connection.count=0, connection.count=0
+Apr 12, 2017 9:28:00 PM com.hazelcast.internal.monitors.HealthMonitor
+INFO: [172.18.0.6]:5701 [meta-search] [3.5.3] processors=2, physical.memory.total=3.9G, physical.memory.free=117.2M, swap.space.total=3.9G, swap.space.free=2.4G, heap.memory.used=59.4M, heap.memory.free=108.6M, heap.memory.total=168.0M, heap.memory.max=878.5M, heap.memory.used/total=35.38%, heap.memory.used/max=6.77%, minor.gc.count=8, minor.gc.time=122ms, major.gc.count=0, major.gc.time=0ms, load.process=0.00%, load.system=77.00%, load.systemAverage=13.10, thread.count=34, thread.peakCount=34, cluster.timeDiff=0, event.q.size=0, executor.q.async.size=0, executor.q.client.size=0, executor.q.query.size=0, executor.q.scheduled.size=0, executor.q.io.size=0, executor.q.system.size=0, executor.q.operation.size=0, executor.q.priorityOperation.size=0, executor.q.response.size=0, operations.remote.size=0, operations.running.size=0, operations.pending.invocations.count=0, operations.pending.invocations.percentage=0.00%, proxy.count=0, clientEndpoint.count=0, connection.active.count=0, client.connection.count=0, connection.count=0
+Apr 12, 2017 9:28:30 PM com.hazelcast.internal.monitors.HealthMonitor
+INFO: [172.18.0.6]:5701 [meta-search] [3.5.3] processors=2, physical.memory.total=3.9G, physical.memory.free=108.2M, swap.space.total=3.9G, swap.space.free=2.2G, heap.memory.used=59.4M, heap.memory.free=108.6M, heap.memory.total=168.0M, heap.memory.max=878.5M, heap.memory.used/total=35.38%, heap.memory.used/max=6.77%, minor.gc.count=8, minor.gc.time=122ms, major.gc.count=0, major.gc.time=0ms, load.process=0.00%, load.system=85.00%, load.systemAverage=12.00, thread.count=33, thread.peakCount=34, cluster.timeDiff=0, event.q.size=0, executor.q.async.size=0, executor.q.client.size=0, executor.q.query.size=0, executor.q.scheduled.size=0, executor.q.io.size=0, executor.q.system.size=0, executor.q.operation.size=0, executor.q.priorityOperation.size=0, executor.q.response.size=0, operations.remote.size=0, operations.running.size=0, operations.pending.invocations.count=0, operations.pending.invocations.percentage=0.00%, proxy.count=0, clientEndpoint.count=0, connection.active.count=0, client.connection.count=0, connection.count=0
+Apr 12, 2017 9:28:57 PM com.hazelcast.nio.tcp.SocketAcceptor
+INFO: [172.18.0.6]:5701 [meta-search] [3.5.3] Accepting socket connection from /172.18.0.8:38458
+Apr 12, 2017 9:28:58 PM com.hazelcast.nio.tcp.TcpIpConnectionManager
+INFO: [172.18.0.6]:5701 [meta-search] [3.5.3] Established socket connection between /172.18.0.6:5701
+Apr 12, 2017 9:28:58 PM com.hazelcast.client.impl.client.AuthenticationRequest
+INFO: [172.18.0.6]:5701 [meta-search] [3.5.3] Received auth from Connection [/172.18.0.6:5701 -> /172.18.0.8:38458], endpoint=null, live=true, type=JAVA_CLIENT, successfully authenticated, principal : ClientPrincipal{uuid='64388ed4-da7a-4ec2-b307-18f6c18b070e', ownerUuid='7332a320-9793-4841-a2fe-48d490a7288b'}, owner connection : true
+Apr 12, 2017 9:29:00 PM com.hazelcast.internal.monitors.HealthMonitor
+INFO: [172.18.0.6]:5701 [meta-search] [3.5.3] processors=2, physical.memory.total=3.9G, physical.memory.free=116.4M, swap.space.total=3.9G, swap.space.free=2.1G, heap.memory.used=81.8M, heap.memory.free=86.2M, heap.memory.total=168.0M, heap.memory.max=878.5M, heap.memory.used/total=48.68%, heap.memory.used/max=9.31%, minor.gc.count=8, minor.gc.time=122ms, major.gc.count=0, major.gc.time=0ms, load.process=1.00%, load.system=88.00%, load.systemAverage=9.95, thread.count=44, thread.peakCount=45, cluster.timeDiff=0, event.q.size=0, executor.q.async.size=0, executor.q.client.size=0, executor.q.query.size=0, executor.q.scheduled.size=0, executor.q.io.size=0, executor.q.system.size=0, executor.q.operation.size=0, executor.q.priorityOperation.size=0, executor.q.response.size=0, operations.remote.size=0, operations.running.size=0, operations.pending.invocations.count=0, operations.pending.invocations.percentage=0.00%, proxy.count=10, clientEndpoint.count=1, connection.active.count=1, client.connection.count=1, connection.count=0
+Apr 12, 2017 9:29:08 PM com.hazelcast.partition.InternalPartitionService
+INFO: [172.18.0.6]:5701 [meta-search] [3.5.3] Initializing cluster partition table first arrangement...
+Apr 12, 2017 9:30:01 PM com.hazelcast.internal.monitors.HealthMonitor
+INFO: [172.18.0.6]:5701 [meta-search] [3.5.3] processors=2, physical.memory.total=3.9G, physical.memory.free=122.7M, swap.space.total=3.9G, swap.space.free=1.9G, heap.memory.used=96.7M, heap.memory.free=71.3M, heap.memory.total=168.0M, heap.memory.max=878.5M, heap.memory.used/total=57.53%, heap.memory.used/max=11.00%, minor.gc.count=8, minor.gc.time=122ms, major.gc.count=0, major.gc.time=0ms, load.process=1.00%, load.system=78.00%, load.systemAverage=6.47, thread.count=44, thread.peakCount=55, cluster.timeDiff=0, event.q.size=0, executor.q.async.size=0, executor.q.client.size=0, executor.q.query.size=0, executor.q.scheduled.size=0, executor.q.io.size=0, executor.q.system.size=0, executor.q.operation.size=0, executor.q.priorityOperation.size=0, executor.q.response.size=0, operations.remote.size=0, operations.running.size=0, operations.pending.invocations.count=0, operations.pending.invocations.percentage=0.00%, proxy.count=10, clientEndpoint.count=1, connection.active.count=1, client.connection.count=1, connection.count=0

@@ -1,0 +1,12 @@
+[2017-04-12 21:26:07,620][INFO ][node                     ] [locations] version[1.7.1], pid[18], build[b88f43f/2015-07-29T09:54:16Z]
+[2017-04-12 21:26:07,640][INFO ][node                     ] [locations] initializing ...
+[2017-04-12 21:26:08,644][INFO ][plugins                  ] [locations] loaded [], sites [migration]
+[2017-04-12 21:26:09,018][INFO ][env                      ] [locations] using [1] data paths, mounts [[/ (none)]], net usable_space [43.9gb], net total_space [59gb], types [aufs]
+[2017-04-12 21:26:28,082][INFO ][node                     ] [locations] initialized
+[2017-04-12 21:26:28,091][INFO ][node                     ] [locations] starting ...
+[2017-04-12 21:26:29,216][INFO ][transport                ] [locations] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/172.18.0.7:9300]}
+[2017-04-12 21:26:29,498][INFO ][discovery                ] [locations] cocha/pGVDfO-eQf6Uj1O6KHCMgg
+[2017-04-12 21:26:34,128][INFO ][cluster.service          ] [locations] new_master [locations][pGVDfO-eQf6Uj1O6KHCMgg][85788833e15d][inet[/172.18.0.7:9300]], reason: zen-disco-join (elected_as_master)
+[2017-04-12 21:26:34,449][INFO ][http                     ] [locations] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/172.18.0.7:9200]}
+[2017-04-12 21:26:34,451][INFO ][node                     ] [locations] started
+[2017-04-12 21:26:36,123][INFO ][gateway                  ] [locations] recovered [1] indices into cluster_state

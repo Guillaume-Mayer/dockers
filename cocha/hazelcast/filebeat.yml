@@ -1,7 +1,7 @@
 filebeat.prospectors:
 - input_type: log
   paths:
-  - /hazelcast.log
+  - /log/hazelcast.log
 name: "hazelcast"
 output.logstash:
   hosts: ["logstash:5044"]
