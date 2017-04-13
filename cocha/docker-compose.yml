@@ -80,8 +80,8 @@ services:
         - 12201:12201/udp
         environment:
         - TZ=America/Santiago
-        depends_on:
-        - elastic
+        #depends_on:
+        #- elastic
     elastic:
         image: elasticsearch:alpine
         volumes:

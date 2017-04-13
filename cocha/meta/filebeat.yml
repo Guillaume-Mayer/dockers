@@ -1,10 +1,18 @@
 filebeat.prospectors:
 - input_type: log
   paths:
-  - /opt/jboss/jboss-eap-6.4/standalone/log/*.log
+  - /opt/jboss/jboss-eap-6.4/standalone/log/meta-search.log
   multiline:
-    pattern: '^[[:space:]]+|^Caused by:'
-    negate: false
+    pattern: '^(\x1B\[[0-9]+m)*\[[0-9]{2}/[0-9]{2}/[0-9]{4} [0-9]{2}:[0-9]{2}:[0-9]{2},[0-9]{3}\] \['
+    negate: true
+    match: after
+- input_type: log
+  paths:
+  - /opt/jboss/jboss-eap-6.4/standalone/log/*.log
+  exclude_files: ['meta-search\.log$']
+  multiline:
+    pattern: '^\[[0-9]{2}/[0-9]{2}/[0-9]{4} [0-9]{2}:[0-9]{2}:[0-9]{2},[0-9]{3}\] \['
+    negate: true
     match: after
 name: "meta"
 output.logstash:
