@@ -1,0 +1,192 @@
+14:39:52,387 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 41) JBAS011800: Activating Naming Subsystem
+14:39:52,515 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 32) JBAS010280: Activating Infinispan subsystem.
+14:39:52,449 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 46) JBAS013371: Activating Security Subsystem
+14:39:52,540 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 48) JBAS010153: Node identifier property is set to the default value. Please make sure it is unique.
+14:39:52,631 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 50) JBAS015537: Activating WebServices Extension
+14:39:52,681 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 39) JBAS012615: Activated the following JSF Implementations: [main, 1.2]
+14:39:53,597 INFO  [org.jboss.as.naming] (MSC service thread 1-2) JBAS011802: Starting Naming Service
+14:39:53,601 INFO  [org.jboss.as.security] (MSC service thread 1-3) JBAS013370: Current PicketBox version=4.1.1.Final-redhat-1
+14:39:53,759 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-1) JBAS015400: Bound mail session [java:jboss/mail/Default]
+14:39:54,216 INFO  [org.jboss.jaxr] (MSC service thread 1-4) JBAS014000: Started JAXR subsystem, binding JAXR connection factory into JNDI as: java:jboss/jaxr/ConnectionFactory
+14:39:54,577 INFO  [org.jboss.as.connector.logging] (MSC service thread 1-4) JBAS010408: Starting JCA Subsystem (IronJacamar 1.0.31.Final-redhat-1)
+14:39:55,223 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 28) JBAS010404: Deploying non-JDBC-compliant driver class com.mysql.jdbc.Driver (version 5.1)
+14:39:57,490 INFO  [org.apache.coyote.http11.Http11Protocol] (MSC service thread 1-1) JBWEB003001: Coyote HTTP/1.1 initializing on : http-/0.0.0.0:8080
+14:39:57,728 INFO  [org.apache.coyote.http11.Http11Protocol] (MSC service thread 1-1) JBWEB003000: Coyote HTTP/1.1 starting on: http-/0.0.0.0:8080
+14:39:58,645 INFO  [org.jboss.ws.common.management] (MSC service thread 1-3) JBWS022052: Starting JBoss Web Services - Stack CXF Server 4.3.4.Final-redhat-1
+14:39:58,743 INFO  [org.jboss.as.remoting] (MSC service thread 1-1) JBAS017100: Listening on 0.0.0.0:9999
+14:39:58,743 INFO  [org.jboss.as.remoting] (MSC service thread 1-4) JBAS017100: Listening on 0.0.0.0:4447
+14:39:58,885 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-4) JBAS015012: Started FileSystemDeploymentService for directory /opt/jboss/jboss-eap-6.4/standalone/deployments
+14:39:58,893 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) JBAS015876: Starting deployment of "cocha-hotels-core.ear" (runtime-name: "cocha-hotels-core.ear")
+14:40:00,257 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-3) JBAS010400: Bound data source [java:jboss/datasources/bookingDS]
+14:40:00,268 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) JBAS010400: Bound data source [java:jboss/datasources/hotelDS]
+14:40:00,288 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-1) JBAS010400: Bound data source [java:jboss/datasources/meta-database]
+14:40:00,287 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-3) JBAS010400: Bound data source [java:jboss/datasources/meta-database2]
+14:40:04,103 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) JBAS015973: Starting subdeployment (runtime-name: "cocha-hotels-core-war.war")
+14:40:17,153 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-1) JBAS015960: Class Path entry hk2-core.jar in /content/cocha-hotels-core.ear/cocha-hotels-core-war.war/WEB-INF/lib/ha-api-3.1.9.jar  does not point to a valid jar for a Class-Path reference.
+14:40:17,154 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-1) JBAS015960: Class Path entry class-model.jar in /content/cocha-hotels-core.ear/cocha-hotels-core-war.war/WEB-INF/lib/ha-api-3.1.9.jar  does not point to a valid jar for a Class-Path reference.
+14:40:17,171 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-1) JBAS015960: Class Path entry config.jar in /content/cocha-hotels-core.ear/cocha-hotels-core-war.war/WEB-INF/lib/ha-api-3.1.9.jar  does not point to a valid jar for a Class-Path reference.
+14:40:17,177 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-1) JBAS015960: Class Path entry auto-depends.jar in /content/cocha-hotels-core.ear/cocha-hotels-core-war.war/WEB-INF/lib/ha-api-3.1.9.jar  does not point to a valid jar for a Class-Path reference.
+14:40:17,191 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-1) JBAS015960: Class Path entry javax.inject.jar in /content/cocha-hotels-core.ear/cocha-hotels-core-war.war/WEB-INF/lib/ha-api-3.1.9.jar  does not point to a valid jar for a Class-Path reference.
+14:40:17,192 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-1) JBAS015960: Class Path entry asm-all-repackaged.jar in /content/cocha-hotels-core.ear/cocha-hotels-core-war.war/WEB-INF/lib/ha-api-3.1.9.jar  does not point to a valid jar for a Class-Path reference.
+14:40:17,193 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-1) JBAS015960: Class Path entry hk2-api.jar in /content/cocha-hotels-core.ear/cocha-hotels-core-war.war/WEB-INF/lib/ha-api-3.1.9.jar  does not point to a valid jar for a Class-Path reference.
+14:40:17,194 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-1) JBAS015960: Class Path entry osgi-resource-locator.jar in /content/cocha-hotels-core.ear/cocha-hotels-core-war.war/WEB-INF/lib/ha-api-3.1.9.jar  does not point to a valid jar for a Class-Path reference.
+14:40:17,194 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-1) JBAS015960: Class Path entry tiger-types.jar in /content/cocha-hotels-core.ear/cocha-hotels-core-war.war/WEB-INF/lib/ha-api-3.1.9.jar  does not point to a valid jar for a Class-Path reference.
+14:40:17,195 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-1) JBAS015960: Class Path entry bean-validator.jar in /content/cocha-hotels-core.ear/cocha-hotels-core-war.war/WEB-INF/lib/ha-api-3.1.9.jar  does not point to a valid jar for a Class-Path reference.
+14:40:17,196 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-1) JBAS015960: Class Path entry jtype.jar in /content/cocha-hotels-core.ear/cocha-hotels-core-war.war/WEB-INF/lib/ha-api-3.1.9.jar  does not point to a valid jar for a Class-Path reference.
+14:40:17,222 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-1) JBAS015960: Class Path entry activation.jar in /content/cocha-hotels-core.ear/cocha-hotels-core-war.war/WEB-INF/lib/mail-1.4.jar  does not point to a valid jar for a Class-Path reference.
+14:40:17,250 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-1) JBAS015960: Class Path entry istack-commons-runtime-2.19.jar in /content/cocha-hotels-core.ear/cocha-hotels-core-war.war/WEB-INF/lib/jaxb-core-2.2.10-b140802.1033.jar  does not point to a valid jar for a Class-Path reference.
+14:40:17,251 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-1) JBAS015960: Class Path entry txw2-2.2.10-b140802.1033.jar in /content/cocha-hotels-core.ear/cocha-hotels-core-war.war/WEB-INF/lib/jaxb-core-2.2.10-b140802.1033.jar  does not point to a valid jar for a Class-Path reference.
+14:40:17,291 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-1) JBAS015960: Class Path entry jaxb-core.jar in /content/cocha-hotels-core.ear/cocha-hotels-core-war.war/WEB-INF/lib/jaxb-impl-2.2.10-b140802.1033.jar  does not point to a valid jar for a Class-Path reference.
+14:40:17,370 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-1) JBAS015960: Class Path entry javax.annotation-api.jar in /content/cocha-hotels-core.ear/cocha-hotels-core-war.war/WEB-INF/lib/jaxws-rt-2.2.10.jar  does not point to a valid jar for a Class-Path reference.
+14:40:17,371 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-1) JBAS015960: Class Path entry jsr181-api.jar in /content/cocha-hotels-core.ear/cocha-hotels-core-war.war/WEB-INF/lib/jaxws-rt-2.2.10.jar  does not point to a valid jar for a Class-Path reference.
+14:40:17,375 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-1) JBAS015960: Class Path entry jaxb-api.jar in /content/cocha-hotels-core.ear/cocha-hotels-core-war.war/WEB-INF/lib/jaxws-rt-2.2.10.jar  does not point to a valid jar for a Class-Path reference.
+14:40:17,390 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-1) JBAS015960: Class Path entry jaxws-api.jar in /content/cocha-hotels-core.ear/cocha-hotels-core-war.war/WEB-INF/lib/jaxws-rt-2.2.10.jar  does not point to a valid jar for a Class-Path reference.
+14:40:17,392 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-1) JBAS015960: Class Path entry javax.xml.soap-api.jar in /content/cocha-hotels-core.ear/cocha-hotels-core-war.war/WEB-INF/lib/jaxws-rt-2.2.10.jar  does not point to a valid jar for a Class-Path reference.
+14:40:17,393 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-1) JBAS015960: Class Path entry FastInfoset.jar in /content/cocha-hotels-core.ear/cocha-hotels-core-war.war/WEB-INF/lib/jaxws-rt-2.2.10.jar  does not point to a valid jar for a Class-Path reference.
+14:40:17,394 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-1) JBAS015960: Class Path entry gmbal-api-only.jar in /content/cocha-hotels-core.ear/cocha-hotels-core-war.war/WEB-INF/lib/jaxws-rt-2.2.10.jar  does not point to a valid jar for a Class-Path reference.
+14:40:17,401 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-1) JBAS015960: Class Path entry ha-api.jar in /content/cocha-hotels-core.ear/cocha-hotels-core-war.war/WEB-INF/lib/jaxws-rt-2.2.10.jar  does not point to a valid jar for a Class-Path reference.
+14:40:17,401 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-1) JBAS015960: Class Path entry jaxb-impl.jar in /content/cocha-hotels-core.ear/cocha-hotels-core-war.war/WEB-INF/lib/jaxws-rt-2.2.10.jar  does not point to a valid jar for a Class-Path reference.
+14:40:17,402 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-1) JBAS015960: Class Path entry management-api.jar in /content/cocha-hotels-core.ear/cocha-hotels-core-war.war/WEB-INF/lib/jaxws-rt-2.2.10.jar  does not point to a valid jar for a Class-Path reference.
+14:40:17,403 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-1) JBAS015960: Class Path entry mimepull.jar in /content/cocha-hotels-core.ear/cocha-hotels-core-war.war/WEB-INF/lib/jaxws-rt-2.2.10.jar  does not point to a valid jar for a Class-Path reference.
+14:40:17,403 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-1) JBAS015960: Class Path entry policy.jar in /content/cocha-hotels-core.ear/cocha-hotels-core-war.war/WEB-INF/lib/jaxws-rt-2.2.10.jar  does not point to a valid jar for a Class-Path reference.
+14:40:17,404 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-1) JBAS015960: Class Path entry saaj-impl.jar in /content/cocha-hotels-core.ear/cocha-hotels-core-war.war/WEB-INF/lib/jaxws-rt-2.2.10.jar  does not point to a valid jar for a Class-Path reference.
+14:40:17,405 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-1) JBAS015960: Class Path entry stax-ex.jar in /content/cocha-hotels-core.ear/cocha-hotels-core-war.war/WEB-INF/lib/jaxws-rt-2.2.10.jar  does not point to a valid jar for a Class-Path reference.
+14:40:17,406 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-1) JBAS015960: Class Path entry stax2-api.jar in /content/cocha-hotels-core.ear/cocha-hotels-core-war.war/WEB-INF/lib/jaxws-rt-2.2.10.jar  does not point to a valid jar for a Class-Path reference.
+14:40:17,406 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-1) JBAS015960: Class Path entry streambuffer.jar in /content/cocha-hotels-core.ear/cocha-hotels-core-war.war/WEB-INF/lib/jaxws-rt-2.2.10.jar  does not point to a valid jar for a Class-Path reference.
+14:40:17,415 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-1) JBAS015960: Class Path entry woodstox-core-asl.jar in /content/cocha-hotels-core.ear/cocha-hotels-core-war.war/WEB-INF/lib/jaxws-rt-2.2.10.jar  does not point to a valid jar for a Class-Path reference.
+14:40:18,003 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-2) JBAS015893: Encountered invalid class name 'lombok.eclipse.handlers.HandleConstructor$HandleAllArgsConstructor' for service type 'lombok.eclipse.EclipseAnnotationHandler'
+14:40:18,012 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-2) JBAS015893: Encountered invalid class name 'lombok.eclipse.handlers.HandleConstructor$HandleNoArgsConstructor' for service type 'lombok.eclipse.EclipseAnnotationHandler'
+14:40:18,013 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-2) JBAS015893: Encountered invalid class name 'lombok.eclipse.handlers.HandleConstructor$HandleRequiredArgsConstructor' for service type 'lombok.eclipse.EclipseAnnotationHandler'
+14:40:18,015 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-2) JBAS015893: Encountered invalid class name 'lombok.eclipse.handlers.HandleLog$HandleCommonsLog' for service type 'lombok.eclipse.EclipseAnnotationHandler'
+14:40:18,016 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-2) JBAS015893: Encountered invalid class name 'lombok.eclipse.handlers.HandleLog$HandleJulLog' for service type 'lombok.eclipse.EclipseAnnotationHandler'
+14:40:18,018 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-2) JBAS015893: Encountered invalid class name 'lombok.eclipse.handlers.HandleLog$HandleLog4j2Log' for service type 'lombok.eclipse.EclipseAnnotationHandler'
+14:40:18,019 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-2) JBAS015893: Encountered invalid class name 'lombok.eclipse.handlers.HandleLog$HandleLog4jLog' for service type 'lombok.eclipse.EclipseAnnotationHandler'
+14:40:18,020 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-2) JBAS015893: Encountered invalid class name 'lombok.eclipse.handlers.HandleLog$HandleSlf4jLog' for service type 'lombok.eclipse.EclipseAnnotationHandler'
+14:40:18,021 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-2) JBAS015893: Encountered invalid class name 'lombok.eclipse.handlers.HandleLog$HandleXSlf4jLog' for service type 'lombok.eclipse.EclipseAnnotationHandler'
+14:40:18,022 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-2) JBAS015893: Encountered invalid class name 'lombok.javac.handlers.HandleConstructor$HandleAllArgsConstructor' for service type 'lombok.javac.JavacAnnotationHandler'
+14:40:18,024 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-2) JBAS015893: Encountered invalid class name 'lombok.javac.handlers.HandleConstructor$HandleNoArgsConstructor' for service type 'lombok.javac.JavacAnnotationHandler'
+14:40:18,024 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-2) JBAS015893: Encountered invalid class name 'lombok.javac.handlers.HandleConstructor$HandleRequiredArgsConstructor' for service type 'lombok.javac.JavacAnnotationHandler'
+14:40:18,025 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-2) JBAS015893: Encountered invalid class name 'lombok.javac.handlers.HandleLog$HandleCommonsLog' for service type 'lombok.javac.JavacAnnotationHandler'
+14:40:18,026 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-2) JBAS015893: Encountered invalid class name 'lombok.javac.handlers.HandleLog$HandleJulLog' for service type 'lombok.javac.JavacAnnotationHandler'
+14:40:18,027 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-2) JBAS015893: Encountered invalid class name 'lombok.javac.handlers.HandleLog$HandleLog4j2Log' for service type 'lombok.javac.JavacAnnotationHandler'
+14:40:18,027 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-2) JBAS015893: Encountered invalid class name 'lombok.javac.handlers.HandleLog$HandleLog4jLog' for service type 'lombok.javac.JavacAnnotationHandler'
+14:40:18,028 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-2) JBAS015893: Encountered invalid class name 'lombok.javac.handlers.HandleLog$HandleSlf4jLog' for service type 'lombok.javac.JavacAnnotationHandler'
+14:40:18,030 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-2) JBAS015893: Encountered invalid class name 'lombok.javac.handlers.HandleLog$HandleXSlf4jLog' for service type 'lombok.javac.JavacAnnotationHandler'
+14:40:18,032 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-2) JBAS015893: Encountered invalid class name 'lombok.launch.AnnotationProcessorHider$AnnotationProcessor' for service type 'javax.annotation.processing.Processor'
+14:40:18,032 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-2) JBAS015893: Encountered invalid class name 'lombok.core.Main$LicenseApp' for service type 'lombok.core.LombokApp'
+14:40:18,033 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-2) JBAS015893: Encountered invalid class name 'lombok.core.Main$VersionApp' for service type 'lombok.core.LombokApp'
+14:40:18,034 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-2) JBAS015893: Encountered invalid class name 'lombok.installer.Installer$CommandLineInstallerApp' for service type 'lombok.core.LombokApp'
+14:40:18,035 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-2) JBAS015893: Encountered invalid class name 'lombok.installer.Installer$CommandLineUninstallerApp' for service type 'lombok.core.LombokApp'
+14:40:18,038 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-2) JBAS015893: Encountered invalid class name 'lombok.installer.Installer$GraphicalInstallerApp' for service type 'lombok.core.LombokApp'
+14:40:18,074 INFO  [org.jboss.as.jpa] (MSC service thread 1-2) JBAS011401: Read persistence.xml for hotelDS
+14:40:18,089 INFO  [org.jboss.as.jpa] (MSC service thread 1-2) JBAS011401: Read persistence.xml for metaDS
+14:40:18,092 INFO  [org.jboss.as.jpa] (MSC service thread 1-2) JBAS011401: Read persistence.xml for metaDS2
+14:40:18,095 INFO  [org.jboss.as.jpa] (MSC service thread 1-2) JBAS011401: Read persistence.xml for bookingDS
+14:40:20,415 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-4) JNDI bindings for session bean named GetBookReservation in deployment unit subdeployment "cocha-hotels-core-war.war" of deployment "cocha-hotels-core.ear" are as follows:
+
+	java:global/cocha-hotels-core/cocha-hotels-core-war/GetBookReservation!cl.cocha.rest.get.services.GetBookReservation
+	java:app/cocha-hotels-core-war/GetBookReservation!cl.cocha.rest.get.services.GetBookReservation
+	java:module/GetBookReservation!cl.cocha.rest.get.services.GetBookReservation
+	java:global/cocha-hotels-core/cocha-hotels-core-war/GetBookReservation
+	java:app/cocha-hotels-core-war/GetBookReservation
+	java:module/GetBookReservation
+
+14:40:20,429 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-4) JNDI bindings for session bean named HotelInfoEANSvc in deployment unit subdeployment "cocha-hotels-core-war.war" of deployment "cocha-hotels-core.ear" are as follows:
+
+	java:global/cocha-hotels-core/cocha-hotels-core-war/HotelInfoEANSvc!cl.cocha.hotels.ejb.HotelInfoEANSvc
+	java:app/cocha-hotels-core-war/HotelInfoEANSvc!cl.cocha.hotels.ejb.HotelInfoEANSvc
+	java:module/HotelInfoEANSvc!cl.cocha.hotels.ejb.HotelInfoEANSvc
+	java:global/cocha-hotels-core/cocha-hotels-core-war/HotelInfoEANSvc
+	java:app/cocha-hotels-core-war/HotelInfoEANSvc
+	java:module/HotelInfoEANSvc
+
+14:40:20,432 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-4) JNDI bindings for session bean named OnlinePaySvc in deployment unit subdeployment "cocha-hotels-core-war.war" of deployment "cocha-hotels-core.ear" are as follows:
+
+	java:global/cocha-hotels-core/cocha-hotels-core-war/OnlinePaySvc!cl.cocha.hotels.ejb.OnlinePaySvc
+	java:app/cocha-hotels-core-war/OnlinePaySvc!cl.cocha.hotels.ejb.OnlinePaySvc
+	java:module/OnlinePaySvc!cl.cocha.hotels.ejb.OnlinePaySvc
+	java:global/cocha-hotels-core/cocha-hotels-core-war/OnlinePaySvc
+	java:app/cocha-hotels-core-war/OnlinePaySvc
+	java:module/OnlinePaySvc
+
+14:40:20,436 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-4) JNDI bindings for session bean named GetBookReservationSabre in deployment unit subdeployment "cocha-hotels-core-war.war" of deployment "cocha-hotels-core.ear" are as follows:
+
+	java:global/cocha-hotels-core/cocha-hotels-core-war/GetBookReservationSabre!cl.cocha.rest.get.services.GetBookReservationSabre
+	java:app/cocha-hotels-core-war/GetBookReservationSabre!cl.cocha.rest.get.services.GetBookReservationSabre
+	java:module/GetBookReservationSabre!cl.cocha.rest.get.services.GetBookReservationSabre
+	java:global/cocha-hotels-core/cocha-hotels-core-war/GetBookReservationSabre
+	java:app/cocha-hotels-core-war/GetBookReservationSabre
+	java:module/GetBookReservationSabre
+
+14:40:20,440 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-4) JNDI bindings for session bean named HibernateMysqlBookingUtilBean in deployment unit subdeployment "cocha-hotels-core-war.war" of deployment "cocha-hotels-core.ear" are as follows:
+
+	java:global/cocha-hotels-core/cocha-hotels-core-war/HibernateMysqlBookingUtilBean!cl.cocha.hotels.services.HibernateMysqlBookingUtil
+	java:app/cocha-hotels-core-war/HibernateMysqlBookingUtilBean!cl.cocha.hotels.services.HibernateMysqlBookingUtil
+	java:module/HibernateMysqlBookingUtilBean!cl.cocha.hotels.services.HibernateMysqlBookingUtil
+	java:global/cocha-hotels-core/cocha-hotels-core-war/HibernateMysqlBookingUtilBean
+	java:app/cocha-hotels-core-war/HibernateMysqlBookingUtilBean
+	java:module/HibernateMysqlBookingUtilBean
+
+14:40:20,442 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-4) JNDI bindings for session bean named HibernateMysqlMetaUtilBean in deployment unit subdeployment "cocha-hotels-core-war.war" of deployment "cocha-hotels-core.ear" are as follows:
+
+	java:global/cocha-hotels-core/cocha-hotels-core-war/HibernateMysqlMetaUtilBean!cl.cocha.hotels.services.HibernateMysqlMetaUtil
+	java:app/cocha-hotels-core-war/HibernateMysqlMetaUtilBean!cl.cocha.hotels.services.HibernateMysqlMetaUtil
+	java:module/HibernateMysqlMetaUtilBean!cl.cocha.hotels.services.HibernateMysqlMetaUtil
+	java:global/cocha-hotels-core/cocha-hotels-core-war/HibernateMysqlMetaUtilBean
+	java:app/cocha-hotels-core-war/HibernateMysqlMetaUtilBean
+	java:module/HibernateMysqlMetaUtilBean
+
+14:40:20,443 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-4) JNDI bindings for session bean named HibernateMysqlMeta2UtilBean in deployment unit subdeployment "cocha-hotels-core-war.war" of deployment "cocha-hotels-core.ear" are as follows:
+
+	java:global/cocha-hotels-core/cocha-hotels-core-war/HibernateMysqlMeta2UtilBean!cl.cocha.hotels.services.HibernateMysqlMeta2Util
+	java:app/cocha-hotels-core-war/HibernateMysqlMeta2UtilBean!cl.cocha.hotels.services.HibernateMysqlMeta2Util
+	java:module/HibernateMysqlMeta2UtilBean!cl.cocha.hotels.services.HibernateMysqlMeta2Util
+	java:global/cocha-hotels-core/cocha-hotels-core-war/HibernateMysqlMeta2UtilBean
+	java:app/cocha-hotels-core-war/HibernateMysqlMeta2UtilBean
+	java:module/HibernateMysqlMeta2UtilBean
+
+14:40:20,453 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-4) JNDI bindings for session bean named HotelListSvc in deployment unit subdeployment "cocha-hotels-core-war.war" of deployment "cocha-hotels-core.ear" are as follows:
+
+	java:global/cocha-hotels-core/cocha-hotels-core-war/HotelListSvc!cl.cocha.hotels.ejb.HotelListSvc
+	java:app/cocha-hotels-core-war/HotelListSvc!cl.cocha.hotels.ejb.HotelListSvc
+	java:module/HotelListSvc!cl.cocha.hotels.ejb.HotelListSvc
+	java:global/cocha-hotels-core/cocha-hotels-core-war/HotelListSvc
+	java:app/cocha-hotels-core-war/HotelListSvc
+	java:module/HotelListSvc
+
+14:40:20,456 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-4) JNDI bindings for session bean named HibernateMysqlUtilBean in deployment unit subdeployment "cocha-hotels-core-war.war" of deployment "cocha-hotels-core.ear" are as follows:
+
+	java:global/cocha-hotels-core/cocha-hotels-core-war/HibernateMysqlUtilBean!cl.cocha.hotels.services.HibernateMysqlUtil
+	java:app/cocha-hotels-core-war/HibernateMysqlUtilBean!cl.cocha.hotels.services.HibernateMysqlUtil
+	java:module/HibernateMysqlUtilBean!cl.cocha.hotels.services.HibernateMysqlUtil
+	java:global/cocha-hotels-core/cocha-hotels-core-war/HibernateMysqlUtilBean
+	java:app/cocha-hotels-core-war/HibernateMysqlUtilBean
+	java:module/HibernateMysqlUtilBean
+
+14:40:20,457 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-4) JNDI bindings for session bean named HotelSvc in deployment unit subdeployment "cocha-hotels-core-war.war" of deployment "cocha-hotels-core.ear" are as follows:
+
+	java:global/cocha-hotels-core/cocha-hotels-core-war/HotelSvc!cl.cocha.hotels.ejb.HotelSvc
+	java:app/cocha-hotels-core-war/HotelSvc!cl.cocha.hotels.ejb.HotelSvc
+	java:module/HotelSvc!cl.cocha.hotels.ejb.HotelSvc
+	java:global/cocha-hotels-core/cocha-hotels-core-war/HotelSvc
+	java:app/cocha-hotels-core-war/HotelSvc
+	java:module/HotelSvc
+
+14:40:32,754 WARN  [org.jboss.as.ee] (MSC service thread 1-3) JBAS011006: Not installing optional component org.springframework.http.server.ServletServerHttpAsyncRequestControl due to an exception (enable DEBUG log level to see the cause)
+14:40:32,770 WARN  [org.jboss.as.ee] (MSC service thread 1-3) JBAS011006: Not installing optional component com.sun.xml.ws.transport.http.servlet.WSAsyncListener$1 due to an exception (enable DEBUG log level to see the cause)
+14:40:32,805 WARN  [org.jboss.as.ee] (MSC service thread 1-3) JBAS011006: Not installing optional component org.springframework.web.context.request.async.StandardServletAsyncWebRequest due to an exception (enable DEBUG log level to see the cause)
+14:40:33,386 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 54) JBAS011402: Starting Persistence Unit Service 'cocha-hotels-core.ear/cocha-hotels-core-war.war#metaDS2'
+14:40:33,373 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 55) JBAS011402: Starting Persistence Unit Service 'cocha-hotels-core.ear/cocha-hotels-core-war.war#hotelDS'
+14:40:33,390 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 56) JBAS011402: Starting Persistence Unit Service 'cocha-hotels-core.ear/cocha-hotels-core-war.war#bookingDS'
+14:40:33,489 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 57) JBAS011402: Starting Persistence Unit Service 'cocha-hotels-core.ear/cocha-hotels-core-war.war#metaDS'
+14:40:41,402 INFO  [org.jboss.web] (ServerService Thread Pool -- 60) JBAS018210: Register web context: /cocha-hotels-core
+14:40:41,736 INFO  [org.apache.catalina.core.ContainerBase.[jboss.web].[default-host].[/cocha-hotels-core]] (ServerService Thread Pool -- 60) No Spring WebApplicationInitializer types detected on classpath
+14:40:44,479 INFO  [org.apache.catalina.core.ContainerBase.[jboss.web].[default-host].[/cocha-hotels-core]] (ServerService Thread Pool -- 60) Initializing Spring root WebApplicationContext
+14:40:50,441 INFO  [org.apache.catalina.core.ContainerBase.[jboss.web].[default-host].[/cocha-hotels-core]] (ServerService Thread Pool -- 60) Initializing Spring FrameworkServlet 'spring'
+14:40:52,471 INFO  [org.apache.catalina.core.ContainerBase.[jboss.web].[default-host].[/cocha-hotels-core]] (ServerService Thread Pool -- 60) QuartzInitializer: Quartz Initializer Servlet loaded, initializing Scheduler...
+14:40:52,793 INFO  [org.apache.catalina.core.ContainerBase.[jboss.web].[default-host].[/cocha-hotels-core]] (ServerService Thread Pool -- 60) QuartzInitializer: Scheduler has been started...
+14:40:52,794 INFO  [org.apache.catalina.core.ContainerBase.[jboss.web].[default-host].[/cocha-hotels-core]] (ServerService Thread Pool -- 60) QuartzInitializer: Storing the Quartz Scheduler Factory in the servlet context at key: org.quartz.impl.StdSchedulerFactory.KEY
+14:40:53,083 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 29) JBAS015859: Deployed "cocha-hotels-core.ear" (runtime-name : "cocha-hotels-core.ear")
+14:40:53,212 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015961: Http management interface listening on http://0.0.0.0:9990/management
+14:40:53,221 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015951: Admin console listening on http://0.0.0.0:9990
+14:40:53,222 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015874: JBoss EAP 6.4.0.GA (AS 7.5.0.Final-redhat-21) started in 74739ms - Started 479 of 517 services (62 services are lazy, passive or on-demand)

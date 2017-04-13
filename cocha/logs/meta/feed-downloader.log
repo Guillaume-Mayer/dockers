@@ -1,0 +1,107 @@
+[13/04/2017 14:40:38,915] [] [INFO] [org.springframework.web.context.ContextLoader]:305 - Root WebApplicationContext: initialization started
+[13/04/2017 14:40:39,278] [] [INFO] [org.springframework.web.context.ContextLoader]:305 - Root WebApplicationContext: initialization started
+[13/04/2017 14:40:39,291] [] [INFO] [org.springframework.web.context.ContextLoader]:285 - Root WebApplicationContext: initialization started
+[13/04/2017 14:40:40,099] [] [INFO] [org.springframework.web.context.support.XmlWebApplicationContext]:578 - Refreshing Root WebApplicationContext: startup date [Thu Apr 13 14:40:40 CLST 2017]; root of context hierarchy
+[13/04/2017 14:40:40,127] [] [INFO] [org.springframework.web.context.support.XmlWebApplicationContext]:514 - Refreshing Root WebApplicationContext: startup date [Thu Apr 13 14:40:40 CLST 2017]; root of context hierarchy
+[13/04/2017 14:40:40,164] [] [INFO] [org.springframework.web.context.support.XmlWebApplicationContext]:510 - Refreshing Root WebApplicationContext: startup date [Thu Apr 13 14:40:40 CLST 2017]; root of context hierarchy
+[13/04/2017 14:40:40,621] [] [INFO] [org.springframework.beans.factory.xml.XmlBeanDefinitionReader]:317 - Loading XML bean definitions from class path resource [spring/camel-context.xml]
+[13/04/2017 14:40:40,619] [] [INFO] [org.springframework.beans.factory.xml.XmlBeanDefinitionReader]:317 - Loading XML bean definitions from class path resource [spring/camel-context.xml]
+[13/04/2017 14:40:40,654] [] [INFO] [org.springframework.beans.factory.xml.XmlBeanDefinitionReader]:317 - Loading XML bean definitions from class path resource [spring/camel-context.xml]
+[13/04/2017 14:40:42,865] [] [INFO] [org.springframework.beans.factory.xml.XmlBeanDefinitionReader]:317 - Loading XML bean definitions from class path resource [spring/profiles.xml]
+[13/04/2017 14:40:42,882] [] [INFO] [org.springframework.beans.factory.xml.XmlBeanDefinitionReader]:317 - Loading XML bean definitions from class path resource [spring/profiles.xml]
+[13/04/2017 14:40:42,963] [] [INFO] [org.springframework.beans.factory.xml.XmlBeanDefinitionReader]:317 - Loading XML bean definitions from class path resource [spring/config-db-feed.xml]
+[13/04/2017 14:40:43,022] [] [INFO] [org.springframework.beans.factory.xml.XmlBeanDefinitionReader]:317 - Loading XML bean definitions from class path resource [spring/profiles.xml]
+[13/04/2017 14:40:43,024] [] [INFO] [org.springframework.beans.factory.xml.XmlBeanDefinitionReader]:317 - Loading XML bean definitions from class path resource [spring/config-db-feed.xml]
+[13/04/2017 14:40:43,222] [] [INFO] [org.springframework.beans.factory.xml.XmlBeanDefinitionReader]:317 - Loading XML bean definitions from class path resource [spring/config-db-feed.xml]
+[13/04/2017 14:40:44,817] [] [INFO] [org.springframework.beans.factory.xml.XmlBeanDefinitionReader]:317 - Loading XML bean definitions from class path resource [spring/config-db-content.xml]
+[13/04/2017 14:40:44,934] [] [INFO] [org.springframework.beans.factory.xml.XmlBeanDefinitionReader]:317 - Loading XML bean definitions from class path resource [spring/config-db-content.xml]
+[13/04/2017 14:40:44,961] [] [INFO] [org.springframework.beans.factory.xml.XmlBeanDefinitionReader]:317 - Loading XML bean definitions from class path resource [spring/config-db-content.xml]
+[13/04/2017 14:40:49,174] [] [INFO] [org.springframework.web.context.ContextLoader]:305 - Root WebApplicationContext: initialization started
+[13/04/2017 14:40:49,964] [] [INFO] [org.springframework.web.context.support.XmlWebApplicationContext]:578 - Refreshing Root WebApplicationContext: startup date [Thu Apr 13 14:40:49 CLST 2017]; root of context hierarchy
+[13/04/2017 14:40:50,333] [] [INFO] [org.springframework.beans.factory.xml.XmlBeanDefinitionReader]:317 - Loading XML bean definitions from class path resource [spring/camel-context.xml]
+[13/04/2017 14:40:50,914] [] [INFO] [org.springframework.beans.factory.xml.XmlBeanDefinitionReader]:317 - Loading XML bean definitions from class path resource [spring/profiles.xml]
+[13/04/2017 14:40:51,033] [] [INFO] [org.springframework.beans.factory.xml.XmlBeanDefinitionReader]:317 - Loading XML bean definitions from class path resource [spring/config-db-content.xml]
+[13/04/2017 14:40:53,005] [] [INFO] [org.springframework.beans.factory.xml.XmlBeanDefinitionReader]:317 - Loading XML bean definitions from class path resource [spring/config-db-feed.xml]
+[13/04/2017 14:40:53,348] [] [INFO] [org.springframework.beans.factory.xml.XmlBeanDefinitionReader]:317 - Loading XML bean definitions from class path resource [spring/config-cxf.xml]
+[13/04/2017 14:40:53,415] [] [INFO] [org.springframework.beans.factory.xml.XmlBeanDefinitionReader]:317 - Loading XML bean definitions from class path resource [META-INF/cxf/cxf.xml]
+[13/04/2017 14:40:53,428] [] [INFO] [org.springframework.beans.factory.xml.XmlBeanDefinitionReader]:317 - Loading XML bean definitions from class path resource [META-INF/cxf/cxf-servlet.xml]
+[13/04/2017 14:40:56,302] [] [INFO] [org.springframework.beans.factory.xml.XmlBeanDefinitionReader]:317 - Loading XML bean definitions from class path resource [spring/config-hazelcast.xml]
+[13/04/2017 14:40:59,426] [] [INFO] [org.apache.camel.spring.CamelContextFactoryBean]:288 - Bridging Camel and Spring property placeholder configurer with id: bridgePropertyPlaceholder
+[13/04/2017 14:40:59,461] [] [INFO] [org.apache.camel.core.xml.AbstractCamelContextFactoryBean]:261 - Using custom EventNotifier with id: auditEventNotifier and implementation: com.cocha.hotels.util.AuditEventNotifier@3cbe618b
+[13/04/2017 14:41:01,757] [] [INFO] [org.apache.camel.impl.converter.DefaultTypeConverter]:56 - Loaded 218 type converters
+[13/04/2017 14:41:02,098] [] [INFO] [org.apache.camel.spring.SpringCamelContext]:2794 - Apache Camel 2.17.1 (CamelContext: camel) is starting
+[13/04/2017 14:41:02,128] [] [INFO] [org.apache.camel.management.ManagedManagementStrategy]:191 - JMX is enabled
+[13/04/2017 14:41:02,271] [] [WARN] [org.apache.camel.management.DefaultManagementLifecycleStrategy]:178 - This CamelContext(camel) will be registered using the name: camel-2 due to clash with an existing name already registered in MBeanServer.
+[13/04/2017 14:41:02,470] [] [INFO] [org.apache.camel.impl.DefaultRuntimeEndpointRegistry]:203 - Runtime endpoint registry is in extended mode gathering usage statistics of all incoming and outgoing endpoints (cache limit: 1000)
+[13/04/2017 14:41:03,512] [] [INFO] [org.apache.camel.component.jpa.JpaComponent]:134 - Using EntityManagerFactory configured: org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean@4f758deb
+[13/04/2017 14:41:03,514] [] [INFO] [org.apache.camel.component.jpa.JpaComponent]:150 - Using TransactionManager configured on this component: org.springframework.transaction.jta.JtaTransactionManager@48dc8229
+[13/04/2017 14:41:04,461] [] [INFO] [org.springframework.web.context.ContextLoader]:345 - Root WebApplicationContext: initialization completed in 25174 ms
+[13/04/2017 14:41:06,113] [] [INFO] [org.apache.camel.spring.SpringCamelContext]:3033 - AllowUseOriginalMessage is enabled. If access to the original message is not needed, then its recommended to turn this option off as it may improve performance.
+[13/04/2017 14:41:06,114] [] [INFO] [org.apache.camel.spring.SpringCamelContext]:3043 - StreamCaching is not in use. If using streams then its recommended to enable stream caching. See more details at http://camel.apache.org/stream-caching.html
+[13/04/2017 14:41:07,203] [] [INFO] [org.springframework.web.context.ContextLoader]:325 - Root WebApplicationContext: initialization completed in 27905 ms
+[13/04/2017 14:41:08,531] [] [INFO] [org.apache.cxf.wsdl.service.factory.ReflectionServiceFactoryBean]:434 - Creating Service {http://travelio.es/ws4/v4/commonsws}TravelioCommonsServiceV4Service from class es.travelio.ws4.v4.commonsws.TravelioCommonsServiceV4
+[13/04/2017 14:41:11,639] [] [INFO] [org.apache.cxf.wsdl.service.factory.ReflectionServiceFactoryBean]:434 - Creating Service {http://travelio.es/ws4/v4/commonsws}TravelioCommonsServiceV4Service from class es.travelio.ws4.v4.commonsws.TravelioCommonsServiceV4
+[13/04/2017 14:41:11,872] [] [INFO] [org.apache.cxf.wsdl.service.factory.ReflectionServiceFactoryBean]:434 - Creating Service {http://travelio.es/ws4/v4/commonsws}TravelioCommonsServiceV4Service from class es.travelio.ws4.v4.commonsws.TravelioCommonsServiceV4
+[13/04/2017 14:41:12,062] [] [INFO] [org.apache.cxf.wsdl.service.factory.ReflectionServiceFactoryBean]:434 - Creating Service {http://travelio.es/ws4/v4/commonsws}TravelioCommonsServiceV4Service from class es.travelio.ws4.v4.commonsws.TravelioCommonsServiceV4
+[13/04/2017 14:41:12,174] [] [INFO] [org.apache.cxf.wsdl.service.factory.ReflectionServiceFactoryBean]:434 - Creating Service {http://travelio.es/ws4/v4/commonsws}TravelioCommonsServiceV4Service from class es.travelio.ws4.v4.commonsws.TravelioCommonsServiceV4
+[13/04/2017 14:41:12,330] [] [INFO] [org.apache.cxf.wsdl.service.factory.ReflectionServiceFactoryBean]:434 - Creating Service {http://travelio.es/ws/cocha/feedws}TravelioFeedServiceService from class es.travelio.ws.cocha.feedws.TravelioFeedService
+[13/04/2017 14:41:14,576] [] [INFO] [org.apache.camel.spring.SpringCamelContext]:3564 - Route: Servlet Indexer Hotel - Route started and consuming from: Endpoint[servlet:/indexHotels]
+[13/04/2017 14:41:14,580] [] [INFO] [org.apache.camel.spring.SpringCamelContext]:3564 - Route: Indexer -Hotel- Route started and consuming from: Endpoint[direct://indexer-hotel-init]
+[13/04/2017 14:41:14,586] [] [INFO] [org.apache.camel.spring.SpringCamelContext]:3564 - Route: region-indexer-Hotel started and consuming from: Endpoint[direct://hotel-indexer-ES-Hotel]
+[13/04/2017 14:41:14,587] [] [INFO] [org.apache.camel.spring.SpringCamelContext]:3564 - Route: indexer-hotel-close started and consuming from: Endpoint[direct://indexer-hotel-close]
+[13/04/2017 14:41:14,652] [] [INFO] [org.apache.camel.spring.SpringCamelContext]:3564 - Route: EanFeedRoute started and consuming from: Endpoint[file:///home/jboss/data/ean/hotels?move=%24simple%7Bfile%3Aparent%7D%2Fprocessed%2F%24simple%7Bdate%3Anow%3AyyyyMMdd%7D%2Fsuccess%2F%24simple%7Bfile%3Aonlyname%7D&moveFailed=%24simple%7Bfile%3Aparent%7D%2Fprocessed%2F%24simple%7Bdate%3Anow%3AyyyyMMdd%7D%2Ferrors%2F%24simple%7Bfile%3Aonlyname%7D]
+[13/04/2017 14:41:14,654] [] [INFO] [org.apache.camel.spring.SpringCamelContext]:3564 - Route: EanHotelFeedRoute started and consuming from: Endpoint[direct://processEanHotels]
+[13/04/2017 14:41:14,655] [] [INFO] [org.apache.camel.spring.SpringCamelContext]:3564 - Route: EanHotelImagesFeedRoute started and consuming from: Endpoint[direct://processEanHotelsImages]
+[13/04/2017 14:41:14,664] [] [INFO] [org.apache.camel.spring.SpringCamelContext]:3564 - Route: EanAttributesFeedRoute started and consuming from: Endpoint[direct://processEanAttributes]
+[13/04/2017 14:41:14,672] [] [INFO] [org.apache.camel.spring.SpringCamelContext]:3564 - Route: EanHotelAttributesFeedRoute started and consuming from: Endpoint[direct://processEanHotelAttributes]
+[13/04/2017 14:41:14,674] [] [INFO] [org.apache.camel.spring.SpringCamelContext]:3564 - Route: EanDescriptionFeedRoute started and consuming from: Endpoint[direct://processEanDescriptions]
+[13/04/2017 14:41:14,679] [] [INFO] [org.apache.camel.spring.SpringCamelContext]:3564 - Route: EanPolicyDescriptionFeedRoute started and consuming from: Endpoint[direct://processEanPolicyDescriptions]
+[13/04/2017 14:41:14,700] [] [INFO] [org.apache.camel.spring.SpringCamelContext]:3564 - Route: EanPropertyFeesFeedRoute started and consuming from: Endpoint[direct://processEanPropertyFees]
+[13/04/2017 14:41:14,704] [] [INFO] [org.apache.camel.spring.SpringCamelContext]:3564 - Route: EanPropertyMandatoryFeesFeedRoute started and consuming from: Endpoint[direct://processEanPropertyMandatoryFees]
+[13/04/2017 14:41:14,706] [] [INFO] [org.apache.camel.spring.SpringCamelContext]:3564 - Route: EanHotelRoomsFeedRoute started and consuming from: Endpoint[direct://processEanHotelsRooms]
+[13/04/2017 14:41:14,709] [] [INFO] [org.apache.camel.spring.SpringCamelContext]:3564 - Route: EanHotelRoomsImagesFeedRoute started and consuming from: Endpoint[direct://processEanHotelsRoomsImages]
+[13/04/2017 14:41:14,713] [] [INFO] [org.apache.camel.spring.SpringCamelContext]:3564 - Route: TrvFeedServletRoute started and consuming from: Endpoint[servlet:/feedTravelio]
+[13/04/2017 14:41:14,715] [] [INFO] [org.apache.camel.spring.SpringCamelContext]:3564 - Route: TrvFeedAllZoneRoute started and consuming from: Endpoint[direct://travelioFeedAllZone]
+[13/04/2017 14:41:14,717] [] [INFO] [org.apache.camel.spring.SpringCamelContext]:3564 - Route: TrvFeedOneZoneRoute started and consuming from: Endpoint[direct://travelioFeedOneZone]
+[13/04/2017 14:41:14,718] [] [INFO] [org.apache.camel.spring.SpringCamelContext]:3564 - Route: TrvFeedAllCountryRoute started and consuming from: Endpoint[direct://travelioFeedAllCountry]
+[13/04/2017 14:41:14,719] [] [INFO] [org.apache.camel.spring.SpringCamelContext]:3564 - Route: TrvFeedOneCountryRoute started and consuming from: Endpoint[direct://travelioFeedOneCountry]
+[13/04/2017 14:41:14,723] [] [INFO] [org.apache.camel.spring.SpringCamelContext]:3564 - Route: TrvFeedOneProvinceRoute1 started and consuming from: Endpoint[direct://travelioFeedOneProvinceParallel]
+[13/04/2017 14:41:14,727] [] [INFO] [org.apache.camel.spring.SpringCamelContext]:3564 - Route: TrvFeedOneProvinceRoute2 started and consuming from: Endpoint[direct://travelioFeedOneProvince]
+[13/04/2017 14:41:14,735] [] [INFO] [org.apache.camel.spring.SpringCamelContext]:3564 - Route: TrvFeedWebService started and consuming from: Endpoint[direct://traveliofeeedws]
+[13/04/2017 14:41:14,739] [] [INFO] [org.apache.camel.spring.SpringCamelContext]:3564 - Route: TrvFeedOneCityRoute started and consuming from: Endpoint[direct://travelioFeedOneCity]
+[13/04/2017 14:41:14,740] [] [INFO] [org.apache.camel.spring.SpringCamelContext]:3564 - Route: route1 started and consuming from: Endpoint[servlet:/inactivateEANHotels]
+[13/04/2017 14:41:14,743] [] [INFO] [org.apache.camel.spring.SpringCamelContext]:3564 - Route: route2 started and consuming from: Endpoint[servlet:/inactivateTRVHotels]
+[13/04/2017 14:41:14,746] [] [INFO] [org.apache.camel.spring.SpringCamelContext]:3564 - Route: route3 started and consuming from: Endpoint[servlet:/deleteEANRegionHotels]
+[13/04/2017 14:41:14,750] [] [INFO] [org.apache.camel.spring.SpringCamelContext]:3564 - Route: Servlet Indexer - Route started and consuming from: Endpoint[servlet:/indexRegions]
+[13/04/2017 14:41:14,753] [] [INFO] [org.apache.camel.spring.SpringCamelContext]:3564 - Route: Indexer - Route started and consuming from: Endpoint[direct://indexer-init]
+[13/04/2017 14:41:14,762] [] [INFO] [org.apache.camel.spring.SpringCamelContext]:3564 - Route: region-indexer-City started and consuming from: Endpoint[direct://region-indexer-ES-City]
+[13/04/2017 14:41:14,764] [] [INFO] [org.apache.camel.spring.SpringCamelContext]:3564 - Route: region-indexer-Place started and consuming from: Endpoint[direct://region-indexer-ES-City-Childs]
+[13/04/2017 14:41:14,772] [] [INFO] [org.apache.camel.spring.SpringCamelContext]:3564 - Route: region-indexer-Place-City started and consuming from: Endpoint[direct://region-indexer-ES-City-Childs-City]
+[13/04/2017 14:41:14,773] [] [INFO] [org.apache.camel.spring.SpringCamelContext]:3564 - Route: indexer-close started and consuming from: Endpoint[direct://indexer-close]
+[13/04/2017 14:41:14,801] [] [INFO] [org.apache.camel.spring.SpringCamelContext]:3564 - Route: EanGeoFeedRoute started and consuming from: Endpoint[file:///home/jboss/data/ean/geo?move=%24simple%7Bfile%3Aparent%7D%2Fprocessed%2F%24simple%7Bdate%3Anow%3AyyyyMMdd%7D%2Fsuccess%2F%24simple%7Bfile%3Aonlyname%7D&moveFailed=%24simple%7Bfile%3Aparent%7D%2Fprocessed%2F%24simple%7Bdate%3Anow%3AyyyyMMdd%7D%2Ferrors%2F%24simple%7Bfile%3Aonlyname%7D]
+[13/04/2017 14:41:14,802] [] [INFO] [org.apache.camel.spring.SpringCamelContext]:3564 - Route: EanGeoParentRegionFeedRoute started and consuming from: Endpoint[direct://processEanGeoParentRegions]
+[13/04/2017 14:41:14,804] [] [INFO] [org.apache.camel.spring.SpringCamelContext]:3564 - Route: EanGeoRegionLocaleFeedRoute started and consuming from: Endpoint[direct://processEanGeoRegionsLanguageNames]
+[13/04/2017 14:41:14,805] [] [INFO] [org.apache.camel.spring.SpringCamelContext]:3564 - Route: EanGeoAirportFeedRoute started and consuming from: Endpoint[direct://processEanGeoAirports]
+[13/04/2017 14:41:14,806] [] [INFO] [org.apache.camel.spring.SpringCamelContext]:3564 - Route: EanGeoCityFeedRoute started and consuming from: Endpoint[direct://processEanGeoCityArea]
+[13/04/2017 14:41:14,808] [] [INFO] [org.apache.camel.spring.SpringCamelContext]:3564 - Route: EanGeoNeighborhoodFeedRoute started and consuming from: Endpoint[direct://processEanGeoNeighborhoodArea]
+[13/04/2017 14:41:14,809] [] [INFO] [org.apache.camel.spring.SpringCamelContext]:3564 - Route: EanGeoPointsOfInterestRoute started and consuming from: Endpoint[direct://processEanGeoPointsOfInterest]
+[13/04/2017 14:41:14,810] [] [INFO] [org.apache.camel.spring.SpringCamelContext]:3564 - Route: EanGeoRegionsHotelsFeedRoute started and consuming from: Endpoint[direct://processEanGeoRegionsHotels]
+[13/04/2017 14:41:14,812] [] [INFO] [org.apache.camel.spring.SpringCamelContext]:3564 - Route: EanGeoRegionCenterFeedRoute started and consuming from: Endpoint[direct://processEanGeoAreaCenter]
+[13/04/2017 14:41:14,813] [] [INFO] [org.apache.camel.spring.SpringCamelContext]:3564 - Route: EanGeoCountries started and consuming from: Endpoint[direct://processEanGeoCountries]
+[13/04/2017 14:41:14,822] [] [INFO] [org.apache.camel.spring.SpringCamelContext]:3564 - Route: BookingFeedRoute started and consuming from: Endpoint[file:///home/jboss/data/booking/hotels?move=%24simple%7Bfile%3Aparent%7D%2Fprocessed%2F%24simple%7Bdate%3Anow%3AyyyyMMdd%7D%2Fsuccess%2F%24simple%7Bfile%3Aonlyname%7D&moveFailed=%24simple%7Bfile%3Aparent%7D%2Fprocessed%2F%24simple%7Bdate%3Anow%3AyyyyMMdd%7D%2Ferrors%2F%24simple%7Bfile%3Aonlyname%7D]
+[13/04/2017 14:41:14,824] [] [INFO] [org.apache.camel.spring.SpringCamelContext]:3564 - Route: BookingDescriptionFeedRoute started and consuming from: Endpoint[direct://processBookingDescriptions]
+[13/04/2017 14:41:14,825] [] [INFO] [org.apache.camel.spring.SpringCamelContext]:3564 - Route: BookingHotelFeedRoute started and consuming from: Endpoint[direct://processBookingHotels]
+[13/04/2017 14:41:14,828] [] [INFO] [org.apache.camel.spring.SpringCamelContext]:3564 - Route: BookingHotelImageFeedRoute started and consuming from: Endpoint[direct://processBookingHotelsImages]
+[13/04/2017 14:41:14,829] [] [INFO] [org.apache.camel.spring.SpringCamelContext]:3564 - Route: BookingFacilitiesFeedRoute started and consuming from: Endpoint[direct://processBookingFacilities]
+[13/04/2017 14:41:14,834] [] [INFO] [org.apache.camel.spring.SpringCamelContext]:3564 - Route: BookingHotelFacilitiesFeedRoute started and consuming from: Endpoint[direct://processBookingHotelFacilities]
+[13/04/2017 14:41:14,836] [] [INFO] [org.apache.camel.spring.SpringCamelContext]:3564 - Route: BookingHotelRoomsFeedRoute started and consuming from: Endpoint[direct://processBookingHotelRooms]
+[13/04/2017 14:41:14,844] [] [INFO] [org.apache.camel.spring.SpringCamelContext]:3564 - Route: BookingHotelRoomsImagesFeedRoute started and consuming from: Endpoint[direct://processBookingHotelRoomsImages]
+[13/04/2017 14:41:14,846] [] [INFO] [org.apache.camel.spring.SpringCamelContext]:3564 - Route: BookingHotelDescriptionImagesFeedRoute started and consuming from: Endpoint[direct://processBookingHotelDescriptionImages]
+[13/04/2017 14:41:14,858] [] [INFO] [org.apache.camel.spring.SpringCamelContext]:3564 - Route: BookingHotelRoomImagesToHotelImagesFeedRoute started and consuming from: Endpoint[direct://saveRoomPhotosOnHotelPhotos]
+[13/04/2017 14:41:14,869] [] [INFO] [org.apache.camel.spring.SpringCamelContext]:3564 - Route: BookingHotelRoomsImages started and consuming from: Endpoint[direct://saveRoomPhotos]
+[13/04/2017 14:41:14,878] [] [INFO] [org.apache.camel.spring.SpringCamelContext]:3564 - Route: route4 started and consuming from: Endpoint[direct://hello]
+[13/04/2017 14:41:14,881] [] [INFO] [org.apache.camel.spring.SpringCamelContext]:2834 - Total 55 routes, of which 55 are started.
+[13/04/2017 14:41:14,884] [] [INFO] [org.apache.camel.spring.SpringCamelContext]:2835 - Apache Camel 2.17.1 (CamelContext: camel) started in 12.783 seconds
+[13/04/2017 14:41:14,900] [] [INFO] [org.springframework.web.context.ContextLoader]:345 - Root WebApplicationContext: initialization completed in 35966 ms
+[13/04/2017 14:41:14,928] [] [INFO] [org.apache.camel.component.servlet.CamelHttpTransportServlet]:77 - Initialized CamelHttpTransportServlet[name=CamelServlet, contextPath=/feed-downloader]
+[13/04/2017 14:41:32,085] [] [INFO] [org.springframework.web.context.ContextLoader]:345 - Root WebApplicationContext: initialization completed in 42910 ms
