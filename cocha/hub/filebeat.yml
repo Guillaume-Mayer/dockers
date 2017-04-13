@@ -2,10 +2,16 @@ filebeat.prospectors:
 - input_type: log
   paths:
   - /opt/jboss/jboss-eap-6.4/standalone/log/server.log
+  multiline:
+    pattern: '^[0-9]{2}:[0-9]{2}:[0-9]{2},[0-9]{3} [A-Z]{4,5} {1,2}\['
+    negate: true
+    match: after
+- input_type: log
+  paths:
   - /opt/jboss/jboss-eap-6.4/standalone/log/core-hoteles/*.log     
   multiline:
-    pattern: '^[[:space:]]+|^Caused by:'
-    negate: false
+    pattern: '^[0-9]{4}-[0-9]{2}-[0-9]{2} [0-9]{2}:[0-9]{2}:[0-9]{2} [A-Z]{4,5} {1,2}'
+    negate: true
     match: after
 name: "hub"
 output.logstash:

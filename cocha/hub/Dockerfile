@@ -5,6 +5,7 @@ LABEL Author gmayer@arkho.tech
 
 # JBoss Configuration
 COPY standalone.xml $JBOSS_HOME/standalone/configuration/standalone.xml
+COPY logging.properties $JBOSS_HOME/standalone/configuration/logging.properties
 
 # Driver MySql
 COPY com $JBOSS_HOME/modules/com
