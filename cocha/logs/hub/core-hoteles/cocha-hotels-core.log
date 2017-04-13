@@ -5729,3 +5729,4 @@ INNER JOIN
 2017-04-12 21:40:57 DEBUG QuartzSchedulerThread:276 - batch acquisition of 0 triggers
 2017-04-12 21:41:23 DEBUG QuartzSchedulerThread:276 - batch acquisition of 0 triggers
 2017-04-12 21:41:48 DEBUG QuartzSchedulerThread:276 - batch acquisition of 0 triggers
+2017-04-12 21:42:13 DEBUG QuartzSchedulerThread:276 - batch acquisition of 0 triggers
