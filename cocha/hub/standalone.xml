@@ -120,7 +120,7 @@
                 </handlers>
             </root-logger>
             <formatter name="PATTERN">
-                <pattern-formatter pattern="%d{HH:mm:ss,SSS} %-5p [%c] (%t) %s%E%n"/>
+                <pattern-formatter pattern="%d{dd/MM/yyyy HH:mm:ss,SSS} %-5p [%c] (%t) %s%E%n"/>
             </formatter>
             <formatter name="COLOR-PATTERN">
                 <pattern-formatter pattern="%K{level}%d{HH:mm:ss,SSS} %-5p [%c] (%t) %s%E%n"/>

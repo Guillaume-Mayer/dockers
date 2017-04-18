@@ -13,8 +13,6 @@ services:
         - TZ=America/Santiago
     hazelcast:
         build: ./hazelcast
-        volumes:
-        - ./logs/hazelcast:/log
         networks:
         - nw
         environment:
@@ -23,8 +21,6 @@ services:
         - logstash
     elasticsearch:
         build: ./elasticsearch
-        volumes:
-        - ./logs/elasticsearch:/elasticsearch-1.7.1/logs
         networks:
         - nw
         environment:
@@ -36,7 +32,6 @@ services:
         volumes:
         - files:/home/jboss/data
         - ./deployments/meta:/opt/jboss/jboss-eap-6.4/standalone/deployments
-        - ./logs/meta:/opt/jboss/jboss-eap-6.4/standalone/log
         networks:
         - nw
         ports:
@@ -53,7 +48,6 @@ services:
         build: ./hub
         volumes:
         - ./deployments/hub:/opt/jboss/jboss-eap-6.4/standalone/deployments
-        - ./logs/hub:/opt/jboss/jboss-eap-6.4/standalone/log
         networks:
         - nw
         ports:
@@ -80,7 +74,7 @@ services:
         - 12201:12201/udp
         depends_on:
         - mysql
-        #- elastic
+        - elastic
     elastic:
         image: elasticsearch:alpine
         volumes:
@@ -93,6 +87,7 @@ services:
         image: kibana
         environment:
         - ELASTICSEARCH_URL=http://elastic:9200
+        - TZ=America/Santiago
         networks:
         - nw
         ports:
