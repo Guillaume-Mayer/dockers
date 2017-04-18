@@ -78,9 +78,8 @@ services:
         - nw
         ports:
         - 12201:12201/udp
-        environment:
-        - TZ=America/Santiago
-        #depends_on:
+        depends_on:
+        - mysql
         #- elastic
     elastic:
         image: elasticsearch:alpine
@@ -90,8 +89,6 @@ services:
         - nw
         ports:
         - 9200:9200
-        environment:
-        - TZ=America/Santiago
     kibana:
         image: kibana
         environment:
@@ -100,8 +97,6 @@ services:
         - nw
         ports:
         - 5601:5601
-        environment:
-        - TZ=America/Santiago
         depends_on:
         - elastic
 volumes: 
