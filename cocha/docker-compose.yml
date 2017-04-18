@@ -100,6 +100,8 @@ services:
         - nw
         ports:
         - 5601:5601
+        environment:
+        - TZ=America/Santiago
         depends_on:
         - elastic
 volumes: 
