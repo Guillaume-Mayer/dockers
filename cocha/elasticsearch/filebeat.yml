@@ -8,4 +8,4 @@ filebeat.prospectors:
     match: after
 name: "elasticsearch"
 output.logstash:
-  hosts: ["logstash:5044"]
+  hosts: ["ls_harvester:5044"]

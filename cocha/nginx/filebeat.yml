@@ -4,4 +4,4 @@ filebeat.prospectors:
   - /var/log/nginx/access.log
 name: "nginx"
 output.logstash:
-  hosts: ["logstash:5044"]
+  hosts: ["ls_harvester:5044"]

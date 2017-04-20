@@ -15,4 +15,4 @@ filebeat.prospectors:
     match: after
 name: "hub"
 output.logstash:
-  hosts: ["logstash:5044"]
+  hosts: ["ls_harvester:5044"]
