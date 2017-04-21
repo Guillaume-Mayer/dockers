@@ -1,106 +1,120 @@
-  version: "3"
-  services:
-      mysql:
-          image: mysql:5
-          volumes:
-          - data:/var/lib/mysql
-          networks:
-          - nw
-          environment: 
-          - MYSQL_ROOT_PASSWORD=rOot123.,
-          - TZ=America/Santiago
-      hazelcast:
-          build: ./hazelcast
-          networks:
-          - nw
-          environment:
-          - TZ=America/Santiago
-      elasticsearch:
-          build: ./elasticsearch
-          networks:
-          - nw
-          environment:
-          - TZ=America/Santiago
-      meta:
-          build: ./meta
-          volumes:
-          - files:/home/jboss/data
-          - ./deployments/meta:/opt/jboss/jboss-eap-6.4/standalone/deployments
-          networks:
-          - nw
-          environment:
-          - TZ=America/Santiago
-          depends_on:
-          - mysql
-          - elasticsearch
-          - hazelcast
-      hub:
-          build: ./hub
-          volumes:
-          - ./deployments/hub:/opt/jboss/jboss-eap-6.4/standalone/deployments
-          networks:
-          - nw
-          environment:
-          - TZ=America/Santiago
-          depends_on:
-          - meta
-      downloader:
-          build: ./downloader
-          volumes:
-          - files:/data
-          networks:
-          - nw
-          depends_on:
-          - meta
-      ls_harvester:
-          build: ./ls-harvester
-          networks:
-          - nw
-          depends_on:
-          - mysql
-          - redis
-      ls_indexer:
-          build: ./ls-indexer
-          networks:
-          - nw
-          depends_on:
-          - redis
-          - elastic
-      elastic:
-          image: elasticsearch:alpine
-          volumes:
-          - logs:/usr/share/elasticsearch/data
-          networks:
-          - nw
-      kibana:
-          image: kibana
-          environment:
-          - ELASTICSEARCH_URL=http://elastic:9200
-          - TZ=America/Santiago
-          networks:
-          - nw
-          ports:
-          - 5601:5601
-          depends_on:
-          - elastic
-      nginx:
-          build: ./nginx
-          networks:
-          - nw
-          ports:
-          - 80:80
-          depends_on:
-          - hub
-      redis:
-          image: redis:alpine
-          networks:
-          - nw
-          volumes:
-          - redis:/data
-  volumes: 
-      data:
-      files:
-      logs:
-      redis:
-  networks: 
-      nw:
+version: "3"
+services:
+    nginx:
+        build: ./nginx
+        networks:
+        - nw_front
+        ports:
+        - 80:80
+        depends_on:
+        - hub
+        - ls_harvester
+    hub:
+        build: ./hub
+        volumes:
+        - ./deployments/hub:/opt/jboss/jboss-eap-6.4/standalone/deployments
+        networks:
+        - nw_front
+        - nw_back
+        environment:
+        - TZ=America/Santiago
+        depends_on:
+        - mysql
+        - meta
+        - ls_harvester
+    meta:
+        build: ./meta
+        volumes:
+        - files:/home/jboss/data
+        - ./deployments/meta:/opt/jboss/jboss-eap-6.4/standalone/deployments
+        networks:
+        - nw_back
+        environment:
+        - TZ=America/Santiago
+        depends_on:
+        - mysql
+        - elasticsearch
+        - hazelcast
+        - ls_harvester
+    mysql:
+        image: mysql:5
+        volumes:
+        - data:/var/lib/mysql
+        networks:
+        - nw_back
+        environment: 
+        - MYSQL_ROOT_PASSWORD=rOot123.,
+        - TZ=America/Santiago
+    hazelcast:
+        build: ./hazelcast
+        networks:
+        - nw_back
+        environment:
+        - TZ=America/Santiago
+        depends_on:
+        - ls_harvester
+    elasticsearch:
+        build: ./elasticsearch
+        networks:
+        - nw_back
+        environment:
+        - TZ=America/Santiago
+        depends_on:
+        - ls_harvester
+    ls_harvester:
+        build: ./ls-harvester
+        networks:
+        - nw_front
+        - nw_back
+        depends_on:
+        - mysql
+        - redis
+    redis:
+        image: redis:alpine
+        networks:
+        - nw_back
+        - nw_log
+        volumes:
+        - redis:/data
+    ls_indexer:
+        build: ./ls-indexer
+        networks:
+        - nw_log
+        depends_on:
+        - redis
+        - elastic
+    elastic:
+        image: elasticsearch:alpine
+        volumes:
+        - logs:/usr/share/elasticsearch/data
+        networks:
+        - nw_log
+    kibana:
+        image: kibana
+        environment:
+        - ELASTICSEARCH_URL=http://elastic:9200
+        - TZ=America/Santiago
+        networks:
+        - nw_log
+        ports:
+        - 5601:5601
+        depends_on:
+        - elastic
+        - ls_indexer
+#   downloader:
+#       build: ./downloader
+#       volumes:
+#       - files:/data
+#       networks:
+#       - nw
+#       depends_on:
+#       - meta
+volumes: 
+    data:
+    files:
+    logs:
+    redis:
+networks: 
+    nw_front:
+    nw_back:
+    nw_log:
