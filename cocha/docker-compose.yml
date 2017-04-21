@@ -93,6 +93,8 @@ services:
         - logs:/usr/share/elasticsearch/data
         networks:
         - nw_log
+        ports:
+        - 9200:9200
     kibana:
         image: kibana
         environment:
