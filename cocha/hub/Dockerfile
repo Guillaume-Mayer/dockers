@@ -10,6 +10,14 @@ COPY logging.properties $JBOSS_HOME/standalone/configuration/logging.properties
 # Driver MySql
 COPY com $JBOSS_HOME/modules/com
 
+# Updated modules
+COPY javax-jaxrs/jaxrs-api-3.0.2.Final.jar $JBOSS_HOME/modules/system/layers/base/javax/ws/rs/api/main/jaxrs-api-3.0.2.Final.jar
+COPY javax-jaxrs/module.xml $JBOSS_HOME/modules/system/layers/base/javax/ws/rs/api/main/module.xml
+COPY resteasy-jaxb/resteasy-jaxb-provider-3.0.2.Final.jar $JBOSS_HOME/modules/system/layers/base/org/jboss/resteasy/resteasy-jaxb-provider/main/resteasy-jaxb-provider-3.0.2.Final.jar
+COPY resteasy-jaxb/module.xml $JBOSS_HOME/modules/system/layers/base/org/jboss/resteasy/resteasy-jaxb-provider/main/module.xml
+COPY resteasy-jaxrs/resteasy-jaxrs-3.0.2.Final.jar $JBOSS_HOME/modules/system/layers/base/org/jboss/resteasy/resteasy-jaxrs/main/resteasy-jaxrs-3.0.2.Final.jar
+COPY resteasy-jaxrs/module.xml $JBOSS_HOME/modules/system/layers/base/org/jboss/resteasy/resteasy-jaxrs/main/module.xml
+
 # Entry Point
 COPY docker-entrypoint.sh /docker-entrypoint.sh
 
