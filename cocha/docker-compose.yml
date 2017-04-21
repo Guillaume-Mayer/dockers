@@ -31,6 +31,8 @@ services:
         - nw_back
         environment:
         - TZ=America/Santiago
+        ports:
+        - 8080:8080
         depends_on:
         - mysql
         - elasticsearch
@@ -45,6 +47,8 @@ services:
         environment: 
         - MYSQL_ROOT_PASSWORD=rOot123.,
         - TZ=America/Santiago
+        ports:
+        - 3306:3306
     hazelcast:
         build: ./hazelcast
         networks:
