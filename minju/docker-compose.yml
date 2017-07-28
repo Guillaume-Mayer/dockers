@@ -9,3 +9,5 @@ services:
     volumes:
     - ./db:/docker-entrypoint-initdb.d:ro
     - data:/var/lib/postgresql/data
+volumes:
+  data:
