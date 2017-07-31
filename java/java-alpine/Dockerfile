@@ -1,4 +1,4 @@
-FROM nginx:alpine
+FROM alpine:latest
 
 RUN apk --no-cache add wget ca-certificates && \
     wget -q -O /etc/apk/keys/sgerrand.rsa.pub https://raw.githubusercontent.com/sgerrand/alpine-pkg-glibc/master/sgerrand.rsa.pub && \

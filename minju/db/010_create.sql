@@ -1,0 +1,6 @@
+CREATE USER esb WITH PASSWORD 'esb123';
+
+CREATE DATABASE wso2_user_db WITH OWNER esb;
+CREATE DATABASE registry_db WITH OWNER esb;
+CREATE DATABASE registry_local1 WITH OWNER esb;
+CREATE DATABASE registry_local2 WITH OWNER esb;

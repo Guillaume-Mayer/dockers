@@ -1,0 +1,67 @@
+<datasources-configuration xmlns:svns="http://org.wso2.securevault/configuration">
+     <providers>
+        <provider>org.wso2.carbon.ndatasource.rdbms.RDBMSDataSourceReader</provider>
+    </providers>
+    <datasources>
+        <datasource>
+            <name>REGISTRY_LOCAL1</name>
+            <description>The datasource used for registry- local</description>
+            <jndiConfig>
+                <name>jdbc/WSO2CarbonDB</name>
+            </jndiConfig>
+            <definition type="RDBMS">
+                <configuration>
+                    <url>jdbc:postgresql://db:5432/registry_local1?autoReconnect=true</url>
+                    <username>esb</username>
+                    <password>esb123</password>
+                    <driverClassName>org.postgresql.Driver</driverClassName>
+                    <maxActive>50</maxActive>
+                    <maxWait>60000</maxWait>
+                    <testOnBorrow>true</testOnBorrow>
+                    <validationQuery>SELECT 1</validationQuery>
+                    <validationInterval>30000</validationInterval>
+                </configuration>
+            </definition>
+        </datasource>
+        <datasource>
+            <name>REGISTRY_DB</name>
+            <description>The datasource used for registry- config/governance</description>
+            <jndiConfig>
+                <name>jdbc/WSO2RegistryDB</name>
+            </jndiConfig>
+            <definition type="RDBMS">
+                <configuration>
+                    <url>jdbc:postgresql://db:5432/registry_db?autoReconnect=true</url>
+                    <username>esb</username>
+                    <password>esb123</password>
+                    <driverClassName>org.postgresql.Driver</driverClassName>
+                    <maxActive>50</maxActive>
+                    <maxWait>60000</maxWait>
+                    <testOnBorrow>true</testOnBorrow>
+                    <validationQuery>SELECT 1</validationQuery>
+                    <validationInterval>30000</validationInterval>
+                </configuration>
+            </definition>
+        </datasource>
+         <datasource>
+            <name>WSO2_USER_DB</name>
+            <description>The datasource used for registry and user manager</description>
+            <jndiConfig>
+                <name>jdbc/WSO2UMDB</name>
+            </jndiConfig>
+            <definition type="RDBMS">
+                <configuration>
+                    <url>jdbc:postgresql://db:5432/wso2_user_db</url>
+                    <username>esb</username>
+                    <password>esb123</password>
+                    <driverClassName>org.postgresql.Driver</driverClassName>
+                    <maxActive>50</maxActive>
+                    <maxWait>60000</maxWait>
+                    <testOnBorrow>true</testOnBorrow>
+                    <validationQuery>SELECT 1</validationQuery>
+                    <validationInterval>30000</validationInterval>
+                </configuration>
+            </definition>
+        </datasource>
+   </datasources>
+</datasources-configuration>

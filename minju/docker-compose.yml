@@ -2,6 +2,7 @@ version: "3"
 services:
   db:
     image: postgres:alpine
+    container_name: esb-db
     environment:
     - POSTGRES_PASSWORD=pg123456
     ports:
@@ -10,8 +11,17 @@ services:
     - ./db:/docker-entrypoint-initdb.d:ro
     - data:/var/lib/postgresql/data
   manager:
-    image: wso2esb:5.0.0-manager
-  worker:
-    image: wso2esb:5.0.0-worker
+    image: wso2esb:5.0.0
+    container_name: esb-manager
+    volumes:
+    - ./config/manager/master-datasources.xml:/opt/wso2esb-5.0.0/repository/conf/datasources/master-datasources.xml:ro
+    - ./config/manager/user-mgt.xml:/opt/wso2esb-5.0.0/repository/conf/user-mgt.xml:ro
+    - ./config/manager/registry.xml:/opt/wso2esb-5.0.0/repository/conf/registry.xml:ro
+    - ./config/manager/axis2.xml:/opt/wso2esb-5.0.0/repository/conf/axis2/axis2.xml:ro
+    - ./config/manager/jndi.properties:/opt/wso2esb-5.0.0/repository/conf/jndi.properties:ro
+    - ./config/manager/docker-entrypoint.sh:/docker-entrypoint.sh:ro
+    entrypoint: /docker-entrypoint.sh
+    depends_on:
+    - db
 volumes:
   data:

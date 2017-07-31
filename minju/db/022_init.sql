@@ -1,4 +1,4 @@
-\c registry_db
+\c registry_db esb
 
 DROP TABLE IF EXISTS REG_CLUSTER_LOCK;
 CREATE TABLE REG_CLUSTER_LOCK (

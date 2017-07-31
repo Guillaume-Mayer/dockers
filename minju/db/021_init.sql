@@ -1,4 +1,4 @@
-\c wso2_user_db
+\c wso2_user_db esb
 
 DROP TABLE IF EXISTS REG_CLUSTER_LOCK;
 CREATE TABLE REG_CLUSTER_LOCK (
