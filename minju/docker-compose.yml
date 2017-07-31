@@ -9,5 +9,9 @@ services:
     volumes:
     - ./db:/docker-entrypoint-initdb.d:ro
     - data:/var/lib/postgresql/data
+  manager:
+    image: wso2esb:5.0.0-manager
+  worker:
+    image: wso2esb:5.0.0-worker
 volumes:
   data:
