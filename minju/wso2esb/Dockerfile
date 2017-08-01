@@ -1,4 +1,4 @@
-FROM java:nginx
+FROM java:alpine
 
 COPY wso2esb-5.0.0.zip /opt
 
@@ -11,4 +11,4 @@ RUN apk --no-cache add unzip && \
 COPY lib/*.jar /opt/wso2esb-5.0.0/repository/components/lib/
 COPY dropins/*.jar /opt/wso2esb-5.0.0/repository/components/dropins/
 
-EXPOSE 4100 8280 8243
+EXPOSE 4100 8280 8243 9443

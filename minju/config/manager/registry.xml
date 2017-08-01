@@ -46,7 +46,7 @@
 
     <mount path="/_system/config" overwrite="true">
         <instanceId>instanceid</instanceId>
-        <targetPath>/_system/asNodes</targetPath>
+        <targetPath>/_system/config</targetPath>
     </mount>
 
     <mount path="/_system/governance" overwrite="true">

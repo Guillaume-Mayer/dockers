@@ -20,8 +20,7 @@ services:
     - ./config/manager/registry.xml:/opt/wso2esb-5.0.0/repository/conf/registry.xml:ro
     - ./config/manager/axis2.xml:/opt/wso2esb-5.0.0/repository/conf/axis2/axis2.xml:ro
     - ./config/manager/jndi.properties:/opt/wso2esb-5.0.0/repository/conf/jndi.properties:ro
-    - ./config/manager/docker-entrypoint.sh:/docker-entrypoint.sh:ro
-    entrypoint: /docker-entrypoint.sh
+    entrypoint: /opt/wso2esb-5.0.0/bin/wso2server.sh
     depends_on:
     - db
   worker1:
@@ -33,8 +32,7 @@ services:
     - ./config/worker/registry.xml:/opt/wso2esb-5.0.0/repository/conf/registry.xml:ro
     - ./config/worker/1/axis2.xml:/opt/wso2esb-5.0.0/repository/conf/axis2/axis2.xml:ro
     - ./config/worker/jndi.properties:/opt/wso2esb-5.0.0/repository/conf/jndi.properties:ro
-    - ./config/worker/docker-entrypoint.sh:/docker-entrypoint.sh:ro
-    entrypoint: /docker-entrypoint.sh
+    entrypoint: /opt/wso2esb-5.0.0/bin/wso2server.sh -DworkerNode=true
     depends_on:
     - manager
   worker2:
@@ -46,9 +44,20 @@ services:
     - ./config/worker/registry.xml:/opt/wso2esb-5.0.0/repository/conf/registry.xml:ro
     - ./config/worker/2/axis2.xml:/opt/wso2esb-5.0.0/repository/conf/axis2/axis2.xml:ro
     - ./config/worker/jndi.properties:/opt/wso2esb-5.0.0/repository/conf/jndi.properties:ro
-    - ./config/worker/docker-entrypoint.sh:/docker-entrypoint.sh:ro
-    entrypoint: /docker-entrypoint.sh
+    entrypoint: /opt/wso2esb-5.0.0/bin/wso2server.sh -DworkerNode=true
     depends_on:
     - manager
+  nginx:
+    image: nginx:alpine
+    container_name: esb-lb
+    ports:
+    - 80:80
+    - 443:443
+    volumes:
+    - ./config/nginx:/etc/nginx/conf.d:ro
+    - ./config/ssl:/etc/nginx/ssl:ro
+    depends_on:
+    - worker1
+    - worker2
 volumes:
   data:
