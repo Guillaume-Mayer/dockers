@@ -11,6 +11,12 @@ services:
     - ./db:/docker-entrypoint-initdb.d:ro
     - data:/var/lib/postgresql/data
     command: postgres -c max_connections=1000
+  svn:
+    image: krisdavison/svn-server:v2.0
+    container_name: esb-svn
+    command: /startup.sh
+    volumes:
+    - svn:/home/svn
   manager:
     image: wso2esb:5.0.0
     container_name: esb-manager
@@ -20,9 +26,11 @@ services:
     - ./config/manager/registry.xml:/opt/wso2esb-5.0.0/repository/conf/registry.xml:ro
     - ./config/manager/axis2.xml:/opt/wso2esb-5.0.0/repository/conf/axis2/axis2.xml:ro
     - ./config/manager/jndi.properties:/opt/wso2esb-5.0.0/repository/conf/jndi.properties:ro
+    - ./config/manager/carbon.xml:/opt/wso2esb-5.0.0/repository/conf/carbon.xml:ro
     entrypoint: /opt/wso2esb-5.0.0/bin/wso2server.sh
     depends_on:
     - db
+    - svn
   worker1:
     image: wso2esb:5.0.0
     container_name: esb-worker1
@@ -32,6 +40,7 @@ services:
     - ./config/worker/registry.xml:/opt/wso2esb-5.0.0/repository/conf/registry.xml:ro
     - ./config/worker/1/axis2.xml:/opt/wso2esb-5.0.0/repository/conf/axis2/axis2.xml:ro
     - ./config/worker/jndi.properties:/opt/wso2esb-5.0.0/repository/conf/jndi.properties:ro
+    - ./config/worker/1/carbon.xml:/opt/wso2esb-5.0.0/repository/conf/carbon.xml:ro
     entrypoint: /opt/wso2esb-5.0.0/bin/wso2server.sh -DworkerNode=true
     depends_on:
     - manager
@@ -44,6 +53,7 @@ services:
     - ./config/worker/registry.xml:/opt/wso2esb-5.0.0/repository/conf/registry.xml:ro
     - ./config/worker/2/axis2.xml:/opt/wso2esb-5.0.0/repository/conf/axis2/axis2.xml:ro
     - ./config/worker/jndi.properties:/opt/wso2esb-5.0.0/repository/conf/jndi.properties:ro
+    - ./config/worker/2/carbon.xml:/opt/wso2esb-5.0.0/repository/conf/carbon.xml:ro
     entrypoint: /opt/wso2esb-5.0.0/bin/wso2server.sh -DworkerNode=true
     depends_on:
     - manager
@@ -61,3 +71,4 @@ services:
     - worker2
 volumes:
   data:
+  svn:
