@@ -10,6 +10,7 @@ services:
     volumes:
     - ./db:/docker-entrypoint-initdb.d:ro
     - data:/var/lib/postgresql/data
+    command: postgres -c max_connections=1000
   manager:
     image: wso2esb:5.0.0
     container_name: esb-manager
@@ -23,5 +24,31 @@ services:
     entrypoint: /docker-entrypoint.sh
     depends_on:
     - db
+  worker1:
+    image: wso2esb:5.0.0
+    container_name: esb-worker1
+    volumes:
+    - ./config/worker/master-datasources.xml:/opt/wso2esb-5.0.0/repository/conf/datasources/master-datasources.xml:ro
+    - ./config/worker/user-mgt.xml:/opt/wso2esb-5.0.0/repository/conf/user-mgt.xml:ro
+    - ./config/worker/registry.xml:/opt/wso2esb-5.0.0/repository/conf/registry.xml:ro
+    - ./config/worker/1/axis2.xml:/opt/wso2esb-5.0.0/repository/conf/axis2/axis2.xml:ro
+    - ./config/worker/jndi.properties:/opt/wso2esb-5.0.0/repository/conf/jndi.properties:ro
+    - ./config/worker/docker-entrypoint.sh:/docker-entrypoint.sh:ro
+    entrypoint: /docker-entrypoint.sh
+    depends_on:
+    - manager
+  worker2:
+    image: wso2esb:5.0.0
+    container_name: esb-worker2
+    volumes:
+    - ./config/worker/master-datasources.xml:/opt/wso2esb-5.0.0/repository/conf/datasources/master-datasources.xml:ro
+    - ./config/worker/user-mgt.xml:/opt/wso2esb-5.0.0/repository/conf/user-mgt.xml:ro
+    - ./config/worker/registry.xml:/opt/wso2esb-5.0.0/repository/conf/registry.xml:ro
+    - ./config/worker/2/axis2.xml:/opt/wso2esb-5.0.0/repository/conf/axis2/axis2.xml:ro
+    - ./config/worker/jndi.properties:/opt/wso2esb-5.0.0/repository/conf/jndi.properties:ro
+    - ./config/worker/docker-entrypoint.sh:/docker-entrypoint.sh:ro
+    entrypoint: /docker-entrypoint.sh
+    depends_on:
+    - manager
 volumes:
   data:
