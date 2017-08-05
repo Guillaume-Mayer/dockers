@@ -1,1 +1,1 @@
-docker build -t soapui .
+docker build -t registry.arkhotech.space/soapui-mock-service .
