@@ -5,8 +5,8 @@ services:
     container_name: esb-db
     environment:
     - POSTGRES_PASSWORD=pg123456
-    ports:
-    - 5432:5432
+    #ports:
+    #- 5432:5432
     volumes:
     - ./db:/docker-entrypoint-initdb.d:ro
     - data:/var/lib/postgresql/data
@@ -15,6 +15,8 @@ services:
     image: krisdavison/svn-server:v2.0
     container_name: esb-svn
     command: /startup.sh
+    #ports:
+    #- 80:80
     volumes:
     - svn:/home/svn
   manager:
@@ -27,7 +29,7 @@ services:
     - ./config/manager/axis2.xml:/opt/wso2esb-5.0.0/repository/conf/axis2/axis2.xml:ro
     - ./config/manager/jndi.properties:/opt/wso2esb-5.0.0/repository/conf/jndi.properties:ro
     - ./config/manager/carbon.xml:/opt/wso2esb-5.0.0/repository/conf/carbon.xml:ro
-    entrypoint: /opt/wso2esb-5.0.0/bin/wso2server.sh
+    entrypoint: /opt/wso2esb-5.0.0/bin/wso2server.sh -Dsetup
     depends_on:
     - db
     - svn

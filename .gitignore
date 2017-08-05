@@ -7,3 +7,5 @@ id_rsa*
 rust-musl-builder/
 cocha/deployments/
 chilec/
+jenkins/jenkins_home/
+
