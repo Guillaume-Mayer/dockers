@@ -1,4 +1,5 @@
 # docker run --rm jenkins-maven:alpine bash -c "`cat version.sh`"
+# docker exec jenkins ash -c "`cat version.sh`"
 
 JAVA_VERSION=`java -version 2>&1 | head -1 | awk -F'"' '{print $2}'`
 GIT_VERSION=`git --version | awk '{print $3}'`
