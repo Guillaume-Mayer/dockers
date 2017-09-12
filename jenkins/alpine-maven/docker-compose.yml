@@ -1,0 +1,12 @@
+version: "3"
+services:
+  jenkins:
+    image: jenkins-maven:alpine
+    container_name: jenkins
+    ports:
+    - 8080:8080
+    volumes:
+    - jenkins:/var/jenkins_home
+volumes:
+  jenkins:
+    external: true
