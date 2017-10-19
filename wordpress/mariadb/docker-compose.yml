@@ -1,0 +1,26 @@
+version: "3"
+services:
+  db:
+    image: mariadb
+    environment:
+    - MYSQL_ROOT_PASSWORD=rOot123.,
+    ports:
+    - 3306:3306
+    volumes:
+    - db:/var/lib/mysql
+  wordpress:
+    #image: wordpress:fpm-alpine
+    image: wordpress
+    environment:
+    - WORDPRESS_DB_HOST=db
+    - WORDPRESS_DB_USER=root
+    - WORDPRESS_DB_PASSWORD=rOot123.,
+    ports:
+    - 8080:80
+    volumes:
+    - wp:/var/www/html
+    depends_on:
+    - db
+volumes:
+  db:
+  wp:

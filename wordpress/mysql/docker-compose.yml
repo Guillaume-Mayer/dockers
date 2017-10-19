@@ -1,6 +1,6 @@
 version: "3"
 services:
-  mysql:
+  db:
     image: mysql
     environment:
     - MYSQL_ROOT_PASSWORD=rOot123.,
@@ -12,7 +12,7 @@ services:
     #image: wordpress:fpm-alpine
     image: wordpress
     environment:
-    - WORDPRESS_DB_HOST=mysql
+    - WORDPRESS_DB_HOST=db
     - WORDPRESS_DB_USER=root
     - WORDPRESS_DB_PASSWORD=rOot123.,
     ports:
@@ -20,7 +20,7 @@ services:
     volumes:
     - wp:/var/www/html
     depends_on:
-    - mysql
+    - db
 volumes:
   db:
   wp:
