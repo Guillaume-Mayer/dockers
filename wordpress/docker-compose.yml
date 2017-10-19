@@ -18,9 +18,8 @@ services:
     ports:
     - 8080:80
     volumes:
-    - wp:/var/www/html
+    - ./html:/var/www/html
     depends_on:
     - db
 volumes:
   db:
-  wp:
