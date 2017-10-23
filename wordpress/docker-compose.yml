@@ -7,10 +7,10 @@ services:
     ports:
     - 3306:3306
     volumes:
-    - db:/var/lib/mysql
+    - dbfalp:/var/lib/mysql
   wordpress:
     #image: wordpress:fpm-alpine
-    image: wordpress
+    image: wordpress:4.7.4
     environment:
     - WORDPRESS_DB_HOST=db
     - WORDPRESS_DB_USER=root
@@ -18,8 +18,8 @@ services:
     ports:
     - 8080:80
     volumes:
-    - ./html:/var/www/html
+    - ./website/src:/var/www/html
     depends_on:
     - db
 volumes:
-  db:
+  dbfalp:
