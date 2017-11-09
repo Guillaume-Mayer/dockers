@@ -1,0 +1,29 @@
+version: "3"
+services:
+  db:
+    image: mariadb
+    environment:
+    - MYSQL_ROOT_PASSWORD=rOot123.,
+    - MYSQL_DATABASE=directus
+    - MYSQL_USER=directus
+    - MYSQL_PASSWORD=directus123
+    ports:
+    - 3306:3306
+    volumes:
+    - data:/var/lib/mysql
+  directus:
+    image: getdirectus/directus:6.4
+    environment:
+    - MYSQL_USER=directus
+    - MYSQL_PASSWORD=directus123
+    - MYSQL_ENV_MYSQL_DATABASE=directus
+    - MYSQL_ENV_MYSQL_USER=directus
+    - MYSQL_ENV_MYSQL_PASSWORD=directus123
+    - MYSQL_PORT_3306_TCP_ADDR=db
+    - MYSQL_PORT_3306_TCP_PORT=3306
+    ports:
+    - 8080:8080
+    depends_on:
+    - db
+volumes:
+  data:
