@@ -22,8 +22,8 @@ urls=("https://distribution-xml.booking.com/xml/bookings.getHotels?rows=1000&off
 nombres=("hotels" "descriptions" "images" "facilities" "hotelfacility" "hotelroomsphotos" "descriptionphotos" "hotelroomstranslations")
 resultNode="<result>"
 
-user="Cocha"
-password="Cocha.123"
+user="*****"
+password="*****"
 
 lastChangeParameter=""
 if [ $useLastChange ]; then
