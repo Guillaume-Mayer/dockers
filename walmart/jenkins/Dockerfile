@@ -29,4 +29,4 @@ EXPOSE 8080
 
 VOLUME /home/jenkins/.jenkins
 
-ENTRYPOINT java -jar jenkins.war --httpPort=8080cp
+ENTRYPOINT java -jar jenkins.war --httpPort=8080

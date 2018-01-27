@@ -1,0 +1,60 @@
+version: "3"
+
+services:
+
+  db:
+    image: postgres:alpine
+    volumes:
+    - db:/var/lib/postgresql/data
+    environment:
+    - POSTGRES_USER=sonar
+    - POSTGRES_PASSWORD=sonar
+
+  sonarqube:
+    image: sonarqube:alpine
+    volumes:
+    - sonarqube:/opt/sonarqube/data
+    environment:
+    - SONARQUBE_JDBC_URL=jdbc:postgresql://db:5432/sonar
+    ports:
+    - 9000:9000
+    depends_on:
+    - db
+
+  nexus:
+    image: sonatype/nexus3
+    volumes:
+    - nexus:/nexus-data
+    ports:
+    - 8081:8081
+
+  jenkins:
+    image: jenkins/jenkins
+    hostname: ci-jenkins
+    #build: ./jenkins
+    volumes:
+    - jenkins:/var/jenkins_home
+    #- /var/run/docker.sock:/var/run/docker.sock
+    ports:
+    - 8080:8080
+
+  gitlab:
+    image: gitlab/gitlab-ce
+    hostname: ci-gitlab
+    volumes:
+    - gitlab_etc:/etc/gitlab
+    - gitlab_log:/var/log/gitlab
+    - gitlab_opt:/var/opt/gitlab
+    ports:
+    - '22:22'
+    - 80:80
+    #- 443:443
+
+volumes:
+  db:
+  sonarqube:
+  nexus:
+  jenkins:
+  gitlab_etc:
+  gitlab_log:
+  gitlab_opt:
