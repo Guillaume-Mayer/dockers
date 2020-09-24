@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
-<title>Aplicación Comercio en Docker</title>
+<title>Aplicaci&oacute;n Comercio en Docker</title>
 
 <xmp theme="cerulean" style="display:none;">
-# Aplicación Comercio en Docker
+# Aplicaci&oacute;n Comercio en Docker
 
 ## 1) Instalar Docker
 
@@ -22,15 +22,15 @@ Se necesitara reiniciar la maquina.
 
 ## 2) Descargar la imagen de base
 
-Se descarga la imagen de base en la cual correra la aplicación dockerizada.
+Se descarga la imagen de base en la cual correra la aplicaci&oacute;n dockerizada.
 
-Es un servidor microsoft completo, ocupa mas o menos 10 Go, así que dura bastante la descarga.
+Es un servidor microsoft completo, ocupa mas o menos 10 Go, as&iacute; que dura bastante la descarga.
 
 ```Shell
 docker pull microsoft/windowsservercore
 ```
 
-Por desgracia no se pudó usar la imagen *microsoft/nanoserver* por que Jboss 5 no la soporta.
+Por desgracia no se pud&oacute; usar la imagen *microsoft/nanoserver* por que Jboss 5 no la soporta.
 
 ## 3) Imagen con maquina virtual Java 6
 
@@ -68,7 +68,7 @@ RUN $newPath = ('{0};{1}\bin' -f $env:PATH, $env:JAVA_HOME); \
     setx /M PATH $newPath;
 ```
 
-- Esa imagen ocupa la de microsoft Windows Server Core como base (No se pudó usar nanoserver por causa del JBoss 5).
+- Esa imagen ocupa la de microsoft Windows Server Core como base (No se pud&oacute; usar nanoserver por causa del JBoss 5).
 - Se define PowerShell como shell por defecto
 - Se copia la JDK 6u45 en la raiz (C:)
 - Se define la variable de entono JAVA_HOME
@@ -84,7 +84,7 @@ Se puede probar la imagen con el comando siguiente:
 ```Shell
 docker run -it --rm arkhotech/java:6u45
 ```
-Las opciones -it permiten simular un terminal interactivo, la opción --rm le dice a docker de borrar el contenedor cuando no se usa mas.
+Las opciones -it permiten simular un terminal interactivo, la opci&oacute;n --rm le dice a docker de borrar el contenedor cuando no se usa mas.
 
 ## 4) Imagen con JBoss 5
 
@@ -129,9 +129,9 @@ docker run --rm arkhotech/jboss:5.1.0.GA
 
 ## 5) Imagen con aplicaciones de CBRS
 
-En esa ultima capa/imagen, se agregan los archvos propios a las aplicaciones de CBRS, archivos de configuración y archivos java (war, jar, sar).
+En esa ultima capa/imagen, se agregan los archvos propios a las aplicaciones de CBRS, archivos de configuraci&oacute;n y archivos java (war, jar, sar).
 La mayoria de esos archivos estando en la carpeta "default".
-También se agrega el archivo run.conf.bat que permite definir las opciones de la JVM, así que el script docker-cmd.bat, que sera el punto de inicio del contenedor y que nos permite definir algunas acciones personalisadas.
+También se agrega el archivo run.conf.bat que permite definir las opciones de la JVM, as&iacute; que el script docker-cmd.bat, que sera el punto de inicio del contenedor y que nos permite definir algunas acciones personalisadas.
 
 ```Dockerfile
 # Jboss base image
@@ -204,15 +204,15 @@ echo Launching JBoss (run.bat)
 c:\jboss-5.1.0.GA\bin\run.bat
 ```
 
-- Se agregan mapeos IP/Nombre en archivo hosts para que sean reconocidos en la Aplicación
+- Se agregan mapeos IP/Nombre en archivo hosts para que sean reconocidos en la Aplicaci&oacute;n
 Docker ocupa el mismo DNS que la maquina host, pero no agrega automaticamente el nomre de dominio:
 Por ejemplo `ping maipo.cbrs.local` encuentra el IP del servidor maipo, pero `ping maipo` no lo encuentra.
 - Se conectan las unidades de red I, J, R, W y Z
 - Se levanta el servidor JBoss mediante el script run.bat
 
-**Ojo** La conexión de las unidades I: y Z: no funcionan (error 121, timeOut)
+**Ojo** La conexi&oacute;n de las unidades I: y Z: no funcionan (error 121, timeOut)
 
-**Ojo** Se ocupó los credenciales de Arkhotech, pero se deberian reemplazar por otros.
+**Ojo** Se ocup&oacute; los credenciales de Arkhotech, pero se deberian reemplazar por otros.
 
 La imagen se construira con el comando siguiente:
 ```Shell
@@ -231,10 +231,10 @@ Para levantar el contenedor final, ejecutar el comando siguiente:
 docker run -p 8080:8080 -v c:/Arkhotech/Volumes/log:c:/jboss-5.1.0.GA/server/default/log --name cbrs -d arkhotech/cbrs
 ```
 
-- La opción -p 8080:8080 permite mapear el puerto 8080 del host al puerto 8080 del contenedor
-- La opción -v c:/Arkhotech/Volumes/log:c:/jboss-5.1.0.GA/server/default/log permite montar la carpeta de los logs del contenedor en una carpeta del host.
-- La opción --name le da "cbrs" como nombre al contenedor
-- La opción -d le dice que se ejecutar en background
+- La opci&oacute;n -p 8080:8080 permite mapear el puerto 8080 del host al puerto 8080 del contenedor
+- La opci&oacute;n -v c:/Arkhotech/Volumes/log:c:/jboss-5.1.0.GA/server/default/log permite montar la carpeta de los logs del contenedor en una carpeta del host.
+- La opci&oacute;n --name le da "cbrs" como nombre al contenedor
+- La opci&oacute;n -d le dice que se ejecutar en background
 
 Para ver los logs del contenedor, se ejecuta el comando siguiente:
 ```Shell
@@ -244,7 +244,7 @@ docker logs cbrs
 Se muestran los contenedores mediante el comando `docker ps -a`, despues de levantar el contenedor cbrs, se deberia mostrar eso:
 ![docker ps -a][ss2]
 
-Para ver los detalles del contenedor, se usa el comando `docker inspect cbrs`, que deberia mostra algo así:
+Para ver los detalles del contenedor, se usa el comando `docker inspect cbrs`, que deberia mostra algo as&iacute;:
 ```json
 [
     {
@@ -453,14 +453,14 @@ Para ver los detalles del contenedor, se usa el comando `docker inspect cbrs`, q
 ]
 ```
 
-Una vez la aplicación levantada se podra acceder a través del puerto 8080.
+Una vez la aplicaci&oacute;n levantada se podra acceder a través del puerto 8080.
 
-**NAT** Docker ocupa NAT para sus contenedores así que cada contenedor tendra una IP propia que no significa nada fuera de la maquina host.
+**NAT** Docker ocupa NAT para sus contenedores as&iacute; que cada contenedor tendra una IP propia que no significa nada fuera de la maquina host.
 
 En el ejemplo encima, la IP **172.28.61.47** es valida solo en la maquina host.
 
-- Para acceder a la aplicación desde la maquina host : http://172.28.61.47:8080/comercio
-- Para acceder a la aplicación desde fuera, usar la IP (o hostname) de la maquina host, en nuestro caso : http://192.168.102.178:8080/comercio
+- Para acceder a la aplicaci&oacute;n desde la maquina host : http://172.28.61.47:8080/comercio
+- Para acceder a la aplicaci&oacute;n desde fuera, usar la IP (o hostname) de la maquina host, en nuestro caso : http://192.168.102.178:8080/comercio
 - Para parrar el contenedor : `docker stop cbrs`
 - Para borrar el contenedor : `docker rm cbrs`
 
